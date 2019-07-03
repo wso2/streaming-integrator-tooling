@@ -31,7 +31,7 @@ Viewing the Results:
         INFO {org.wso2.siddhi.core.query.processor.stream.LogStreamProcessor} - sentimentExtensionSample: Event :, StreamEvent{ timestamp=1513623526790, beforeWindowData=null, onAfterWindowData=null, outputData=[48.8583698, 2.2944833, Tour Eiffel, 5 Avenue Anatole France, 75007 Paris, France], type=CURRENT, next=null}
 */
 
--- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with SP editor.
+-- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with streaming-integrator-tooling.
 
 define stream geocodeStream (location string, level string, time string);
 

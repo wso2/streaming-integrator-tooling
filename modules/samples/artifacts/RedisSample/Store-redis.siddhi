@@ -37,7 +37,7 @@ Viewing the Results:
 
 */
 
--- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with SP editor. 
+-- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with streaming-integrator-tooling.
 
 define stream insertSweetProductionStream (symbol string, price float, volume long); 
 define stream deleteSweetProductionStream (symbol string, price float, volume long);

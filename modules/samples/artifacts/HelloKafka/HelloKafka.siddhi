@@ -27,7 +27,7 @@ Prerequisites:
               v) Add the original Kafka libs from {Source} to {WSO2SPHome}/samples/sample-clients/lib
              vi) Navigate to {KafkaHome} and start zookeeper node using "sh bin/zookeeper-server-start.sh config/zookeeper.properties" command
             vii) Navigate to {KafkaHome} and start Kafka server node using "sh bin/kafka-server-start.sh config/server.properties" command
-           viii) Start the server: sh editor.sh
+           viii) Start the server: sh streaming-integrator-tooling.sh
     2) Save this sample
 
 Executing the Sample:
