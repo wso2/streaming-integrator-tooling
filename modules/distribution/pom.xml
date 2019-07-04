@@ -27,10 +27,10 @@
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <artifactId>wso2-streaming-integrator</artifactId>
+    <artifactId>wso2-streaming-integrator-tooling</artifactId>
     <packaging>pom</packaging>
-    <name>WSO2 Streaming Integrator - Parent</name>
-    <description>WSO2 Streaming Integrator - Distribution</description>
+    <name>WSO2 Streaming Integrator Tooling - Parent</name>
+    <description>WSO2 Streaming Integrator Tooling- Distribution</description>
     <url>http://wso2.org</url>
 
     <dependencies>
@@ -1150,7 +1150,7 @@
                             <descriptors>
                                 <descriptor>${basedir}/src/assembly/bin.xml</descriptor>
                             </descriptors>
-                            <finalName>wso2-streaming-integrator-${project.version}</finalName>
+                            <finalName>wso2-streaming-integrator-tooling-${project.version}</finalName>
                             <appendAssemblyId>false</appendAssemblyId>
                         </configuration>
                     </execution>
