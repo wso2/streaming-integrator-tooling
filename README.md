@@ -1,31 +1,4 @@
-# Streaming Integrator 
-
-
-### Introduction
-
-WSO2 Streaming Integrator is an open-source  streaming data processing engine which lets users integrate streaming data and/or take action based on streaming data
-
-### What Does Streaming Integrator do?
-
-WSO2 Streaming Integration has the capability of consuming streaming data, apply stream processing techniques to process them and Integrate the process data with one or more destinations and/or trigger integration
-
-
-### Architecture Diagram
-
-
-
-### Download ####
-
-Please download the latest stable WSO2 Stream Processor release from [https://wso2.com/analytics-and-stream-processing/install](https://wso2.com/analytics-and-stream-processing/install)
-
-#### How to Run ####
-
-Please refer to our quick start guide on how to start and run the WSO2 Stream Processor.
-https://docs.wso2.com/display/SP4xx/Quick+Start+Guide
-
-#### Documentation ####
-
-Please see the [WSO2 Documentation site for WSO2 SP](https://docs.wso2.com/display/SP4xx)
+# Streaming Integrator-tooling
 
 #### Support ####
 
