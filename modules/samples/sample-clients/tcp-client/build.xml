@@ -23,7 +23,7 @@
     <property name="resources.dir" value="src/main/resources"/>
     <property name="temp.dir" value="binary"/>
     <property name="class.dir" value="${temp.dir}/classes"/>
-    <property name="main-class" value="org.wso2.sp.tcp.client.TCPClient"/>
+    <property name="main-class" value="org.wso2.si.tcp.client.TCPClient"/>
     <property name="lib.dir" value="${carbon.home}/lib"/>
 
     <property name="url" value="tcp://localhost:9892/SweetProductionStream"/>
@@ -79,7 +79,8 @@
         <echo>Publishing events to tcp endpoints to port 9892</echo>
         <echo>Configure -Durl=tcp://localhost:9892/SweetProductionStream(optional) -Dtype=json(optional)
             -DfilePath=xxx(optional) -DeventDefinition=xxx(optional) -Ddelay=1000 -DcustomMapping=true/false(optional)
-            -DnoOfEventsToSend=(optional)</echo>
+            -DnoOfEventsToSend=(optional)
+        </echo>
         <echo>CustomMapping will be overridden if eventDefinition is given.</echo>
         <echo>If eventDefinition is given, its mandatory to give a file path to the events as well.</echo>
         <echo>Following mentioned values will be applied if no value is given for optional values.</echo>

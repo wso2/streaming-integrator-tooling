@@ -85,8 +85,8 @@ Testing the Sample:
 
 Viewing the Results:
     See the output on the terminal.
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - sentimentExtensionSample : outputStream : Event{timestamp=1513619669217, data=[Mohan , David is a good person. David is a bad person, 0], isExpired=false}
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - sentimentExtensionSample : outputStream : Event{timestamp=1513619687568, data=[Nuwan , David is a good person., 3], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - sentimentExtensionSample : outputStream : Event{timestamp=1513619669217, data=[Mohan , David is a good person. David is a bad person, 0], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - sentimentExtensionSample : outputStream : Event{timestamp=1513619687568, data=[Nuwan , David is a good person., 3], isExpired=false}
 */
 -- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with SP editor.
 

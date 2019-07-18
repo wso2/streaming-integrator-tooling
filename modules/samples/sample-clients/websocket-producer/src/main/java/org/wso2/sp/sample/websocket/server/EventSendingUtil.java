@@ -18,8 +18,8 @@
 
 package org.wso2.sp.sample.websocket.server;
 
+import io.siddhi.core.stream.input.InputHandler;
 import org.apache.log4j.Logger;
-import org.wso2.siddhi.core.stream.input.InputHandler;
 
 import java.util.ArrayList;
 import java.util.Arrays;

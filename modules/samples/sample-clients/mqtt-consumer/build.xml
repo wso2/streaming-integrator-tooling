@@ -22,7 +22,7 @@
     <property name="src.dir" value="src/main/java"/>
     <property name="temp.dir" value="temp"/>
     <property name="class.dir" value="${temp.dir}/classes"/>
-    <property name="main-class" value="org.wso2.sp.sample.mqtt.consumer.MqttReceiver"/>
+    <property name="main-class" value="org.wso2.si.sample.mqtt.consumer.MqttReceiver"/>
     <property name="lib.dir" value="${carbon.home}/lib"/>
 
 
@@ -82,8 +82,9 @@
         <echo>If eventDefinition is given, its mandatory to give a file path to the events as well.</echo>
         <echo>Following mentioned values will be applied if no value is given for optional values.</echo>
         <echo>Configure -Durl=http://tcp://localhost:1883 -Dtopic=mqtt_topic and -Dtype=xml,
-        username=(Optional), password=(Optional), client.id=(Optional), quality.of.service=(Optional),
-            clean.session=(Optional), message.retain=(Optional), keep.alive=(Optional), connection.timeout=(Optional)</echo>
+            username=(Optional), password=(Optional), client.id=(Optional), quality.of.service=(Optional),
+            clean.session=(Optional), message.retain=(Optional), keep.alive=(Optional), connection.timeout=(Optional)
+        </echo>
         <java classname="${main-class}"
               classpathref="javac.classpath" fork="true">
             <arg value="${url}"/>

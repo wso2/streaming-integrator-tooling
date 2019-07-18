@@ -1,20 +1,20 @@
 /*
-*  Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
-*
-*  WSO2 Inc. licenses this file to you under the Apache License,
-*  Version 2.0 (the "License"); you may not use this file except
-*  in compliance with the License.
-*  You may obtain a copy of the License at
-*
-*    http://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing,
-* software distributed under the License is distributed on an
-* "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-* KIND, either express or implied.  See the License for the
-* specific language governing permissions and limitations
-* under the License.
-*/
+ *  Copyright (c) 2017, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
+ *
+ *  WSO2 Inc. licenses this file to you under the Apache License,
+ *  Version 2.0 (the "License"); you may not use this file except
+ *  in compliance with the License.
+ *  You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
 
 package org.wso2.carbon.sample.server;
 
@@ -44,9 +44,6 @@ public class DatabridgeTestServer {
     private static final String STREAM_NAME1 = "sweet.stream";
     private static final String VERSION = "1.0.0";
     private static final Logger log = Logger.getLogger(DatabridgeTestServer.class);
-    private ThriftDataReceiver thriftDataReceiver;
-    private BinaryDataReceiver binaryDataReceiver;
-    private InMemoryStreamDefinitionStore streamDefinitionStore;
     private static final String STREAM_DEFN = "{" +
             "  'name':'" + STREAM_NAME1 + "'," +
             "  'version':'" + VERSION + "'," +
@@ -57,6 +54,10 @@ public class DatabridgeTestServer {
             "          {'name':'amount','type':'DOUBLE'}" +
             "  ]" +
             "}";
+    private ThriftDataReceiver thriftDataReceiver;
+    private BinaryDataReceiver binaryDataReceiver;
+    private InMemoryStreamDefinitionStore streamDefinitionStore;
+
     public static void main(String args[]) throws DataBridgeException, InterruptedException,
             StreamDefinitionStoreException, MalformedStreamDefinitionException {
         DatabridgeTestServer databridgeTestServer = new DatabridgeTestServer();
@@ -124,7 +125,7 @@ public class DatabridgeTestServer {
             binaryDataReceiver = new BinaryDataReceiver(new BinaryDataReceiverConfiguration(receiverPort + 100,
                     receiverPort), databridge);
             binaryDataReceiver.start();
-            
+
         } else {
             thriftDataReceiver = new ThriftDataReceiver(receiverPort, databridge);
             thriftDataReceiver.start(host);

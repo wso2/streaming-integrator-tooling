@@ -23,7 +23,7 @@
     <property name="resources.dir" value="src/main/resources"/>
     <property name="temp.dir" value="temp"/>
     <property name="class.dir" value="${temp.dir}/classes"/>
-    <property name="main-class" value="org.wso2.sp.mqtt.client.MqttClient"/>
+    <property name="main-class" value="org.wso2.si.mqtt.client.MqttClient"/>
     <property name="lib.dir" value="${carbon.home}/lib"/>
 
     <property name="url" value="tcp://localhost:1883"/>

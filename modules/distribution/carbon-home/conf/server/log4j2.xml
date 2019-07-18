@@ -36,19 +36,19 @@
                 <TimeBasedTriggeringPolicy/>
             </Policies>
         </RollingFile>
-	<EditorConsole name="EditorConsole">
-		<PatternLayout pattern="[%d] %5p {%c} - %m%ex%n"/>
-	</EditorConsole>
+        <EditorConsole name="EditorConsole">
+            <PatternLayout pattern="[%d] %5p {%c} - %m%ex%n"/>
+        </EditorConsole>
     </Appenders>
     <Loggers>
         <Logger name="AUDIT_LOG" level="info" additivity="false">
             <AppenderRef ref="AUDIT_LOGFILE"/>
         </Logger>
         <Logger name="com.zaxxer.hikari" level="error"/>
-	<Root level="info">
+        <Root level="info">
             <AppenderRef ref="CARBON_CONSOLE"/>
             <AppenderRef ref="CARBON_LOGFILE"/>
- 	<AppenderRef ref="EditorConsole"/>
+            <AppenderRef ref="EditorConsole"/>
         </Root>
     </Loggers>
 </Configuration>

@@ -1,1 +1,6 @@
-{"event":{"name":"redhat","amount":57.678}}
+{
+  "event": {
+    "name": "redhat",
+    "amount": 57.678
+  }
+}

@@ -22,7 +22,7 @@ Testing the Sample:
 Viewing the Results:
     See the output on timeSeriesExtensionSample console.
     Expected output
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - timeSeriesExtensionSample : logStream : Event{timestamp=1513592366610, data=[5000.0, 7000.0, 822.6805758329987, 0.0, 0.6129017613945887], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - timeSeriesExtensionSample : logStream : Event{timestamp=1513592366610, data=[5000.0, 7000.0, 822.6805758329987, 0.0, 0.6129017613945887], isExpired=false}
 
 */
 

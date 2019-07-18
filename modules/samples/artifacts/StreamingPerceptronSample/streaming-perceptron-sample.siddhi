@@ -79,7 +79,7 @@ Testing the Sample:
 
 Viewing the Results:
     See the output on the terminal:
-     INFO {org.wso2.siddhi.core.query.processor.stream.LogStreamProcessor} - streaming-perceptron-sample: LOGGER, StreamEvent{ timestamp=1513596699142, beforeWindowData=null, onAfterWindowData=null, outputData=[34.0, 12.0, false, 0.0], type=CURRENT, next=null}
+     INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - streaming-perceptron-sample: LOGGER, StreamEvent{ timestamp=1513596699142, beforeWindowData=null, onAfterWindowData=null, outputData=[34.0, 12.0, false, 0.0], type=CURRENT, next=null}
 */
 define stream ProductionTrainStream (density double, temperature double, qualityCheck_pass bool );
 

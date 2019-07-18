@@ -22,7 +22,7 @@
     <property name="src.dir" value="src/main/java"/>
     <property name="temp.dir" value="temp"/>
     <property name="class.dir" value="${temp.dir}/classes"/>
-    <property name="main-class" value="org.wso2.sp.sample.rabbitmq.consumer.RabbitMQReceiver"/>
+    <property name="main-class" value="org.wso2.si.sample.rabbitmq.consumer.RabbitMQReceiver"/>
     <property name="lib.dir" value="${carbon.home}/lib"/>
 
 
@@ -101,8 +101,10 @@
             -Dheartbeat=(Optional), -Dexchange.type=(Optional), -Dexchange.durable.enabled=(Optional),
             -Dexchange.autodelete.enabled=(Optional), -Ddelivery.mode=(Optional), -Dcontent.type=(Optional),
             -Dcontent.encoding=(Optional), -Dpriority=(Optional), -Dcorrelation.id=(Optional), -Dreply.to=(Optional),
-            -Dexpiration=(Optional), -Dmessage.id=(Optional), -Dtimestamp=(Optional), -Dtype=(Optional), -Duser.id=(Optional),
-            -Dapp.id=(Optional), -Drouting.key=(Optional), -Dheaders=(Optional), -Dtls.enabled=(Optional), -Dtls.truststore.path=(Optional),
+            -Dexpiration=(Optional), -Dmessage.id=(Optional), -Dtimestamp=(Optional), -Dtype=(Optional),
+            -Duser.id=(Optional),
+            -Dapp.id=(Optional), -Drouting.key=(Optional), -Dheaders=(Optional), -Dtls.enabled=(Optional),
+            -Dtls.truststore.path=(Optional),
             -Dtls.truststore.password="(Optional)", -Dtls.truststore.type=(Optional), -Dtls.version=(Optional)
         </echo>
         <java classname="${main-class}"
@@ -110,29 +112,29 @@
             <arg value="${uri}"/>
             <arg value="${exchange}"/>
             <arg value="${type}"/>
-            <arg value="${heartbeat}" />
-            <arg value="${exchange.type}" />
-            <arg value="${exchange.durable.enabled}" />
+            <arg value="${heartbeat}"/>
+            <arg value="${exchange.type}"/>
+            <arg value="${exchange.durable.enabled}"/>
             <arg value="${exchange.autodelete.enabled}"/>
-            <arg value="${delivery.mode}" />
+            <arg value="${delivery.mode}"/>
             <arg value="${content.type}"/>
             <arg value="${content.encoding}"/>
-            <arg value="${priority}" />
+            <arg value="${priority}"/>
             <arg value="${correlation.id}"/>
-            <arg value="${reply.to}" />
-            <arg value="${expiration}" />
+            <arg value="${reply.to}"/>
+            <arg value="${expiration}"/>
             <arg value="${message.id}"/>
             <arg value="${timestamp}"/>
-            <arg value="${type}" />
+            <arg value="${type}"/>
             <arg value="${user.id}"/>
             <arg value="${app.id}"/>
             <arg value="${routing.key}"/>
-            <arg value="${headers}" />
+            <arg value="${headers}"/>
             <arg value="${tls.enabled}"/>
             <arg value="${tls.truststore.path}"/>
-            <arg value="${tls.truststore.password}" />
+            <arg value="${tls.truststore.password}"/>
             <arg value="${tls.truststore.type}"/>
-            <arg value="${tls.version}" />
+            <arg value="${tls.version}"/>
         </java>
     </target>
 

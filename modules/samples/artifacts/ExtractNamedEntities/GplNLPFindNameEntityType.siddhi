@@ -29,7 +29,7 @@ Testing the Sample:
 Viewing the Results:
   Viewing the Results:
     Messages similar to the following would be shown on the console.
-        INFO {org.wso2.siddhi.core.query.processor.stream.LogStreamProcessor} - GplNLPFindNameEntityType: StreamEvent{ timestamp=1513573692406, beforeWindowData=null, onAfterWindowData=null, outputData=[ABC factory produces 20 donuts per day., ABC], type=CURRENT, next=null}
+        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - GplNLPFindNameEntityType: StreamEvent{ timestamp=1513573692406, beforeWindowData=null, onAfterWindowData=null, outputData=[ABC factory produces 20 donuts per day., ABC], type=CURRENT, next=null}
     ABC has been recognized as an organization.
 
 Note:

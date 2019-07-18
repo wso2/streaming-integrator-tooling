@@ -22,7 +22,7 @@
     <property name="src.dir" value="src/main/java"/>
     <property name="temp.dir" value="temp"/>
     <property name="class.dir" value="${temp.dir}/classes"/>
-    <property name="main-class" value="org.wso2.sp.sample.websocket.receiver.WebSocketReceiver"/>
+    <property name="main-class" value="org.wso2.si.sample.websocket.receiver.WebSocketReceiver"/>
     <property name="lib.dir" value="${carbon.home}/lib"/>
 
     <property name="host" value="localhost"/>
@@ -77,7 +77,7 @@
         <echo>CustomMapping will be overridden if eventDefinition is given.</echo>
         <echo>If eventDefinition is given, its mandatory to give a file path to the events as well.</echo>
         <echo>Following mentioned values will be applied if no value is given for optional values.</echo>
-        <echo>Configure -Dhost=localhost, -Dport=8025, -Dtype=xml,  -Didle.timeout=(Optional),
+        <echo>Configure -Dhost=localhost, -Dport=8025, -Dtype=xml, -Didle.timeout=(Optional),
             -Dsub.protocol=(Optional),
         </echo>
         <java classname="${main-class}"

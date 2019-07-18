@@ -29,18 +29,17 @@ import java.net.InetSocketAddress;
  * Http test sever listener.
  */
 public class HttpServerListenerHandler {
-    HttpServerListener getServerListner() {
-        return sl;
-    }
-
     private static final Logger logger = Logger.getLogger(HttpServerListenerHandler.class);
     private HttpServerListener sl;
     private HttpServer server;
     private int port;
-
     HttpServerListenerHandler(int port) {
         this.sl = new HttpServerListener();
         this.port = port;
+    }
+
+    HttpServerListener getServerListner() {
+        return sl;
     }
 
     public void run() {

@@ -49,7 +49,7 @@ Testing the Sample:
   VViewing the Results:
     The received responses will be logged in the terminal/editor console as following.
 
-    * INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - RequestResponse : responseStream : Event{timestamp=1555358941592, data=[toffees, 75.6], isExpired=false}
+    * INFO {io.siddhi.core.stream.output.sink.LogSink} - RequestResponse : responseStream : Event{timestamp=1555358941592, data=[toffees, 75.6], isExpired=false}
 
  Notes:
   If the message "LowProductionAlertStream' stream could not connect to 'localhost:8080", it could be due to port 8080

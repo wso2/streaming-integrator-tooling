@@ -18,8 +18,8 @@
 
 package org.wso2.sp.http.client;
 
+import io.siddhi.core.stream.input.InputHandler;
 import org.apache.log4j.Logger;
-import org.wso2.siddhi.core.stream.input.InputHandler;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -32,6 +32,7 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class EventSendingUtil {
     private static final Logger log = Logger.getLogger(EventSendingUtil.class);
+
     public static void publishEvents(List<String[]> fileEntriesList, boolean sendEventsContinuously,
                                      int noOfEventsToSend, String eventDefinition, String[] sweetName,
                                      InputHandler inputHandler, int delay, boolean isBinaryMessage,

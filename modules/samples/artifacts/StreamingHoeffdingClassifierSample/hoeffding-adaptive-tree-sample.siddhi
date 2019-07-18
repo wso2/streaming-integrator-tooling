@@ -86,7 +86,7 @@ Testing the Sample:
 
 Viewing the Results:
     See the output on the terminal:
-     INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - streaming-hoeffding-classifier-sample : PredictionStream : Event{timestamp=1513610806272, data=[30.4, 20.5, candy, 0.0], isExpired=false}
+     INFO {io.siddhi.core.stream.output.sink.LogSink} - streaming-hoeffding-classifier-sample : PredictionStream : Event{timestamp=1513610806272, data=[30.4, 20.5, candy, 0.0], isExpired=false}
 -- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with SP editor.
 */
 

@@ -18,10 +18,10 @@
 
 package org.wso2.sp.http.client;
 
+import io.siddhi.core.SiddhiAppRuntime;
+import io.siddhi.core.SiddhiManager;
+import io.siddhi.core.stream.input.InputHandler;
 import org.apache.log4j.Logger;
-import org.wso2.siddhi.core.SiddhiAppRuntime;
-import org.wso2.siddhi.core.SiddhiManager;
-import org.wso2.siddhi.core.stream.input.InputHandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -94,8 +94,8 @@ public class HttpClient {
                 "Cream Sandwich", "Jelly Bean", "KitKat", "Lollipop", "Marshmallow"};
 
         EventSendingUtil.publishEvents(fileEntriesList, sendEventsCountinously, noOfEventsToSend, eventDefinition,
-                                       sweetName, httpClientStream, Integer.parseInt(args[5]), false,
-                                       continuouslyReadFile);
+                sweetName, httpClientStream, Integer.parseInt(args[5]), false,
+                continuouslyReadFile);
         Thread.sleep(2000);
         siddhiAppRuntime.shutdown();
         Thread.sleep(2000);
