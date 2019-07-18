@@ -31,9 +31,9 @@ import java.util.Arrays;
  * WSO2Event Client Publisher.
  */
 public class Client {
-    private static Log log = LogFactory.getLog(Client.class);
     private static final String STREAM_NAME = "SweetProductionStream";
     private static final String VERSION = "1.0.0";
+    private static Log log = LogFactory.getLog(Client.class);
     private static String agentConfigFileName = "sync.data.agent.config.yaml";
 
     public static void main(String[] args) {

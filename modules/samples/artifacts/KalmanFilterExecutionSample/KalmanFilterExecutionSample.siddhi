@@ -31,8 +31,8 @@ Testing the Sample:
 
 Viewing the Results:
     Messages similar to the following would be shown on the console.
-        INFO {org.wso2.siddhi.core.query.processor.stream.LogStreamProcessor} - KalmanFilterExecutionSample: Event :, StreamEvent{ timestamp=1513378257580, beforeWindowData=null, onAfterWindowData=null, outputData=[55.6], type=CURRENT, next=null}
-        INFO {org.wso2.siddhi.core.query.processor.stream.LogStreamProcessor} - KalmanFilterExecutionSample: Event :, StreamEvent{ timestamp=1513378266843, beforeWindowData=null, onAfterWindowData=null, outputData=[38.05000877553216], type=CURRENT, next=null}
+        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - KalmanFilterExecutionSample: Event :, StreamEvent{ timestamp=1513378257580, beforeWindowData=null, onAfterWindowData=null, outputData=[55.6], type=CURRENT, next=null}
+        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - KalmanFilterExecutionSample: Event :, StreamEvent{ timestamp=1513378266843, beforeWindowData=null, onAfterWindowData=null, outputData=[38.05000877553216], type=CURRENT, next=null}
 
 */
 

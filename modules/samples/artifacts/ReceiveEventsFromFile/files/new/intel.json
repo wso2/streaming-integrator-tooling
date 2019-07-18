@@ -1,1 +1,6 @@
-{"event":{"name":"intel","amount":75.6}}
+{
+  "event": {
+    "name": "intel",
+    "amount": 75.6
+  }
+}

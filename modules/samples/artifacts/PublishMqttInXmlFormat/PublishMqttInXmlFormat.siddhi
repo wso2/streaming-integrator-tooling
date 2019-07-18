@@ -41,11 +41,11 @@ Viewing the Results:
     * See the output in the terminal of {WSO2SPHome}/samples/sample-clients/mqtt-consumer. You will get the output as follows (example for 3 events) :
     
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
-        [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : PublishMqttInXmlFormatTest : logStream : Event{timestamp=1512462478777, data=[chocolate, 78.34], isExpired=false}
+        [java] [io.siddhi.core.stream.output.sink.LogSink] : PublishMqttInXmlFormatTest : logStream : Event{timestamp=1512462478777, data=[chocolate, 78.34], isExpired=false}
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
-        [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : PublishMqttInXmlFormatTest : logStream : Event{timestamp=1512462520264, data=[sweets, 34.57], isExpired=false}
+        [java] [io.siddhi.core.stream.output.sink.LogSink] : PublishMqttInXmlFormatTest : logStream : Event{timestamp=1512462520264, data=[sweets, 34.57], isExpired=false}
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
-        [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : PublishMqttInXmlFormatTest : logStream : Event{timestamp=1512462534053, data=[coffee, 12.7], isExpired=false}
+        [java] [io.siddhi.core.stream.output.sink.LogSink] : PublishMqttInXmlFormatTest : logStream : Event{timestamp=1512462534053, data=[coffee, 12.7], isExpired=false}
 
     Notes:
     If you need to edit this application while it is running, stop the application -> Save -> Start.

@@ -18,10 +18,10 @@
 
 package org.wso2.sp.tcp.server;
 
+import io.siddhi.core.SiddhiAppRuntime;
+import io.siddhi.core.SiddhiManager;
+import io.siddhi.core.util.config.InMemoryConfigManager;
 import org.apache.log4j.Logger;
-import org.wso2.siddhi.core.SiddhiAppRuntime;
-import org.wso2.siddhi.core.SiddhiManager;
-import org.wso2.siddhi.core.util.config.InMemoryConfigManager;
 
 import java.util.HashMap;
 import java.util.Map;

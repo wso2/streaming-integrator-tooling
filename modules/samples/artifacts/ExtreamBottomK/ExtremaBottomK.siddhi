@@ -38,10 +38,10 @@ Testing the Sample:
 Viewing the Results:
     See the output on ExtremaBottomK console.
     Expected output
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498254202, data=[sugar, 20, sugar, 1, null, null, null, null], isExpired=false}, Event{timestamp=1529498254202, data=[cake, 10, cake, 1, sugar, 1, null, null], isExpired=false}]
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498262769, data=[cake, 10, cake, 1, sugar, 1, null, null], isExpired=false}, Event{timestamp=1529498262769, data=[toffee, 65, toffee, 1, cake, 1, sugar, 1], isExpired=false}]
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498270897, data=[toffee, 65, toffee, 1, cake, 1, sugar, 1], isExpired=false}, Event{timestamp=1529498270897, data=[cake, 74, toffee, 1, sugar, 1, cake, 2], isExpired=false}]
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498278304, data=[cake, 74, toffee, 1, sugar, 1, cake, 2], isExpired=false}, Event{timestamp=1529498278304, data=[toffee, 25, sugar, 1, toffee, 2, cake, 2], isExpired=false}]
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498254202, data=[sugar, 20, sugar, 1, null, null, null, null], isExpired=false}, Event{timestamp=1529498254202, data=[cake, 10, cake, 1, sugar, 1, null, null], isExpired=false}]
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498262769, data=[cake, 10, cake, 1, sugar, 1, null, null], isExpired=false}, Event{timestamp=1529498262769, data=[toffee, 65, toffee, 1, cake, 1, sugar, 1], isExpired=false}]
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498270897, data=[toffee, 65, toffee, 1, cake, 1, sugar, 1], isExpired=false}, Event{timestamp=1529498270897, data=[cake, 74, toffee, 1, sugar, 1, cake, 2], isExpired=false}]
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - ExtremaBottomK : outputStream : [Event{timestamp=1529498278304, data=[cake, 74, toffee, 1, sugar, 1, cake, 2], isExpired=false}, Event{timestamp=1529498278304, data=[toffee, 25, sugar, 1, toffee, 2, cake, 2], isExpired=false}]
 */
 
 @Source(type = 'http', receiver.url='http://localhost:8006/productionStream', basic.auth.enabled='false',

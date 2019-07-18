@@ -28,7 +28,7 @@ Testing the Sample:
 
 Viewing the Results:
     Messages similar to the following would be shown on the console.
-        INFO {org.wso2.siddhi.core.query.processor.stream.LogStreamProcessor} - MapExtensionSample: Event: , StreamEvent{ timestamp=1513384974698, beforeWindowData=null, onAfterWindowData=null, outputData=[true, false], type=CURRENT, next=null}
+        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - MapExtensionSample: Event: , StreamEvent{ timestamp=1513384974698, beforeWindowData=null, onAfterWindowData=null, outputData=[true, false], type=CURRENT, next=null}
 
 
 */

@@ -81,7 +81,7 @@ Testing the Sample:
 
 Viewing the Results:
   See the output on the terminal of {WSO2SPHome}/samples/sample-clients/jms-consumer:
-      [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : JmsReceiver : logStream : Event{timestamp=1513607495863, data=['chocolate cake', 50.50], isExpired=false}
+      [java] [io.siddhi.core.stream.output.sink.LogSink] : JmsReceiver : logStream : Event{timestamp=1513607495863, data=['chocolate cake', 50.50], isExpired=false}
 */
 
 define stream SweetProductionStream (name string, amount double);

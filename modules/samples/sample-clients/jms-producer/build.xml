@@ -22,7 +22,7 @@
     <property name="src.dir" value="src/main/java"/>
     <property name="temp.dir" value="temp"/>
     <property name="class.dir" value="${temp.dir}/classes"/>
-    <property name="main-class" value="org.wso2.sp.sample.jms.client.JmsClient"/>
+    <property name="main-class" value="org.wso2.si.sample.jms.client.JmsClient"/>
     <property name="lib.dir" value="${carbon.home}/lib/"/>
     <property name="client.lib.dir" value="../lib/"/>
 

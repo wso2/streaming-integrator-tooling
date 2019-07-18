@@ -37,7 +37,7 @@ Testing the Sample:
 
 Viewing the Results:
     See the output on the terminal:
-2019-03-14_12-50-21_966] INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - SendEvent : BarStream : Event{timestamp=1552548021825, data=[Hello], isExpired=false} 
+2019-03-14_12-50-21_966] INFO {io.siddhi.core.stream.output.sink.LogSink} - SendEvent : BarStream : Event{timestamp=1552548021825, data=[Hello], isExpired=false}
 
 Notes:
 	Make sure the the credential file is correct and user have write access to make api calls.

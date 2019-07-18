@@ -1,1 +1,6 @@
-{"event":{"name":"ibm","amount":57.678}}
+{
+  "event": {
+    "name": "ibm",
+    "amount": 57.678
+  }
+}

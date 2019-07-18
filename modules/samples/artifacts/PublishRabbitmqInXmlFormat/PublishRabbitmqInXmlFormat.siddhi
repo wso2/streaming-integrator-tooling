@@ -44,11 +44,11 @@ Viewing the Results:
 (sample output for 4 events)
 
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
-        [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : PublishRabbitmqInXmlFormatTest : logStream : Event{timestamp=1512448790922, data=[toffee, 9.78], isExpired=false}
+        [java] [io.siddhi.core.stream.output.sink.LogSink] : PublishRabbitmqInXmlFormatTest : logStream : Event{timestamp=1512448790922, data=[toffee, 9.78], isExpired=false}
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
-        [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : PublishRabbitmqInXmlFormatTest : logStream : Event{timestamp=1512448813975, data=[lollipop, 12.6], isExpired=false}
+        [java] [io.siddhi.core.stream.output.sink.LogSink] : PublishRabbitmqInXmlFormatTest : logStream : Event{timestamp=1512448813975, data=[lollipop, 12.6], isExpired=false}
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper
-        [java] [org.wso2.siddhi.core.stream.output.sink.LogSink] : PublishRabbitmqInXmlFormatTest : logStream : Event{timestamp=1512448830488, data=[Pop, 72.6], isExpired=false}
+        [java] [io.siddhi.core.stream.output.sink.LogSink] : PublishRabbitmqInXmlFormatTest : logStream : Event{timestamp=1512448830488, data=[Pop, 72.6], isExpired=false}
 
           
     Notes:

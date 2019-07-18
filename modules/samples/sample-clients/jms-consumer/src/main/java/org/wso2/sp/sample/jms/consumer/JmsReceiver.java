@@ -18,9 +18,9 @@
 
 package org.wso2.sp.sample.jms.consumer;
 
+import io.siddhi.core.SiddhiAppRuntime;
+import io.siddhi.core.SiddhiManager;
 import org.apache.log4j.Logger;
-import org.wso2.siddhi.core.SiddhiAppRuntime;
-import org.wso2.siddhi.core.SiddhiManager;
 
 /**
  * Test client for Jms source.
@@ -42,7 +42,7 @@ public class JmsReceiver {
         String factoryType = args[3];
         String jndiName = args[4];
         SiddhiAppRuntime siddhiAppRuntime = siddhiManager.createSiddhiAppRuntime(
-                        "@App:name('JmsReceiver')\n" +
+                "@App:name('JmsReceiver')\n" +
                         "@sink(type='log')" +
                         "define stream logStream(name string, amount double);\n" +
                         "@source(type='jms',@map(type='" + type + "'),\n" +

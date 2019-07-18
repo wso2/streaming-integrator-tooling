@@ -25,10 +25,10 @@ Testing the Sample:
 
 Viewing the Results:
     See the output. Following messages would be shown on the console.
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621173211, data=[HouseholdID:1::UniqueID:0001, 12.12, 13-08-2001 23:49:33], isExpired=false}
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621174202, data=[HouseholdID:2::UniqueID:0002, 13.12, 13-08-2004 23:49:34], isExpired=false}
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621175208, data=[HouseholdID:3::UniqueID:0003, 13.12, 13-08-2006 23:49:35], isExpired=false}
-        INFO {org.wso2.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621176214, data=[HouseholdID:4::UniqueID:0004, 14.12, 13-08-2008 23:49:36], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621173211, data=[HouseholdID:1::UniqueID:0001, 12.12, 13-08-2001 23:49:33], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621174202, data=[HouseholdID:2::UniqueID:0002, 13.12, 13-08-2004 23:49:34], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621175208, data=[HouseholdID:3::UniqueID:0003, 13.12, 13-08-2006 23:49:35], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - DataPreprocessing : ProcessedStream : Event{timestamp=1513621176214, data=[HouseholdID:4::UniqueID:0004, 14.12, 13-08-2008 23:49:36], isExpired=false}
 
 
 */
