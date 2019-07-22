@@ -58,7 +58,7 @@ The Streaming Integrator Tooling is currently on development stage so please fol
 
 ## Building from the Source
 
-Please follow the steps mentioned below to build the WSO2 Streaming Integrator from source.
+Please follow the steps mentioned below to build the WSO2 Streaming Integrator Tooling from source.
 
 1. Clone or download the source code from this repository.
 2. Run the `mvn clean install` from the root directory of the repository
