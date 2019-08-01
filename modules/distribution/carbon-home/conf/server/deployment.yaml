@@ -361,3 +361,7 @@ auth.configs:
          role:
            id: 1
            displayName: admin
+  restAPIAuthConfigs:
+    exclude:
+      - /simulation/*
+      - /stores/*
