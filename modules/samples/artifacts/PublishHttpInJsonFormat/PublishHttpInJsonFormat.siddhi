@@ -45,10 +45,10 @@ Testing the Sample:
 
 Viewing the Results:
     See the output on the terminal:
-	 [java] [HttpServerListener] : Event Name Arrived: {"event":{"name":"toffees","amount":75.6}}
-     [java] [HttpServerMain] : Received Events: {"event":{"name":"toffees","amount":75.6}} ,
-     [java] [HttpServerMain] : Received Event Headers key set: [Http_method, Content-type, Content-length]
-     [java] [HttpServerMain] : Received Event Headers value set: [[POST], [application/json], [42]]
+	 [java] [org.wso2.si.http.server.HttpServerListener] : Event Name Arrived: {"event":{"name":"toffees","amount":75.6}}
+     [java] [org.wso2.si.http.server.HttpServerMain] : Received Events: {"event":{"name":"toffees","amount":75.6}} ,
+     [java] [org.wso2.si.http.server.HttpServerMain] : Received Event Headers key set: [Http_method, Content-type, Content-length]
+     [java] [org.wso2.si.http.server.HttpServerMain] : Received Event Headers value set: [[POST], [application/json], [42]]
 
 
  Notes:
