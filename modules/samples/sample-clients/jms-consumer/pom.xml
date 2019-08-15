@@ -26,7 +26,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <name>WSO2 Streaming Integrator - Sample - JMS Consumer</name>
+    <name>WSO2 Streaming Integrator Tooling - Sample - JMS Consumer</name>
     <build>
         <plugins>
             <plugin>

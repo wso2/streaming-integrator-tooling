@@ -46,10 +46,10 @@ Testing the Sample:
 
 Viewing the Results:
     See the output on the terminal:
-     [java] [org.wso2.sp.http.server.HttpServerListener] : Event Name Arrived: {"event":{"id":"toffees","amount":123.5}}
-     [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Names:{"event":{"id":"toffees","amount":123.5}} , 
-     [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers key set:[Http_method, Content-type, Content-length]
-     [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers value set:[[POST], [application/json], [43]]
+     [java] [org.wso2.si.http.server.HttpServerListener] : Event Name Arrived: {"event":{"id":"toffees","amount":123.5}}
+     [java] [org.wso2.si.http.server.HttpServerMain] : Received Event Names:{"event":{"id":"toffees","amount":123.5}} ,
+     [java] [org.wso2.si.http.server.HttpServerMain] : Received Event Headers key set:[Http_method, Content-type, Content-length]
+     [java] [org.wso2.si.http.server.HttpServerMain] : Received Event Headers value set:[[POST], [application/json], [43]]
 
 Notes:
 	If the message "'HTTP' sink at 'LowProductionAlertStream' has successfully connected to http://localhost:8080/abc" does not appear, it could be due to port 8080 defined in the Siddhi application is already being used by a different program. To resolve this issue, do the following:

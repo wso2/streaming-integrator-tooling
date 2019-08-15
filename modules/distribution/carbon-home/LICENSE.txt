@@ -240,13 +240,11 @@ siddhi-io-sqs-1.1.0.jar                                                         
 siddhi-io-tcp-2.1.2.jar                                                         bundle         apache2   3604
 siddhi-io-twitter-1.1.1.jar                                                     bundle         apache2   3618
 siddhi-io-websocket-1.1.1.jar                                                   bundle         apache2   3616
-siddhi-io-wso2event-4.1.1.jar                                                   bundle         apache2   3645
 siddhi-map-binary-1.1.1.jar                                                     bundle         apache2   3592
 siddhi-map-csv-1.1.1.jar                                                        bundle         apache2   3593
 siddhi-map-json-4.1.2.jar                                                       bundle         apache2   3643
 siddhi-map-keyvalue-1.1.2.jar                                                   bundle         apache2   3607
 siddhi-map-text-1.1.2.jar                                                       bundle         apache2   3595
-siddhi-map-wso2event-4.1.1.jar                                                  bundle         apache2   3648
 siddhi-map-xml-4.1.2.jar                                                        bundle         apache2   3646
 siddhi-query-api_4.5.4.jar                                                      bundle         apache2   3591
 siddhi-query-compiler_4.5.4.jar                                                 bundle         apache2   3578

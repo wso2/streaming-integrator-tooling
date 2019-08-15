@@ -25,7 +25,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <name>WSO2 Streaming Integrator - Sample - TCP Server</name>
+    <name>WSO2 Streaming Integrator Tooling - Sample - TCP Server</name>
     <artifactId>tcp-server</artifactId>
     <packaging>pom</packaging>
 

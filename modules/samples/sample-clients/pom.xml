@@ -25,7 +25,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <name>WSO2 Streaming Integrator - Sample Clients</name>
+    <name>WSO2 Streaming Integrator Tooling - Sample Clients</name>
     <artifactId>sample-clients</artifactId>
     <packaging>pom</packaging>
 
@@ -36,8 +36,6 @@
         <module>tcp-server</module>
         <module>http-server</module>
         <module>http-client</module>
-        <module>wso2event-client</module>
-        <module>wso2event-server</module>
         <module>mqtt-client</module>
         <module>mqtt-consumer</module>
         <module>rabbitmq-consumer</module>

@@ -4,7 +4,7 @@
 
 /*
 Purpose:
-	This application demonstrates how to configure WSO2 Streaming Integrator to send sweet production events via Kafka transport in JSON format.
+	This application demonstrates how to configure WSO2 Streaming Integrator Tooling to send sweet production events via Kafka transport in JSON format.
 
 Prerequisites:
     1) Set up Kafka as follows:
@@ -71,7 +71,7 @@ Testing the Sample:
 
 Viewing the Results:
   See the output on the terminal of {WSO2SPHome}/samples/sample-clients/kafka-consumer:
-    [java] [org.wso2.sp.sample.kafka.consumer.KafkaReceiver] : Event received in Kafka Event Adaptor: {"event":{"name":"chocolate cake","amount":50.50}}, offSet: 0, key: null, topic: kafka_result_topic, partition: 0
+    [java] [org.wso2.si.sample.kafka.consumer.KafkaReceiver] : Event received in Kafka Event Adaptor: {"event":{"name":"chocolate cake","amount":50.50}}, offSet: 0, key: null, topic: kafka_result_topic, partition: 0
     [java] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] : Committed offset 1 for partition kafka_result_topic-0
 
   Notes:

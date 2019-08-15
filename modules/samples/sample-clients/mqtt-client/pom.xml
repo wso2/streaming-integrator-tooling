@@ -25,7 +25,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <name>WSO2 Streaming Integrator - Sample - MQTT Client</name>
+    <name>WSO2 Streaming Integrator Tooling - Sample - MQTT Client</name>
     <build>
         <plugins>
             <plugin>

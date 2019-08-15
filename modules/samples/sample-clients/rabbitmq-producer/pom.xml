@@ -26,7 +26,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <name>WSO2 Streaming Integrator - Sample - RabbitMQ Producer</name>
+    <name>WSO2 Streaming Integrator Tooling - Sample - RabbitMQ Producer</name>
     <build>
         <plugins>
             <plugin>

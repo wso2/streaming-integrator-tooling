@@ -3,7 +3,7 @@
 
 /*
 Purpose:
-    This application demonstrates how to configure WSO2 Streaming Integrator to send sweet production events via TCP transport in text format, and view the output on the server terminal.
+    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to send sweet production events via TCP transport in text format, and view the output on the server terminal.
 
 Prerequisites:
     1) Save this sample. 
@@ -21,9 +21,9 @@ Executing the Sample:
     6) In the 'name' field and 'amount' field, enter 'toffee' and '45.24' respectively and click Send to send the event. 
     7) Send some more events.
     8) See the output in the terminal of {WSO2SPHome}/samples/sample-clients/tcp-server. You can see output similar to the following:
-        [java] [org.wso2.sp.tcp.server.TCPServer] : Event{timestamp=1512446413468, data=[toffee, 45.25], isExpired=false}
-        [java] [org.wso2.sp.tcp.server.TCPServer] : Event{timestamp=1512446425113, data=[coffee, 9.78], isExpired=false}
-        [java] [org.wso2.sp.tcp.server.TCPServer] : Event{timestamp=1512446442300, data=[chocolate, 78.23], isExpired=false}
+        [java] [org.wso2.si.tcp.server.TCPServer] : Event{timestamp=1512446413468, data=[toffee, 45.25], isExpired=false}
+        [java] [org.wso2.si.tcp.server.TCPServer] : Event{timestamp=1512446425113, data=[coffee, 9.78], isExpired=false}
+        [java] [org.wso2.si.tcp.server.TCPServer] : Event{timestamp=1512446442300, data=[chocolate, 78.23], isExpired=false}
 
 
 
