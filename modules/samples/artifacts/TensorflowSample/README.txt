@@ -4,7 +4,7 @@
 
 3. Start the editor using ./{WSO2SPHome}/bin/editor.sh
 
-4. Go to the event simulator in the editor (Stream Processor Studio) and find the TensorFlowTestApp under Siddhi App Name drop down
+4. Go to the event simulator in the editor (Streaming Integrator Tooling Studio) and find the TensorFlowTestApp under Siddhi App Name drop down
 
 5. Select 'InputStream' in the Stream Name drop down.
 

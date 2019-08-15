@@ -4,7 +4,7 @@
 /*
 
 Purpose:
-    This application demonstrates how to configure persist the activities received to the WSO2 Stream Processor and to view the relevant information when needed..
+    This application demonstrates how to configure persist the activities received to the WSO2 Streaming Integrator Tooling and to view the relevant information when needed..
 
 Prerequisites:
 

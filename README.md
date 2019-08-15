@@ -54,7 +54,7 @@ WSO2 Streaming Integration Tooling consists with 3 profiles
 ## Download
 
 The Streaming Integrator Tooling is currently on development stage so please follow the [How to build]() section to build the streaming integrator from the source.
-<!-- Please download the latest WSO2 Streaming Integrator release from [here]()  -->
+<!-- Please download the latest WSO2 Streaming Integrator Tooling release from [here]()  -->
 
 ## Building from the Source
 
@@ -62,7 +62,7 @@ Please follow the steps mentioned below to build the WSO2 Streaming Integrator T
 
 1. Clone or download the source code from this repository.
 2. Run the `mvn clean install` from the root directory of the repository
-3. The generated Streaming Integrator distribution can be found at `streaming-integrator-tooling/modules/distribution/target/wso2si-tooling-<version>.zip`
+3. The generated Streaming Integrator Tooling distribution can be found at `streaming-integrator-tooling/modules/distribution/target/wso2si-tooling-<version>.zip`
 
 ## Getting Started
 

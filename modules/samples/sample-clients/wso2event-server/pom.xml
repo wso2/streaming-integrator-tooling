@@ -27,7 +27,7 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <name>WSO2 Streaming Integrator - Sample - WSO2Event Server</name>
+    <name>WSO2 Streaming Integrator Tooling - Sample - WSO2Event Server</name>
     <artifactId>wso2event-server</artifactId>
     <packaging>pom</packaging>
 
