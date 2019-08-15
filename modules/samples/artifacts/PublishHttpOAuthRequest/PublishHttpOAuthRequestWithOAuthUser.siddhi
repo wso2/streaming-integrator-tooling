@@ -60,10 +60,10 @@ Executing the Sample:
       See the output on the terminal:
 Siddhi App test successfully deployed.
  INFO {org.wso2.extension.siddhi.io.http.sink.HttpSink} - Request sent successfully to https://localhost:8005/abc
-  	  [java] [org.wso2.sp.http.server.HttpServerListener] : Event Name Arrived: {"event":{"name":"toffees","amount":75.6}}
-      [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Names:{"event":{"name":"toffees","amount":75.6}} ,
-      [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers key set:[Http_method, Content-type, Content-length]
-      [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers value set:[[POST], [application/json], [42]]
+  	  [java] [HttpServerListener] : Event Name Arrived: {"event":{"name":"toffees","amount":75.6}}
+      [java] [HttpServerMain] : Received Event Names:{"event":{"name":"toffees","amount":75.6}} ,
+      [java] [HttpServerMain] : Received Event Headers key set:[Http_method, Content-type, Content-length]
+      [java] [HttpServerMain] : Received Event Headers value set:[[POST], [application/json], [42]]
 
  Notes:
   If you get the message "Error when pushing events to Siddhi debugger engine', it could be due to time out problem,

@@ -36,8 +36,6 @@
         <module>tcp-server</module>
         <module>http-server</module>
         <module>http-client</module>
-        <module>wso2event-client</module>
-        <module>wso2event-server</module>
         <module>mqtt-client</module>
         <module>mqtt-consumer</module>
         <module>rabbitmq-consumer</module>

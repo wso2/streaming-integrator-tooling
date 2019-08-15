@@ -40,17 +40,17 @@ Testing the Sample:
 
 Viewing the Results:
 	* Ouput by sending events through the event simulator:
-	[java] [org.wso2.sp.http.server.HttpServerListener] : Event Name Arrived: <events><event><name>toffee</name><amount>50.0</amount></event></events>
-    [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Names:<events><event><name>toffee</name><amount>50.0</amount></event></events> ,
-    [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers key set:[Http_method, Transfer-encoding, Content-type]
-    [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers value set:[[POST], [chunked], [application/xml]]
+	[java] [HttpServerListener] : Event Name Arrived: <events><event><name>toffee</name><amount>50.0</amount></event></events>
+    [java] [HttpServerMain] : Received Event Names:<events><event><name>toffee</name><amount>50.0</amount></event></events> ,
+    [java] [HttpServerMain] : Received Event Headers key set:[Http_method, Transfer-encoding, Content-type]
+    [java] [HttpServerMain] : Received Event Headers value set:[[POST], [chunked], [application/xml]]
 
 
         * Output by sending events through event cURL commands:
-    [java] [org.wso2.sp.http.server.HttpServerListener] : Event Name Arrived: <events><event><name>toffee</name><amount>67.43</amount></event></events>
-    [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Names:<events><event><name>toffee</name><amount>67.43</amount></event></events> ,
-    [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers key set:[Http_method, Transfer-encoding, Content-type]
-    [java] [org.wso2.sp.http.server.HttpServerMain] : Received Event Headers value set:[[POST], [chunked], [application/xml]]
+    [java] [HttpServerListener] : Event Name Arrived: <events><event><name>toffee</name><amount>67.43</amount></event></events>
+    [java] [HttpServerMain] : Received Event Names:<events><event><name>toffee</name><amount>67.43</amount></event></events> ,
+    [java] [HttpServerMain] : Received Event Headers key set:[Http_method, Transfer-encoding, Content-type]
+    [java] [HttpServerMain] : Received Event Headers value set:[[POST], [chunked], [application/xml]]
 
 	Note:
 	Stop this Siddhi application once you are done with the execution.
