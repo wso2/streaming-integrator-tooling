@@ -20,7 +20,7 @@
 
 [![Jenkins Build Status](https://wso2.org/jenkins/view/wso2-dependencies/job/products/job/streaming-integrator-tooling/badge/icon)](https://wso2.org/jenkins/view/wso2-dependencies/job/products/job/streaming-integrator-tooling/)
   [![GitHub Release](https://img.shields.io/github/release-pre/wso2/streaming-integrator-tooling.svg)](https://github.com/wso2/streaming-integrator-tooling/releases/)
-  [![GitHub Release Date](https://img.shields.io/github/release-date/wso2/streaming-integrator-tooling.svg)](https://github.com/wso2/streaming-integrator-tooling/releases)
+  [![GitHub Release Date](https://img.shields.io/github/release-date-pre/wso2/streaming-integrator-tooling.svg)](https://github.com/wso2/streaming-integrator-tooling/releases)
   [![GitHub Open Issues](https://img.shields.io/github/issues-raw/wso2/streaming-integrator-tooling.svg)](https://github.com/wso2/streaming-integrator-tooling/commits/master)
   [![GitHub Last Commit](https://img.shields.io/github/last-commit/wso2/streaming-integrator-tooling.svg)](https://github.com/wso2/streaming-integrator-tooling/commits/master)
   [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
