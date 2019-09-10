@@ -180,6 +180,11 @@
             <outputDirectory>wso2/server/deployment/web-ui-apps/policies</outputDirectory>
             <fileMode>644</fileMode>
         </fileSet>
+        <fileSet>
+            <directory>carbon-home/bin/bootstrap</directory>
+            <outputDirectory>bin/bootstrap</outputDirectory>
+            <fileMode>644</fileMode>
+        </fileSet>
     </fileSets>
     <files>
         <file>
@@ -236,7 +241,6 @@
             <filtered>true</filtered>
             <fileMode>644</fileMode>
         </file>
-
         <!--Forget me tool-->
         <file>
             <source>src/scripts/forgetme.sh</source>
