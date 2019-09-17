@@ -38,10 +38,6 @@
             <artifactId>siddhi-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.siddhi</groupId>
-            <artifactId>siddhi-core</artifactId>
-        </dependency>
-        <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
         </dependency>
