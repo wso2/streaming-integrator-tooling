@@ -28,7 +28,7 @@
 
     <property name="host" value="0.0.0.0"/>
     <property name="port" value="9892"/>
-    <property name="context" value="LowProducitonAlertStream"/>
+    <property name="context" value="LowProductionAlertStream"/>
     <property name="type" value="binary"/>
 
     <path id="javac.classpath">
@@ -72,7 +72,7 @@
 
     <target name="run" depends="compile">
         <echo>Publishing events to TCP endpoints to port 9892</echo>
-        <echo>Configure -Dhost=0.0.0.0 -Dport=9892 -Dcontext=LowProducitonAlertStream and -Dtype=binary</echo>
+        <echo>Configure -Dhost=0.0.0.0 -Dport=9892 -Dcontext=LowProductionAlertStream and -Dtype=binary</echo>
         <java classname="${main-class}"
               classpathref="javac.classpath" fork="true">
             <arg value="${host}"/>

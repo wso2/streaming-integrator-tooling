@@ -54,14 +54,12 @@ public class TCPServer {
                 "@App:name('TestExecutionPlan') " +
                         "@source(type ='tcp', context='" + context + "'," +
                         "@map(type='" + type + "'))" +
-                        "define stream LowProducitonAlertStream (name string, amount double);\n" +
+                        "define stream LowProductionAlertStream (name string, amount double);\n" +
                         "@sink(type='log')\n" +
                         "define stream logStream(name string, amount double);\n" +
-                        "from LowProducitonAlertStream\n" +
+                        "from LowProductionAlertStream\n" +
                         "select * \n" +
                         "insert into logStream;");
         siddhiAppRuntime.start();
-        while (true) {
-        }
     }
 }
