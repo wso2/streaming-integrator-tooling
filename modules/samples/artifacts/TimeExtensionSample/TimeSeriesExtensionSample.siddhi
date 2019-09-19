@@ -15,9 +15,9 @@ Executing the Sample:
         * TimeSeriesExtensionSample.siddhi - Started Successfully!
 
 Testing the Sample:
-    Navigate to {WSO2SPHome}/samples/sample-clients/http-client and run the following command
-        ant -Dtype=xml -DeventDefinition='<events><event><x>{0}</x><y>{1}</y></event></events>' -DfilePath={WSO2SPHome}/samples/artifacts/TimeExtensionSample/TimeSeries_events.txt -DnoOfEventsToSend=10 -DcontinuouslyReadFile=true
-        You can edit -DfilePath={WSO2SPHome}/samples/artifacts/TimeExtensionSample/TimeSeries_events.txt -DnoOfEventsToSend=10 -DcontinuouslyReadFile=true file and give your own value set to check the lengthTimeRegress.
+    Navigate to {WSO2SIHome}/samples/sample-clients/http-client and run the following command
+        ant -Dtype=xml -DeventDefinition='<events><event><x>{0}</x><y>{1}</y></event></events>' -DfilePath={WSO2SIHome}/samples/artifacts/TimeExtensionSample/TimeSeries_events.txt -DnoOfEventsToSend=10 -DcontinuouslyReadFile=true
+        You can edit -DfilePath={WSO2SIHome}/samples/artifacts/TimeExtensionSample/TimeSeries_events.txt -DnoOfEventsToSend=10 -DcontinuouslyReadFile=true file and give your own value set to check the lengthTimeRegress.
 
 Viewing the Results:
     See the output on timeSeriesExtensionSample console.

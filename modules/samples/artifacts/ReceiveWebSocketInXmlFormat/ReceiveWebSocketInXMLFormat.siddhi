@@ -13,7 +13,7 @@ Prerequisites:
     1) Save this sample
 
 Executing the Sample:
-    1) Navigate to {WSO2SPHome}/samples/sample-clients/websocket-producer and run "ant" command as follows:
+    1) Navigate to {WSO2SIHome}/samples/sample-clients/websocket-producer and run "ant" command as follows:
          Run "ant" command in the terminal.
          If you want to publish custom number of events, you need to run "ant" command as follows
              ant -DnoOfEventsToSend=5

@@ -7,8 +7,8 @@ Purpose:
 
 Pre-requisites:
     1) The following steps must be executed to enable WSO2 SP to publish and retrieve events via Prometheus.
-        a) Download and copy the prometheus client jars to the {WSO2SPHome}/lib directory as follows.
-              i) Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to {WSO2SPHome}/lib directory.
+        a) Download and copy the prometheus client jars to the {WSO2SIHome}/lib directory as follows.
+              i) Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to {WSO2SIHome}/lib directory.
                  * simpleclient_common-0.5.0.jar
                  * simpleclient-0.5.0.jar
 		         * simpleclient_httpserver-0.5.0.jar
@@ -16,7 +16,7 @@ Pre-requisites:
     2) Start the editor WSO2 SP by giving this command in the terminal : sh editor.sh
     3) Save this sample
         "Siddhi App EnergyAlertApp successfully deployed" message would be shown in the console
-    4) Navigate to {WSO2SPHome}/samples/sample-clients/prometheus-client and run "ant" command as follows:
+    4) Navigate to {WSO2SIHome}/samples/sample-clients/prometheus-client and run "ant" command as follows:
         ant
 
 Executing the Sample:

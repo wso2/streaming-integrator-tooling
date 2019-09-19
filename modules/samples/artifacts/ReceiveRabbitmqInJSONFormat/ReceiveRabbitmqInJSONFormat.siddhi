@@ -21,7 +21,7 @@ Executing the Sample:
 
 Testing the Sample:
     Publish events with rabbitmq sample publisher:
-    Open a terminal and issue command from the {WSO2SPHome}/samples/sample-clients/rabbitmq-producer and run 'ant' command.
+    Open a terminal and issue command from the {WSO2SIHome}/samples/sample-clients/rabbitmq-producer and run 'ant' command.
     If you want to publish custom number of events, you need to run 'ant' command as follows:
         ant -DnoOfEventsToPublish=5
 

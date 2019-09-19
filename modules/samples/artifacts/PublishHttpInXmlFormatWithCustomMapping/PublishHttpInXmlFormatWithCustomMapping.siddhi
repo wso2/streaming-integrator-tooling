@@ -22,7 +22,7 @@ Executing the Sample:
 	* Start the application and check whether the specified messages appear on the console.
 
 Testing the Sample:
-        1) Open a terminal and navigate to {WSO2SPHome}/samples/sample-clients/http-server and run "ant" command without any arguments.
+        1) Open a terminal and navigate to {WSO2SIHome}/samples/sample-clients/http-server and run "ant" command without any arguments.
         2) Send events using one or more of the following methods.
         * Send events with the HTTP server through the event simulator:
             a) Open event simulator by clicking on the second icon or press Ctrl+Shift+I.

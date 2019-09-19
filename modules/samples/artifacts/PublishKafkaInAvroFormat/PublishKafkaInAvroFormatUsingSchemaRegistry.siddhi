@@ -16,13 +16,13 @@ Prerequisites:
                 * scala_library_2.11.12.jar
                 * zkclient_0.11.jar
                 * zookeeper_3.4.13.jar
-        c) Copy these same files to the {WSO2SPHome}/samples/sample-clients/lib folder.
-        d) Navigate to {WSO2SPHome}/bin and issue the following command:
+        c) Copy these same files to the {WSO2SIHome}/samples/sample-clients/lib folder.
+        d) Navigate to {WSO2SIHome}/bin and issue the following command:
                  -For Linux: ./jartobundle.sh <path/kafka> <path/kafka-osgi>
                  -For Windows: ./jartobundle.bat <path/kafka> <path/kafka-osgi>
            If converted successfully, the following messages are shown on the terminal for each lib file:
                - INFO: Created the OSGi bundle <kafka-lib-name>.jar for JAR file <absolute_path>/kafka/<kafka-lib-name>.jar
-        e) Copy the OSGi-converted kafka libs from the kafka-osgi folder to {WSO2SPHome}/lib.
+        e) Copy the OSGi-converted kafka libs from the kafka-osgi folder to {WSO2SIHome}/lib.
     2) Download confluent-5.2.1 from https://www.confluent.io/download/ and unzip.
     3) Save this sample.
     4) If there is no syntax error, the following message is shown on the console:
@@ -37,7 +37,7 @@ Executing the Sample:
         bin/schema-registry-start ./etc/schema-registry/schema-registry.properties
     4) Post the avro schema to schema registry using,
         curl -X POST -H "Content-Type: application/json" --data '{ "schema": "{ \"type\": \"record\", \"name\": \"sweetProduction\",\"namespace\": \"sweetProduction\", \"fields\":[{ \"name\": \"name\", \"type\": \"string\" },{ \"name\": \"amount\", \"type\": \"double\" }]}"}' http://localhost:8081/subjects/sweet-production/versions
-    5) Navigate to {WSO2SPHome}/samples/sample-clients/kafka-avro-consumer and run the 'ant' command without arguments.
+    5) Navigate to {WSO2SIHome}/samples/sample-clients/kafka-avro-consumer and run the 'ant' command without arguments.
     6) Start the Siddhi application by clicking on 'Run'.
     7) If the Siddhi application starts successfully, the following messages are shown on the console:
     	  * - PublishKafkaInAvroFormatUsingSchemaRegistry.siddhi - Started Successfully!
@@ -77,7 +77,7 @@ Testing the Sample:
                    *  "message": "Single Event simulation started successfully"
 
 Viewing the Results:
-  See the output on the terminal of {WSO2SPHome}/samples/sample-clients/kafka-avro-consumer:
+  See the output on the terminal of {WSO2SIHome}/samples/sample-clients/kafka-avro-consumer:
     [java] [org.wso2.extension.siddhi.io.kafka.source.KafkaConsumerThread] : Event received in Kafka Event Adaptor with offSet: 2, key: null, topic: kafka_result_topic, partition: 0
     [java] [io.siddhi.core.stream.output.sink.LogSink] : KafkaSample : logStream : Event{timestamp=1546973831995, data=[chocolate cake, 50.5], isExpired=false}
 

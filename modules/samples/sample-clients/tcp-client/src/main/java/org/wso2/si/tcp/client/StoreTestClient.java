@@ -20,10 +20,10 @@ package org.wso2.si.tcp.client;
 
 import io.siddhi.core.event.Event;
 import io.siddhi.core.exception.ConnectionUnavailableException;
+import io.siddhi.extension.io.tcp.transport.TCPNettyClient;
+import io.siddhi.extension.map.binary.sinkmapper.BinaryEventConverter;
 import io.siddhi.query.api.definition.Attribute;
 import org.apache.log4j.Logger;
-import org.wso2.extension.siddhi.io.tcp.transport.TCPNettyClient;
-import org.wso2.extension.siddhi.map.binary.sinkmapper.BinaryEventConverter;
 
 import java.io.IOException;
 import java.util.ArrayList;

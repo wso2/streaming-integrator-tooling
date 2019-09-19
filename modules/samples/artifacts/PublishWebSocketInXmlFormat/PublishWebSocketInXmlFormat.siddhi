@@ -13,7 +13,7 @@ Prerequisites:
 	     * - Siddhi App PublishWebSocketInXmlFormat successfully deployed.
     
 Executing the Sample:
-    1) Open a terminal and navigate to the {WSO2SPHome}/samples/sample-clients/websocket-receiver directory
+    1) Open a terminal and navigate to the {WSO2SIHome}/samples/sample-clients/websocket-receiver directory
     and run the 'ant' command.
             * If you use the default host 'localhost' and port '8025' in your program use 'ant' command
             without any arguments.
@@ -29,7 +29,7 @@ Executing the Sample:
     6) In the 'name' and 'amount' fields, enter 'toffee' and '45.24' respectively, and then click Send to send the
     event.
     7) Send some more events.
-    8) Check the output in the terminal of {WSO2SPHome}/samples/sample-clients/websocket-receiver. You will see output
+    8) Check the output in the terminal of {WSO2SIHome}/samples/sample-clients/websocket-receiver. You will see output
     similar to the following:
         WebSocketSample : logStream : Event{timestamp=1517982716368, data=[toffee, 45.25], isExpired=false}
         WebSocketSample : logStream : Event{timestamp=1517982792293, data=[coffee, 9.78], isExpired=false}

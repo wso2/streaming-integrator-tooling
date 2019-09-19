@@ -9,7 +9,7 @@ Prerequisites:
     1) Save this sample. 
 
 Executing the Sample:
-    1) Open a terminal and navigate to the {WSO2SPHome}/samples/sample-clients/tcp-server directory. Run the 'ant' command with argument -Dtype=text.
+    1) Open a terminal and navigate to the {WSO2SIHome}/samples/sample-clients/tcp-server directory. Run the 'ant' command with argument -Dtype=text.
     2) Start the Siddhi application by clicking 'Run'.
     3) If the Siddhi application starts successfully, the following messages appear on the console.
         * PublishTcpInTextFormat.siddhi - Started Successfully!
@@ -20,7 +20,7 @@ Executing the Sample:
         Stream Name: SweetProductionStream
     6) In the 'name' field and 'amount' field, enter 'toffee' and '45.24' respectively and click Send to send the event. 
     7) Send some more events.
-    8) See the output in the terminal of {WSO2SPHome}/samples/sample-clients/tcp-server. You can see output similar to the following:
+    8) See the output in the terminal of {WSO2SIHome}/samples/sample-clients/tcp-server. You can see output similar to the following:
         [java] [org.wso2.si.tcp.server.TCPServer] : Event{timestamp=1512446413468, data=[toffee, 45.25], isExpired=false}
         [java] [org.wso2.si.tcp.server.TCPServer] : Event{timestamp=1512446425113, data=[coffee, 9.78], isExpired=false}
         [java] [org.wso2.si.tcp.server.TCPServer] : Event{timestamp=1512446442300, data=[chocolate, 78.23], isExpired=false}

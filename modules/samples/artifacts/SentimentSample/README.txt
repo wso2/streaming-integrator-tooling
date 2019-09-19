@@ -1,8 +1,8 @@
 Purpose of this sample is to test the functionality of sentiment extension in SP 4.0.0
 
-1. Copy {WSO2SPHome}/samples/artifacts/0032/sentimentExtensionSample.siddhi file to {WSO2_SP_Home}/wso2/worker/deployment/siddhi-files/
+1. Copy {WSO2SIHome}/samples/artifacts/0032/sentimentExtensionSample.siddhi file to {WSO2_SP_Home}/wso2/worker/deployment/siddhi-files/
 
-2. Start the worker using ./{WSO2SPHome}/bin/worker.sh
+2. Start the worker using ./{WSO2SIHome}/bin/worker.sh
 
 3. Run following curls commands to send some login events
 

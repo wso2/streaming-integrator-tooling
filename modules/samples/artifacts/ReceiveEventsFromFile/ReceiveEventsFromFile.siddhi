@@ -4,7 +4,7 @@ Purpose:
     This application demonstrates how to use siddhi-io-file for receiving.
 
 Prerequisites:
-    1) Edit this sample file by replacing '{WSO2SPHome}' with the absolute path of your WSO2SP home directory.
+    1) Edit this sample file by replacing '{WSO2SIHome}' with the absolute path of your WSO2SP home directory.
       
     2) Save this sample.
 
@@ -14,14 +14,14 @@ Executing the Sample:
     2) If the Siddhi application starts successfully, the following messages would be shown on the console.
         * ReceiveEventsFromFile.siddhi - Started Successfully!
 
-    3) Check the directories {WSO2SPHome}/samples/artifacts/ReceiveEventsFromFile/files/consumed and new.
+    3) Check the directories {WSO2SIHome}/samples/artifacts/ReceiveEventsFromFile/files/consumed and new.
 
     4) All the files which were in the directory 'new' should have been moved to 'consumed' directory.
 
 NOTE: 
     If the sample is not running and producing output, do the following first.
-    - Move all the files in {WSO2SPHome}/samples/artifacts/ReceiveEventsFromFile/files/consumed directory to
-      {WSO2SPHome}/samples/artifacts/ReceiveEventsFromFile/files/new.
+    - Move all the files in {WSO2SIHome}/samples/artifacts/ReceiveEventsFromFile/files/consumed directory to
+      {WSO2SIHome}/samples/artifacts/ReceiveEventsFromFile/files/new.
     - Delete all the files in consumed and sink directories.
 
 Viewing the Results:
@@ -32,10 +32,10 @@ Viewing the Results:
     
 
 @source(type='file', mode='text.full',
-dir.uri='file:/{WSO2SPHome}/samples/artifacts/ReceiveEventsFromFile/files/new',
+dir.uri='file:/{WSO2SIHome}/samples/artifacts/ReceiveEventsFromFile/files/new',
 action.after.process='move',
 tailing='false',
-move.after.process='file:/{WSO2SPHome}/samples/artifacts/ReceiveEventsFromFile/files/consumed',
+move.after.process='file:/{WSO2SIHome}/samples/artifacts/ReceiveEventsFromFile/files/consumed',
 @map(type='json'))
 define stream SweetProductionStream (name string, amount double);
 

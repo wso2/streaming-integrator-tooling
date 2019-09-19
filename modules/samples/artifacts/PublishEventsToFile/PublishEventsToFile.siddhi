@@ -8,7 +8,7 @@ Purpose:
 	This application demonstrates how to configure WSO2 Streaming Integrator Tooling to publish data events in to files in Json format.
     
 Prerequisites:
-    * Edit the uri '{WSO2SPHome}/samples/artifacts/PublishEventsToFile/files/sink/{{name}}.txt' by replacing {WSO2SPHome} with the absolute path of your WSO2SP home directory. You can also change the path for 'file.uri' in the sink, if you want to publish your event file to a different location.
+    * Edit the uri '{WSO2SIHome}/samples/artifacts/PublishEventsToFile/files/sink/{{name}}.txt' by replacing {WSO2SIHome} with the absolute path of your WSO2SP home directory. You can also change the path for 'file.uri' in the sink, if you want to publish your event file to a different location.
 
 	* Save this sample. If there is no syntax error, the following messages would be shown on the console:
 	     * - Siddhi App PublishEventsToFile successfully deployed.
@@ -35,7 +35,7 @@ Testing the Sample:
         9) Send event
 
 Viewing the Results:
-    Navigate to the path defined by file.uri ({WSO2SPHome}/samples/artifacts/0038/files/sink),
+    Navigate to the path defined by file.uri ({WSO2SIHome}/samples/artifacts/0038/files/sink),
     where you can see a .txt file named after the event (e.g., toffees.txt) and open it.
     You can see the data events that you sent:
         {"event":{"name":"toffees","amount":66.71}}
@@ -44,7 +44,7 @@ Viewing the Results:
 
 define stream SweetProductionStream (name string, amount double);
 
-@sink(type='file', @map(type='json'), file.uri='{WSO2SPHome}/samples/artifacts/PublishEventsToFile/files/sink/{{name}}.txt')
+@sink(type='file', @map(type='json'), file.uri='{WSO2SIHome}/samples/artifacts/PublishEventsToFile/files/sink/{{name}}.txt')
 define stream LowProductionAlertStream (name string, amount double);
 
 @info(name='query1') 
