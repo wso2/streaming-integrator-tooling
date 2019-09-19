@@ -5,14 +5,14 @@ Purpose:
     This application demonstrates how to configure a pretrained PMML model to predict required raw materials from sweet production events and view the output on the console.
 
 Prerequisites:
-    1) Download siddhi-gpl-execution-pmml-x.x.x.jar from the following link and copy the jar to  {WSO2SPHome}/lib
+    1) Download siddhi-gpl-execution-pmml-x.x.x.jar from the following link and copy the jar to  {WSO2SIHome}/lib
         http://maven.wso2.org/nexus/content/repositories/wso2gpl/org/wso2/extension/siddhi/gpl/execution/pmml/siddhi-gpl-execution-pmml/
     2) Save this sample.
     3) If there is no syntax error, the following message is shown on the console:
     	       * - Siddhi App PmmlModelProcessor successfully deployed.
 
 Executing the Sample:
-    1) Replace <SweetProductionRatePrediction_model_path> with the SweetProductionRatePrediction.pmml file's absolute path - {WSO2SPHome}/samples/artifacts/PMMLModelProcessorSample/SweetProductionRatePrediction.pmml
+    1) Replace <SweetProductionRatePrediction_model_path> with the SweetProductionRatePrediction.pmml file's absolute path - {WSO2SIHome}/samples/artifacts/PMMLModelProcessorSample/SweetProductionRatePrediction.pmml
     2) Start the Siddhi application by clicking on 'Run'.
     3) If the Siddhi application starts successfully, the following messages would be shown on the console.
         * PmmlModelProcessor.siddhi - Started Successfully!

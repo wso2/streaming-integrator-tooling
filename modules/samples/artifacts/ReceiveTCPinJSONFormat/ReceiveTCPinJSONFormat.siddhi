@@ -16,7 +16,7 @@ Executing the Sample:
         * ReceiveTCPinJSONFormat - Started Successfully!
 
 Testing the Sample:
-    1) Navigate to {WSO2SPHome}/samples/sample-clients/tcp-client and run "ant" command as follows:
+    1) Navigate to {WSO2SIHome}/samples/sample-clients/tcp-client and run "ant" command as follows:
             ant -Dtype=application/json
        - If you want to publish custom number of events, you need to run "ant" command as follows
             ant -Dtype=application/json -DnoOfEventsToSend=5

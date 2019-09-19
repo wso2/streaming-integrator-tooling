@@ -7,7 +7,7 @@ Purpose:
 Prerequisites:
     1) Install R. See notes for more information see 'How to use
 ' in 'https://github.com/wso2-extensions/siddhi-gpl-execution-r/blob/master/README.md'
-    2) Download siddhi-gpl-execution-r-x.x.x.jar and copy the jar to  {WSO2SPHome}/lib
+    2) Download siddhi-gpl-execution-r-x.x.x.jar and copy the jar to  {WSO2SIHome}/lib
         http://maven.wso2.org/nexus/content/repositories/wso2gpl/org/wso2/extension/siddhi/gpl/execution/r/siddhi-gpl-execution-r/
     3) Save this sample.
     4) If there is no syntax error, the following message is shown on the console:

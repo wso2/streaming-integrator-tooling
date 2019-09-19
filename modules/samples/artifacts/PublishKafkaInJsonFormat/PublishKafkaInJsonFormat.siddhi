@@ -16,13 +16,13 @@ Prerequisites:
             * scala-library-2.11.8.jar
             * zkclient-0.8.jar
             * zookeeper-3.4.6.jar
-	c) Copy these same files to the {WSO2SPHome}/samples/sample-clients/lib folder.
- 	d) Navigate to {WSO2SPHome}/bin and issue the following command:
+	c) Copy these same files to the {WSO2SIHome}/samples/sample-clients/lib folder.
+ 	d) Navigate to {WSO2SIHome}/bin and issue the following command:
              -For Linux: ./jartobundle.sh <path/kafka> <path/kafka-osgi>
     	     -For Windows: ./jartobundle.bat <path/kafka> <path/kafka-osgi>
 	   If converted successfully, the following messages are shown on the terminal for each lib file:
     	   - INFO: Created the OSGi bundle <kafka-lib-name>.jar for JAR file <absolute_path>/kafka/<kafka-lib-name>.jar
-        e) Copy the OSGi-converted kafka libs from the kafka-osgi folder to {WSO2SPHome}/lib.
+        e) Copy the OSGi-converted kafka libs from the kafka-osgi folder to {WSO2SIHome}/lib.
     2) Save this sample. 
     3) If there is no syntax error, the following message is shown on the console:
 	        * -Siddhi App PublishKafkaInJsonFormat successfully deployed. 
@@ -30,7 +30,7 @@ Prerequisites:
 Executing the Sample:
     1) Navigate to {KafkaHome} and start the zookeeper node using bin/zookeeper-server-start.sh config/zookeeper.properties
     2) Navigate to {KafkaHome} and start the kafka server node using bin/kafka-server-start.sh config/server.properties
-    3) Navigate to {WSO2SPHome}/samples/sample-clients/kafka-consumer and run the 'ant' command without arguments.
+    3) Navigate to {WSO2SIHome}/samples/sample-clients/kafka-consumer and run the 'ant' command without arguments.
     4) Start the Siddhi application by clicking on 'Run'.
     5) If the Siddhi application starts successfully, the following messages are shown on the console:
     	  * - PublishKafkaInJsonFormat.siddhi - Started Successfully!
@@ -70,7 +70,7 @@ Testing the Sample:
                   *  "message": "Single Event simulation started successfully"
 
 Viewing the Results:
-  See the output on the terminal of {WSO2SPHome}/samples/sample-clients/kafka-consumer:
+  See the output on the terminal of {WSO2SIHome}/samples/sample-clients/kafka-consumer:
     [java] [org.wso2.si.sample.kafka.consumer.KafkaReceiver] : Event received in Kafka Event Adaptor: {"event":{"name":"chocolate cake","amount":50.50}}, offSet: 0, key: null, topic: kafka_result_topic, partition: 0
     [java] [org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] : Committed offset 1 for partition kafka_result_topic-0
 

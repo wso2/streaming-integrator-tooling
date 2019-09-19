@@ -18,8 +18,8 @@ Prerequisites:
         * you can replace values for 'localhost:9080' in targets according to your preferred host and port.
 	      In that case, the 'server.url' option must be included in the Sink definition with the same host and port values.
 
-        c) Download and copy the prometheus client jars to the {WSO2SPHome}/lib directory as follows.
-              i) Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to {WSO2SPHome}/lib directory.
+        c) Download and copy the prometheus client jars to the {WSO2SIHome}/lib directory as follows.
+              i) Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to {WSO2SIHome}/lib directory.
                  * simpleclient_pushgateway-0.5.0.jar
                  * simpleclient_common-0.5.0.jar
                  * simpleclient-0.5.0.jar

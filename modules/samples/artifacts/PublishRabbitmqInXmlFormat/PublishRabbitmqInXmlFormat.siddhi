@@ -20,7 +20,7 @@ Prerequisites:
             * invoke-rc.d rabbitmq-server start
 
 Executing the Sample:
-    1) Open a terminal and navigate to the {WSO2SPHome}/samples/sample-clients/rabbitmq-consumer directory and run the 'ant' command.
+    1) Open a terminal and navigate to the {WSO2SIHome}/samples/sample-clients/rabbitmq-consumer directory and run the 'ant' command.
             * If you use the default exchange 'RABBITMQSAMPLE' and URI 'amqp://guest:guest@localhost:5672' in your program use 'ant' command without any arguments.
             * However, if you use different exchange names or URIs, run the 'ant' command with appropriate arguments.
              e.g., ant -Dexchange=rabbitMqtest
@@ -40,7 +40,7 @@ Testing the Sample:
 
 
 Viewing the Results:
-   *See the output in the terminal of {WSO2SPHome}/samples/sample-clients/rabbitmq-consumer. You will get the output as follows:
+   *See the output in the terminal of {WSO2SIHome}/samples/sample-clients/rabbitmq-consumer. You will get the output as follows:
 (sample output for 4 events)
 
         [java] [org.apache.axiom.om.util.StAXUtils] : XMLStreamReader is org.apache.axiom.util.stax.dialect.SJSXPStreamReaderWrapper

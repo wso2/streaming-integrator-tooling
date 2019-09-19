@@ -32,8 +32,8 @@ Testing the Sample:
         d) Send some more events in the same format, with different values for "name" and "amount".
 
     Option3: Publish events with http sample client:
-        1) Navigate to {WSO2SPHome}/samples/sample-clients/http-client and run the following command
-            ant -Dtype=json -DfilePath={WSO2SPHome}/samples/artifacts/ExtreamBottomK/ExtremaBottomKEvents.txt -DeventDefinition='{"event":{"name":"{0}","amount":{1}}}' -Durl=http://localhost:8006/productionStream
+        1) Navigate to {WSO2SIHome}/samples/sample-clients/http-client and run the following command
+            ant -Dtype=json -DfilePath={WSO2SIHome}/samples/artifacts/ExtreamBottomK/ExtremaBottomKEvents.txt -DeventDefinition='{"event":{"name":"{0}","amount":{1}}}' -Durl=http://localhost:8006/productionStream
 
 Viewing the Results:
     See the output on ExtremaBottomK console.

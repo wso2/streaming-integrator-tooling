@@ -17,7 +17,7 @@ Executing the Sample:
 
 Testing the Sample:
     Option1: Publish events with http sample client:
-    1) Navigate to {WSO2SPHome}/samples/sample-clients/http-client and run "ant" command as follows:
+    1) Navigate to {WSO2SIHome}/samples/sample-clients/http-client and run "ant" command as follows:
         Run "ant" command in the terminal
         If you want to publish custom number of events, you need to run "ant" command as follows
             ant -DnoOfEventsToSend=5
@@ -29,7 +29,7 @@ Testing the Sample:
     Option3: Publish events with Postman:
         a) Install 'Postman' application from Chrome web store.
         b) Launch the application.
-        c) Make a 'POST' request to 'http://localhost:8006/productionStream' endpoint. Set the Content-Type to 'application/xml' and set the request body in json format as follows,
+        c) Make a 'POST' request to 'http://localhost:8006/productionStream' endpoint. Set the Content-Type to 'application/json' and set the request body in json format as follows,
              {
                 "event": {
                     "name": "sugar",
@@ -46,7 +46,7 @@ Notes:
 
 Viewing the Results:
     See the output. Following message would be shown on the console.
-    ReceiveHTTPInXMLFormatWithDefaultMapping : LowProducitonAlertStream : Event{timestamp=1511938781887, data=[sugar, 300.0], isExpired=false}
+    ReceiveHTTPInXMLFormatWithDefaultMapping : LowProductionAlertStream : Event{timestamp=1511938781887, data=[sugar, 300.0], isExpired=false}
 
 */
 
@@ -57,7 +57,7 @@ define stream SweetProductionStream (name string, amount double);
 @sink(type='log')
 define stream LowProductionAlertStream (name string, amount double);
 
--- passthrough data in the SweetProductionStream into LowProducitonAlertStream
+-- passthrough data in the SweetProductionStream into LowProductionAlertStream
 @info(name='query1')
 from SweetProductionStream
 select *
