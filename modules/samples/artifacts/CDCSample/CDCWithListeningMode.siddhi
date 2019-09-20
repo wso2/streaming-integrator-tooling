@@ -8,10 +8,10 @@ Purpose:
 
 Pre-requesites:
     1) Ensure that MySQL is installed on your computer.
-    2) Add the MySQL JDBC driver into {WSO2_SP_HOME}/lib as follows:
+    2) Add the MySQL JDBC driver into {WSO2_SI_HOME}/lib as follows:
             2.1) Download the JDBC driver from: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz
             2.2) Unzip the archive.
-            2.3) Copy mysql-connector-java-5.1.45-bin.jar to {WSO2_SP_Home}/lib directory.
+            2.3) Copy mysql-connector-java-5.1.45-bin.jar to {WSO2_SI_Home}/lib directory.
     3) Configure MySQL to enable binary logging.
             4.1)Follow https://debezium.io/docs/connectors/mysql/#enabling-the-binlog
     4) Enable state persistence in siddhi apps.

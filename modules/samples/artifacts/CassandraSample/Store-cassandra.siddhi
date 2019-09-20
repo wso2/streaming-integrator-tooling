@@ -14,13 +14,13 @@ Purpose:
 
 Prerequisites:
     1) Ensure that Cassandra version 3 or above is installed on your machine. 
-    2) Add the DataStax Java driver into {WSO2_SP_HOME}/lib as follows:
+    2) Add the DataStax Java driver into {WSO2_SI_HOME}/lib as follows:
            a) Download the DataStax Java driver from: http://central.maven.org/maven2/com/datastax/cassandra/cassandra-driver-core/3.3.2/cassandra-driver-core-3.3.2.jar
-           b) Use the "jartobundle" tool in {WSO2_SP_Home}/bin to extract and convert the above JARs into OSGi bundles.
-            For Windows: <SP_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
-            For Linux: <SP_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+           b) Use the "jartobundle" tool in {WSO2_SI_Home}/bin to extract and convert the above JARs into OSGi bundles.
+            For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+            For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
             Note: The driver given in the above link is a OSGi bundled one. Please skip this step if the jar is already OSGi bunbled.
-           c) Copy the converted bundles to the {WSO2_SP_Home}/lib directory.
+           c) Copy the converted bundles to the {WSO2_SI_Home}/lib directory.
     3) Create a keyspace named 'production' in Cassanndra store.
     4) In the store configuration of this application, replace 'username' and 'password' values with your Cassandra credentials.
     5) Save this sample.

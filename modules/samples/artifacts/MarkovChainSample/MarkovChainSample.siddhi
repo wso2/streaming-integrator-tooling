@@ -7,12 +7,12 @@ Purpose:
     This application demonstrates state transition based on an existing Markov matrix, when the transition probability is less than or equal to the alert threshold probability, notify state is changed to 'true' in the event.
 
 Prerequisites:
-   Please find the below resource files in {WSO2_SP_Home}/samples/artifacts/MarkovChainSample directory.
+   Please find the below resource files in {WSO2_SI_Home}/samples/artifacts/MarkovChainSample directory.
 
-    1) Copy MarkovChainSimulator.json file to {WSO2_SP_Home}/wso2/editor/deployment/simulation-configs
-    2) Copy MarkovChainTest.csv file to {WSO2_SP_Home}/wso2/editor/deployment/csv-files
-    3) Copy MarkovChainMatrix.csv file to {WSO2_SP_Home}/wso2/editor/deployment/csv-files
-    4) Copy MarkovChainSample.siddhi file to {WSO2_SP_Home}/wso2/editor/deployment/siddhi-files/ and replace the absolute file path for MarkovChainMatrix.csv in 'MarkovChainSample' Siddhi App.
+    1) Copy MarkovChainSimulator.json file to {WSO2_SI_Home}/wso2/server/deployment/simulation-configs
+    2) Copy MarkovChainTest.csv file to {WSO2_SI_Home}/wso2/server/deployment/csv-files
+    3) Copy MarkovChainMatrix.csv file to {WSO2_SI_Home}/wso2/server/deployment/csv-files
+    4) Copy MarkovChainSample.siddhi file to {WSO2_SI_Home}/wso2/server/deployment/siddhi-files/ and replace the absolute file path for MarkovChainMatrix.csv in 'MarkovChainSample' Siddhi App.
     5) Start editor runtime.
 
 Executing the Sample:
@@ -46,6 +46,6 @@ define stream StateStream (id string, state string);
 define stream StatePatternStream (id string, lastState string, state string, transitionProbability double, notify bool);
 
 @info(name = 'query1')
-from StateStream#markov:markovChain(id, state, 60 min, 0.3, '{WSO2_SP_Home}/wso2/editor/deployment/csv-files/MarkovChainMatrix.csv', false)
+from StateStream#markov:markovChain(id, state, 60 min, 0.3, '{WSO2_SI_Home}/wso2/editor/deployment/csv-files/MarkovChainMatrix.csv', false)
 select id, lastState, state, transitionProbability, notify
 insert into StatePatternStream;
