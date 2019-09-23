@@ -21,7 +21,7 @@ Prerequisites:
             For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
             Note: The driver given in the above link is a OSGi bundled one. Please skip this step if the jar is already OSGi bunbled.
            c) Copy the converted bundles to the {WSO2_SI_Home}/lib directory.
-    3) Create a keyspace named 'production' in Cassanndra store.
+    3) Create a keyspace named 'production' in Cassandra store: CREATE KEYSPACE "production" WITH replication = {'class':'SimpleStrategy', 'replication_factor':1};
     4) In the store configuration of this application, replace 'username' and 'password' values with your Cassandra credentials.
     5) Save this sample.
 
