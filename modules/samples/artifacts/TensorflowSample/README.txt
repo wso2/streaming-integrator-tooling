@@ -1,6 +1,6 @@
-1. Copy {WSO2SIHome}/samples/artifacts/1009/TensorFlowTestApp.siddhi file to {WSO2_SP_Home}/wso2/editor/deployment/workspace
+1. Copy {WSO2SIHome}/samples/artifacts/1009/TensorFlowTestApp.siddhi file to {WSO2_SI_Home}/wso2/editor/deployment/workspace
 
-2. Open the copied file TensorFlowTestApp.siddhi in WSO2_SP_Home}/wso2/editor/deployment/workspace and observe the query. You can find the first parameter as '/home/niruhan/siddhi-execution-tensorflow/component/src/test/resources/TensorFlowModels/Regression' which gives the absolute path to the regression TensorFlow model. Change it to the absolute path of the folder {WSO2SIHome}/samples/artifacts/1009/Regression on your machine
+2. Open the copied file TensorFlowTestApp.siddhi in WSO2_SI_Home}/wso2/editor/deployment/workspace and observe the query. You can find the first parameter as '/home/niruhan/siddhi-execution-tensorflow/component/src/test/resources/TensorFlowModels/Regression' which gives the absolute path to the regression TensorFlow model. Change it to the absolute path of the folder {WSO2SIHome}/samples/artifacts/1009/Regression on your machine
 
 3. Start the editor using ./{WSO2SIHome}/bin/editor.sh
 

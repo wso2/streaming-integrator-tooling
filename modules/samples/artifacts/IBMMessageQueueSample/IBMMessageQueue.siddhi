@@ -9,7 +9,7 @@ Purpose:
 Prerequisites:
     1) Ensure that there is a running IBM MQ instance.
     2) Create a queue manager named ESBQManager, Queue named  Queue1 and channel named Channel1
-    3) Download com.ibm.mq.allclient_9.0.5.0_1.0.0.jar and javax.jms-api-2.0.1.jar and copy to <SP_HOME>/lib directory.
+    3) Download com.ibm.mq.allclient_9.0.5.0_1.0.0.jar and javax.jms-api-2.0.1.jar and copy to <SI_HOME>/lib directory.
 
 Executing the Sample:
     1) Start the Siddhi application by clicking on 'Run'
