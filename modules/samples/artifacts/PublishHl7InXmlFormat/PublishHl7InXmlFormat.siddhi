@@ -21,8 +21,8 @@ Executing the Sample:
 Testing the Sample:
     1) Open the event simulator by clicking on the second icon or pressing Ctrl+Shift+I.
     2) In the Single Simulation tab of the panel, specifiy the values as follows:
-        * Siddhi App Name   :   PublishHl7InER7Format
-        * Stream Name   :   er7Stream
+        * Siddhi App Name   :   PublishHl7InXmlFormat
+        * Stream Name   :   xmlStream
     3) In the MSH1, MSH2, MSH3HD1,MSH4HD1, MSH5HD1, MSH6HD1, MSH7, MSH8, CM_MSG1, CM_MSG2, MSH10, MSH11, MSH12 fields enter '|', '^~\&amp;', 'sendingSystemA', 'senderFacilityA', 'receivingSystemB' , 'receivingFacilityB', '20080925161613', ' ', 'ADT', 'A01', 'S123456789', 'P', '2.3' respectively and then click Send to send the event.
     4) Send more events as desired.
 */
