@@ -48,7 +48,7 @@
             <artifactId>siddhi-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.extension.siddhi.io.rabbitmq</groupId>
+            <groupId>io.siddhi.extension.io.rabbitmq</groupId>
             <artifactId>siddhi-io-rabbitmq</artifactId>
         </dependency>
         <dependency>
