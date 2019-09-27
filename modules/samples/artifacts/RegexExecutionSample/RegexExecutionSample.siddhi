@@ -24,25 +24,25 @@ Testing the Sample:
                 * Stream Name     : SweetProductionStream
         c) Enter following values in the fields and send
                 name: chocolate cake
-                amount: 50.50
+                startingIndex: 0
         d) Enter following values in the fields and send
                 name: coffee cake
-                amount: 40.50
+                startingIndex: 0
 
 
 Viewing the Results:
   Viewing the Results:
     Messages similar to the following would be shown on the console.
-        INFO {io.siddhi.core.stream.output.sink.LogSink} - RegexExecutionSample : ChocolateProductStream : Event{timestamp=1513759840093, data=[Chocolate cake, true], isExpired=false}
-        INFO {io.siddhi.core.stream.output.sink.LogSink} - RegexExecutionSample : ChocolateProductStream : Event{timestamp=1513759907324, data=[Coffee cake, false], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - RegexExecutionSample : ChocolateProductStream : Event{timestamp=1513759840093, data=[chocolate cake, true], isExpired=false}
+        INFO {io.siddhi.core.stream.output.sink.LogSink} - RegexExecutionSample : ChocolateProductStream : Event{timestamp=1513759907324, data=[coffee cake, false], isExpired=false}
 
 */
-define stream SweetProductionStream (name string, amount double);
+define stream SweetProductionStream (name string, startingIndex int);
 
 @sink(type='log')
 define stream ChocolateProductStream(name string, isAChocolateProduct bool);
 
 from SweetProductionStream
-select name, regex:find("^chocolate(\s*[a-zA-Z]+)", str:lower(name)) as isAChocolateProduct
+select name, regex:find("^chocolate(\s*[a-zA-Z]+)", str:lower(name), startingIndex) as isAChocolateProduct
 insert into ChocolateProductStream;
 

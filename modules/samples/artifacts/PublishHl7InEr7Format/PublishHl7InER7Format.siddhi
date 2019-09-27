@@ -21,7 +21,7 @@ Executing the Sample:
 
 Testing the Sample:
     1) Open the event simulator by clicking on the second icon or pressing Ctrl+Shift+I.
-    2) In the Single Simulation tab of the panel, specifiy the values as follows:
+    2) In the Single Simulation tab of the panel, specify the values as follows:
         * Siddhi App Name  : PublishHl7InER7Format
         * Stream Name      : er7Stream
     3) In the payload, enter 'MSH|^~\&|||||20190211145413.131+0530||ADT^A01|10601|T|2.3' and then click Send to send the event.
@@ -30,7 +30,7 @@ Testing the Sample:
 
 define stream er7Stream (payload string);
 
-@sink(type = 'hl7', uri='localhost:4000', tls.enabled='false', hl7.encoding='er7', @map(type='text', @payload('{{{payload}}}')))
+@sink(type = 'hl7', uri='localhost:4000', tls.enabled='false', hl7.encoding='er7', @map(type='text', @payload('{{payload}}')))
 define stream hl7Stream (payload String);
 
 @info(name='query1')
