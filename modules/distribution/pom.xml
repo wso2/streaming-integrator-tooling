@@ -481,7 +481,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.hl7</groupId>
+                                    <groupId>io.siddhi.extension.io.hl7</groupId>
                                     <artifactId>siddhi-io-hl7</artifactId>
                                     <version>${siddhi.io.hl7.version}</version>
                                     <type>jar</type>
@@ -586,7 +586,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.store.redis</groupId>
+                                    <groupId>io.siddhi.extension.store.redis</groupId>
                                     <artifactId>siddhi-store-redis</artifactId>
                                     <version>${siddhi.store.redis.version}</version>
                                     <type>jar</type>
