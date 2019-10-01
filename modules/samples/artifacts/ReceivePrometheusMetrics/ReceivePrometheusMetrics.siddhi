@@ -13,7 +13,12 @@ Pre-requisites:
                  * simpleclient-0.5.0.jar
 		         * simpleclient_httpserver-0.5.0.jar
 		         * simpleclient_pushgateway-0.5.0.jar
-    2) Start the editor WSO2 SP by giving this command in the terminal : sh editor.sh
+		      ii)a)Download the http-20070405.jar from https://mvnrepository.com/artifact/com.sun.net.httpserver/http/20070405
+		         b)Use the "jartobundle" tool in {WSO2SIHome}/bin to extract and convert the above JAR into an OSGi bundle.
+		            For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+                    For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+                 c)Copy the converted bundle to the {WSO2SIHome}/lib directory.
+    2) Start the WSO2 SI server.
     3) Save this sample
         "Siddhi App EnergyAlertApp successfully deployed" message would be shown in the console
     4) Navigate to {WSO2SIHome}/samples/sample-clients/prometheus-client and run "ant" command as follows:
