@@ -335,21 +335,9 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.execution.kalmanfilter</groupId>
-                                    <artifactId>siddhi-execution-kalman-filter</artifactId>
-                                    <version>${siddhi.execution.kalmanfilter.version}</version>
-                                    <type>jar</type>
-                                </artifactItem>
-                                <artifactItem>
                                     <groupId>org.wso2.extension.siddhi.execution.markov</groupId>
                                     <artifactId>siddhi-execution-markov</artifactId>
                                     <version>${siddhi.execution.markov.version}</version>
-                                    <type>jar</type>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.execution.sentiment</groupId>
-                                    <artifactId>siddhi-execution-sentiment</artifactId>
-                                    <version>${siddhi.execution.sentiment.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
 
@@ -396,27 +384,9 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>io.siddhi.extension.execution.reorder</groupId>
-                                    <artifactId>siddhi-execution-reorder</artifactId>
-                                    <version>${siddhi.execution.reorder.version}</version>
-                                    <type>jar</type>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.execution.approximate</groupId>
-                                    <artifactId>siddhi-execution-approximate</artifactId>
-                                    <version>${siddhi.execution.approximate.version}</version>
-                                    <type>jar</type>
-                                </artifactItem>
-                                <artifactItem>
                                     <groupId>org.wso2.extension.siddhi.execution.graph</groupId>
                                     <artifactId>siddhi-execution-graph</artifactId>
                                     <version>${siddhi.execution.graph.version}</version>
-                                    <type>jar</type>
-                                </artifactItem>
-                                <artifactItem>
-                                    <groupId>io.siddhi.extension.execution.tensorflow</groupId>
-                                    <artifactId>siddhi-execution-tensorflow</artifactId>
-                                    <version>${siddhi.execution.tensorflow.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
@@ -431,6 +401,12 @@
                                     <version>${siddhi.execution.json.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
+                                <artifactItem>
+                                    <groupId>org.wso2.extension.siddhi.execution.stats</groupId>
+                                    <artifactId>siddhi-execution-stats</artifactId>
+                                    <version>${siddhi.execution.stats.version}</version>
+                                    <type>jar</type>
+                                </artifactItem>
                                 <!--IO Extensions-->
                                 <artifactItem>
                                     <groupId>io.siddhi.extension.io.jms</groupId>
@@ -439,7 +415,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.rabbitmq</groupId>
+                                    <groupId>io.siddhi.extension.io.rabbitmq</groupId>
                                     <artifactId>siddhi-io-rabbitmq</artifactId>
                                     <version>${siddhi.io.rabbitmq.version}</version>
                                     <type>jar</type>
@@ -457,7 +433,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.kafka</groupId>
+                                    <groupId>io.siddhi.extension.io.kafka</groupId>
                                     <artifactId>siddhi-io-kafka</artifactId>
                                     <version>${siddhi.io.kafka.version}</version>
                                     <type>jar</type>
@@ -505,7 +481,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.hl7</groupId>
+                                    <groupId>io.siddhi.extension.io.hl7</groupId>
                                     <artifactId>siddhi-io-hl7</artifactId>
                                     <version>${siddhi.io.hl7.version}</version>
                                     <type>jar</type>
@@ -514,6 +490,24 @@
                                     <groupId>org.wso2.extension.siddhi.io.snmp</groupId>
                                     <artifactId>siddhi-io-snmp</artifactId>
                                     <version>${siddhi.io.snmp.version}</version>
+                                    <type>jar</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>io.siddhi.extension.io.grpc</groupId>
+                                    <artifactId>siddhi-io-grpc</artifactId>
+                                    <version>${siddhi.io.grpc.version}</version>
+                                    <type>jar</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>io.siddhi.extension.io.gcs</groupId>
+                                    <artifactId>siddhi-io-gcs</artifactId>
+                                    <version>${siddhi.io.gcs.version}</version>
+                                    <type>jar</type>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>io.siddhi.extension.io.s3</groupId>
+                                    <artifactId>siddhi-io-s3</artifactId>
+                                    <version>${siddhi.io.s3.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
                                 <!--Map Extensions-->
@@ -574,7 +568,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.mqtt</groupId>
+                                    <groupId>io.siddhi.extension.io.mqtt</groupId>
                                     <artifactId>siddhi-io-mqtt</artifactId>
                                     <version>${siddhi.io.mqtt.version}</version>
                                     <type>jar</type>
@@ -592,7 +586,7 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.store.redis</groupId>
+                                    <groupId>io.siddhi.extension.store.redis</groupId>
                                     <artifactId>siddhi-store-redis</artifactId>
                                     <version>${siddhi.store.redis.version}</version>
                                     <type>jar</type>
@@ -610,19 +604,19 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.sqs</groupId>
+                                    <groupId>io.siddhi.extension.io.sqs</groupId>
                                     <artifactId>siddhi-io-sqs</artifactId>
                                     <version>${siddhi.io.sqs.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.io.websocket</groupId>
+                                    <groupId>io.siddhi.extension.io.websocket</groupId>
                                     <artifactId>siddhi-io-websocket</artifactId>
                                     <version>${siddhi.io.websocket.version}</version>
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.map.avro</groupId>
+                                    <groupId>io.siddhi.extension.map.avro</groupId>
                                     <artifactId>siddhi-map-avro</artifactId>
                                     <version>${siddhi.map.avro.version}</version>
                                     <type>jar</type>

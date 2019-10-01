@@ -1,6 +1,6 @@
 Purpose of this sample is to test the functionality of sentiment extension in SP 4.0.0
 
-1. Copy {WSO2SIHome}/samples/artifacts/0032/sentimentExtensionSample.siddhi file to {WSO2_SP_Home}/wso2/worker/deployment/siddhi-files/
+1. Copy {WSO2SIHome}/samples/artifacts/0032/sentimentExtensionSample.siddhi file to {WSO2_SI_Home}/wso2/worker/deployment/siddhi-files/
 
 2. Start the worker using ./{WSO2SIHome}/bin/worker.sh
 
