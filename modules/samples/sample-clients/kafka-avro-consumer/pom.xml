@@ -47,7 +47,7 @@
             <artifactId>siddhi-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.extension.siddhi.io.kafka</groupId>
+            <groupId>io.siddhi.extension.io.kafka</groupId>
             <artifactId>siddhi-io-kafka</artifactId>
         </dependency>
         <dependency>
@@ -55,7 +55,7 @@
             <artifactId>siddhi-map-json</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.wso2.extension.siddhi.map.avro</groupId>
+            <groupId>io.siddhi.extension.map.avro</groupId>
             <artifactId>siddhi-map-avro</artifactId>
         </dependency>
         <dependency>

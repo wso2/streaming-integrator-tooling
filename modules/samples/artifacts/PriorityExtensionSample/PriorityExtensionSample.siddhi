@@ -9,7 +9,9 @@ Purpose:
     After every 1 sec, priority of every events will be reduced by 1 and the updated priority will be sent out with the last known attributes of those events.
 
 Prerequisites:
-    1) Save this sample
+    1) Download siddhi-execution-priority-5.0.1.jar and copy the jar to  {WSO2SIHome}/lib
+            https://maven.wso2.org/nexus/service/local/repositories/releases/content/org/wso2/extension/siddhi/execution/priority/siddhi-execution-priority/5.0.1/siddhi-execution-priority-5.0.1.jar
+    2) Save this sample
 
 Executing the Sample:
     1) Start the Siddhi application by clicking on 'Run'
