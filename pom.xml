@@ -895,7 +895,7 @@
         <carbon.analytics.version>3.0.10</carbon.analytics.version>
         <siddhi.version>5.1.5</siddhi.version>
 
-        <carbon.analytics-common.version>6.1.32</carbon.analytics-common.version>
+        <carbon.analytics-common.version>6.1.33</carbon.analytics-common.version>
         <!-- Maven plugins -->
         <!--Bundle Plugin - Overridden from parent due to a bug in latest version related to capability providers-->
         <maven.bundle.plugin.version>2.5.4</maven.bundle.plugin.version>
@@ -1041,12 +1041,12 @@
         <siddhi.io.googlepubsub.version>2.0.2</siddhi.io.googlepubsub.version>
         <siddhi.io.hl7.version>3.0.0</siddhi.io.hl7.version>
         <siddhi.io.snmp.version>2.0.0</siddhi.io.snmp.version>
-        <siddhi.io.grpc.version>1.0.1</siddhi.io.grpc.version>
+        <siddhi.io.grpc.version>1.0.3</siddhi.io.grpc.version>
         <siddhi.io.gcs.version>1.0.0</siddhi.io.gcs.version>
         <siddhi.io.s3.version>1.0.0</siddhi.io.s3.version>
 
         <siddhi.map.json.version>5.0.4</siddhi.map.json.version>
-        <siddhi.map.avro.version>2.0.4</siddhi.map.avro.version>
+        <siddhi.map.avro.version>2.0.5</siddhi.map.avro.version>
         <siddhi.map.binary.version>2.0.4</siddhi.map.binary.version>
         <siddhi.map.text.version>2.0.4</siddhi.map.text.version>
         <siddhi.map.xml.version>5.0.3</siddhi.map.xml.version>
