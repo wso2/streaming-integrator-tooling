@@ -115,29 +115,29 @@ org.hdrhistogram.HdrHistogram_2.1.10.jar                                        
 org.ops4j.pax.logging.pax-logging-api_1.10.0.jar                                bundle         apache2   2209      
 org.ops4j.pax.logging.pax-logging-log4j2_1.10.0.jar                             bundle         apache2   2208      
 org.osgi.core-6.0.0.jar                                                         bundle         apache2   1407      
-org.wso2.carbon.analytics.auth.rest.api_3.0.11.jar                              bundle         apache2   22802     
-org.wso2.carbon.analytics.idp.client_6.1.33.jar                                 bundle         apache2   22790     
-org.wso2.carbon.analytics.msf4j.interceptor.common_3.0.11.jar                   bundle         apache2   22801     
-org.wso2.carbon.analytics.permissions_6.1.33.jar                                bundle         apache2   22798     
-org.wso2.carbon.business.rules.core_3.0.11.jar                                  bundle         apache2   22806     
-org.wso2.carbon.business.rules.templates.editor.core_3.0.11.jar                 bundle         apache2   22808     
+org.wso2.carbon.analytics.auth.rest.api_3.0.13.jar                              bundle         apache2
+org.wso2.carbon.analytics.idp.client_6.1.35.jar                                 bundle         apache2
+org.wso2.carbon.analytics.msf4j.interceptor.common_3.0.13.jar                   bundle         apache2
+org.wso2.carbon.analytics.permissions_6.1.35.jar                                bundle         apache2
+org.wso2.carbon.business.rules.core_3.0.13.jar                                  bundle         apache2
+org.wso2.carbon.business.rules.templates.editor.core_3.0.13.jar                 bundle         apache2
 org.wso2.carbon.caching_1.1.3.jar                                               bundle         apache2   14020     
 org.wso2.carbon.config_2.1.14.jar                                               bundle         apache2   21895     
 org.wso2.carbon.core-5.1.0-alpha2.jar                                           bundle         apache2   16074     
 org.wso2.carbon.core_5.2.8.jar                                                  bundle         apache2   18151     
-org.wso2.carbon.database.query.manager_6.1.33.jar                               bundle         apache2   22796     
-org.wso2.carbon.databridge.agent_6.1.33.jar                                     bundle         apache2   22799     
-org.wso2.carbon.databridge.commons.binary_6.1.33.jar                            bundle         apache2   22787     
-org.wso2.carbon.databridge.commons.thrift_6.1.33.jar                            bundle         apache2   22795     
-org.wso2.carbon.databridge.commons_6.1.33.jar                                   bundle         apache2   22781     
-org.wso2.carbon.databridge.core_6.1.33.jar                                      bundle         apache2   22791     
-org.wso2.carbon.databridge.receiver.binary_6.1.33.jar                           bundle         apache2   22792     
-org.wso2.carbon.databridge.receiver.thrift_6.1.33.jar                           bundle         apache2   22800     
+org.wso2.carbon.database.query.manager_6.1.35.jar                               bundle         apache2
+org.wso2.carbon.databridge.agent_6.1.35.jar                                     bundle         apache2
+org.wso2.carbon.databridge.commons.binary_6.1.35.jar                            bundle         apache2
+org.wso2.carbon.databridge.commons.thrift_6.1.35.jar                            bundle         apache2
+org.wso2.carbon.databridge.commons_6.1.35.jar                                   bundle         apache2
+org.wso2.carbon.databridge.core_6.1.35.jar                                      bundle         apache2
+org.wso2.carbon.databridge.receiver.binary_6.1.35.jar                           bundle         apache2
+org.wso2.carbon.databridge.receiver.thrift_6.1.35.jar                           bundle         apache2
 org.wso2.carbon.datasource.core-1.0.2.jar                                       bundle         apache2   16073     
 org.wso2.carbon.datasource.core_1.1.4.jar                                       bundle         apache2   14014     
 org.wso2.carbon.deployment.engine_5.2.0.jar                                     bundle         apache2   14797     
-org.wso2.carbon.editor.log.appender_3.0.11.jar                                  bundle         apache2   22807     
-org.wso2.carbon.event.simulator.core_3.0.11.jar                                 bundle         apache2   22804     
+org.wso2.carbon.editor.log.appender_3.0.13.jar                                  bundle         apache2
+org.wso2.carbon.event.simulator.core_3.0.13.jar                                 bundle         apache2
 org.wso2.carbon.extensions.touchpoint_1.1.1.jar                                 bundle         apache2   14616     
 org.wso2.carbon.jndi-1.0.0-alpha.jar                                            bundle         apache2   16072     
 org.wso2.carbon.jndi_1.0.5.jar                                                  bundle         apache2   14012     
@@ -148,7 +148,7 @@ org.wso2.carbon.metrics.das.core_2.3.8.jar                                      
 org.wso2.carbon.metrics.das.reporter_2.3.8.jar                                  bundle         apache2   19005     
 org.wso2.carbon.metrics.jdbc.core_2.3.8.jar                                     bundle         apache2   19009     
 org.wso2.carbon.metrics.jdbc.reporter_2.3.8.jar                                 bundle         apache2   19011     
-org.wso2.carbon.permissions.rest.api_3.0.11.jar                                 bundle         apache2   22785     
+org.wso2.carbon.permissions.rest.api_3.0.13.jar                                 bundle         apache2
 org.wso2.carbon.privacy.forgetme.analytics.streams-1.1.21.jar                   bundle         apache2   17914     
 org.wso2.carbon.privacy.forgetme.api-1.1.21.jar                                 bundle         apache2   17913     
 org.wso2.carbon.privacy.forgetme.logs-1.1.21.jar                                bundle         apache2   17912     
@@ -156,10 +156,10 @@ org.wso2.carbon.privacy.forgetme.sql-1.1.21.jar                                 
 org.wso2.carbon.privacy.forgetme.tool-1.1.21.jar                                bundle         apache2   17910     
 org.wso2.carbon.secvault.ciphertool.5.0.13.jar                                  bundle         apache2   19024     
 org.wso2.carbon.secvault_5.0.13.jar                                             bundle         apache2   18995     
-org.wso2.carbon.si.metrics.core_3.0.11.jar                                      bundle         apache2   22786     
-org.wso2.carbon.siddhi.editor.core_3.0.11.jar                                   bundle         apache2   22805     
-org.wso2.carbon.siddhi.store.api.rest_3.0.11.jar                                bundle         apache2   22793     
-org.wso2.carbon.streaming.integrator.common_3.0.11.jar                          bundle         apache2   22794     
+org.wso2.carbon.si.metrics.core_3.0.13.jar                                      bundle         apache2
+org.wso2.carbon.siddhi.editor.core_3.0.13.jar                                   bundle         apache2
+org.wso2.carbon.siddhi.store.api.rest_3.0.13.jar                                bundle         apache2
+org.wso2.carbon.streaming.integrator.common_3.0.13.jar                          bundle         apache2
 org.wso2.carbon.tools.core-5.2.8.jar                                            bundle         apache2   18122     
 org.wso2.carbon.uiserver_1.0.3.jar                                              bundle         apache2   22803     
 org.wso2.carbon.utils_2.0.8.jar                                                 bundle         apache2   18126     
