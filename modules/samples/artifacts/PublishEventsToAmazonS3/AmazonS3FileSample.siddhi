@@ -1,0 +1,58 @@
+@App:name("AmazonS3FileSample")
+@App:description("Read events from a file and publish them to Amazon AWS S3")
+
+/**
+Purpose:
+    This application demonstrates how to receive events from a file using the siddhi-io-file source extension and
+    publish those as aggregated events to Amazon AWS S3 bucket via the siddhi-io-s3 sink extension. In this sample
+    the events are received by StockQuoteStream stream from a json file. Then those events are aggregated by the
+    StockQuoteWindow window, and then published to the Amazon S3 bucket specified via the bucket.name parameter.
+    Location of the objects in the S3 bucket is specified by the object.path parameter.
+
+Prerequisites:
+    1. Create an AWS account and set the credentials as mentioned in
+       https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html.
+
+Executing the Sample:
+    1. Set the credential.provider class name. If the class is not given, default credential provider chain
+       will be used.
+    2. Set the bucket name for the bucket.name parameter.
+    3. Copy and paste the following text to a new json file and change the value of file.uri parameter to the location
+       of the json file.
+
+       [{"symbol": "test", "date":"2020-01-09", "price": "100000.0", "quantity": "2"},
+       {"symbol": "test", "date":"2020-01-08", "price": "8000.0", "quantity": "456"},
+       {"symbol": "test", "date":"2020-01-09", "price": "768.0", "quantity": "89"},
+       {"symbol": "test2", "date":"2020-01-08", "price": "36.0", "quantity": "500"},
+       {"symbol": "test2", "date":"2020-01-09", "price": "1000.0", "quantity": "3"},
+       {"symbol": "test2", "date":"2020-01-07", "price": "68.0", "quantity": "89"}]
+
+    4. Save the Siddhi sample.
+    5. Run the AmazonS3FileSample.siddhi file.
+
+Testing the Sample:
+    Check the S3 bucket after running the sample. Two folders would  be created as ‘test’ and ‘test2’, each containing
+    folders for specific dates. Inside each of these folders there's a single json file containing events specific for
+    that date.
+*/
+
+define window StockQuoteWindow(symbol string, date string, price double, quantity int) time(20) output all events;
+
+@source(type='file', mode='text.full',
+    file.uri='file:/home/foo/test.json',
+    tailing='false',
+    @map(type='json'))
+define stream StockQuoteStream(symbol string, date string, price double, quantity int);
+
+@sink(type='s3', bucket.name='<BUCKET_NAME>', object.path='stocks/{{symbol}}/{{date}}',
+      credential.provider.class='com.amazonaws.auth.profile.ProfileCredentialsProvider', node.id='zeus',
+    @map(type='json',
+        @payload("""{"symbol": "{{symbol}}", "date": "{{date}}", "price": "{{price}}", "quantity": "{{quantity}}"}""")))
+define stream StorageOutputStream (symbol string, date string, price double, quantity int);
+
+from StockQuoteStream
+insert into StockQuoteWindow;
+
+from StockQuoteWindow
+select *
+insert into StorageOutputStream;
