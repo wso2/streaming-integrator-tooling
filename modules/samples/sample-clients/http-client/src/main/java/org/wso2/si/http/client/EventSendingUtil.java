@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
- * Event generating util class for http source
+ * Event generating util class for http source.
  */
 public class EventSendingUtil {
     private static final Logger log = Logger.getLogger(EventSendingUtil.class);
