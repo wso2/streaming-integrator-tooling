@@ -5,9 +5,8 @@
 Purpose:
     This application demonstrates how to receive events from a file using the siddhi-io-file source extension and
     publish those as aggregated events to Amazon AWS S3 bucket via the siddhi-io-s3 sink extension. In this sample
-    the events are received by StockQuoteStream stream from a json file. Then those events are aggregated by the
-    StockQuoteWindow window, and then published to the Amazon S3 bucket specified via the bucket.name parameter.
-    Location of the objects in the S3 bucket is specified by the object.path parameter.
+    the events are received by StockQuoteStream stream from a json file. Then those events are published to the
+    Amazon S3 bucket specified via the bucket.name parameter.
 
 Prerequisites:
     1. Create an AWS account and set the credentials as mentioned in
@@ -36,8 +35,6 @@ Testing the Sample:
     that date.
 */
 
-define window StockQuoteWindow(symbol string, date string, price double, quantity int) time(20) output all events;
-
 @source(type='file', mode='text.full',
     file.uri='file:/home/foo/test.json',
     tailing='false',
@@ -51,8 +48,5 @@ define stream StockQuoteStream(symbol string, date string, price double, quantit
 define stream StorageOutputStream (symbol string, date string, price double, quantity int);
 
 from StockQuoteStream
-insert into StockQuoteWindow;
-
-from StockQuoteWindow
 select *
 insert into StorageOutputStream;
