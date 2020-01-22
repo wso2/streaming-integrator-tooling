@@ -42,7 +42,7 @@ Testing the Sample:
 define stream StockQuoteStream(symbol string, date string, price double, quantity int);
 
 @sink(type='s3', bucket.name='<BUCKET_NAME>', object.path='stocks/{{symbol}}/{{date}}',
-      credential.provider.class='com.amazonaws.auth.profile.ProfileCredentialsProvider', node.id='zeus',
+      credential.provider.class='software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider', node.id='zeus',
     @map(type='json',
         @payload("""{"symbol": "{{symbol}}", "date": "{{date}}", "price": "{{price}}", "quantity": "{{quantity}}"}""")))
 define stream StorageOutputStream (symbol string, date string, price double, quantity int);
