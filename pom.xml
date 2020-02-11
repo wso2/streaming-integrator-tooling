@@ -313,6 +313,19 @@
                 <type>zip</type>
             </dependency>
 
+            <!-- Siddhi Extensions Installer related -->
+            <dependency>
+                <groupId>org.wso2.carbon.analytics</groupId>
+                <artifactId>org.wso2.carbon.siddhi.extensions.installer.core</artifactId>
+                <version>${carbon.analytics.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.wso2.carbon.analytics</groupId>
+                <artifactId>org.wso2.carbon.siddhi.extensions.installer.core.feature</artifactId>
+                <version>${carbon.analytics.version}</version>
+                <type>zip</type>
+            </dependency>
+
             <!-- Business Rules Templates Editor related -->
             <dependency>
                 <groupId>org.wso2.carbon.analytics</groupId>
