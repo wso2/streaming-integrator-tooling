@@ -1,0 +1,54 @@
+@App:name('FileHandlerApp')
+
+@App:description('Identify whether file or folder has been created, modified or deleted in the given uri and throw events.')
+
+/*
+
+Purpose:
+    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to receive event via fileeventlistener on any creation, modification or deletion of a file or directory.
+
+Prerequisites:
+    1) Save this sample
+
+Executing the Sample:
+    1) Start the Siddhi application by clicking on 'Run'
+
+    2) If the Siddhi application starts successfully, the following messages would be shown on the console
+        * FIleHandlerApp.siddhi - Started Successfully!
+
+    Notes:
+    If you edit this application while it's running, stop the application -> Save -> Start.
+
+Testing the Sample:
+    1) Change the value of the uri parameter in the Siddhi application to the file path to which you want to monitor.
+    2) Make any modifications to the files in specific uri then those actions will create events.
+            I. Create a new file named as test.txt
+            II. Create a new folder named as test
+            III. Add new lines in the test.txt
+            IV. Delete the folder.
+
+
+Viewing the Results:
+    For each action (I, II, III, IV) you make in that folder or file will create a new event.
+    Perform the actions and see the respective output on the console similar to the following.
+
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, 'DATE', Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test, 0, 'DATE', Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, 'DATE', Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test, 0, 'DATE', Completed], isExpired=false}
+	Here 'DATE' speciifes the last modified date.
+    	Note how the filepath, length, last modified date and status of a file or folder changes with every action you make in the specific uri.
+
+*/
+
+@source(type='fileeventlistener',
+        uri='file:/Users/foo/',
+        @map(type='json'))
+define stream CreateFileStream(filepath string, length long, last_modified string,status string);
+
+@sink(type = 'log')
+define stream ResultStream(filepath string, length long, last_modified string,status string);
+
+from CreateFileStream
+select *
+insert into ResultStream;
