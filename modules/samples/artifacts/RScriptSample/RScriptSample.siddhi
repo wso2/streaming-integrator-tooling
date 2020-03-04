@@ -33,7 +33,8 @@ Testing the Sample:
 Viewing the Results:
     See the processed output for each event on the console.
 
--- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with SP editor.
+-- Please refer to https://ei.docs.wso2.com/en/latest/streaming-integrator/quick-start-guide/quick-start-guide-101/ on
+-- getting started with streaming-integrator-tooling.
 */
 
 define stream weather (time long, temp double);
