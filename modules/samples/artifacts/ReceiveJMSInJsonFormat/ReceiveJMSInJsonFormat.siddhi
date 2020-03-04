@@ -7,7 +7,7 @@ Purpose:
 
 Prerequisites:
     1) Setup ActiveMQ
-        * Download activemq-client-5.x.x.jar (http://central.maven.org/maven2/org/apache/activemq/activemq-client/5.9.0/activemq-client-5.9.0.jar)
+        * Download activemq-client-5.x.x.jar (https://repo1.maven.org/maven2/org/apache/activemq/activemq-client/5.9.0/activemq-client-5.9.0.jar)
         * Download apache-activemq-5.x.x-bin.zip (http://archive.apache.org/dist/activemq/apache-activemq/5.9.0/apache-activemq-5.9.0-bin.zip)
         * ActiveMQ activemq-client-5.x.x.jar lib to be added and converted to OSGI (See Note: To convert ActiveMQ lib to OSGI).
         * Unzip the apache-activemq-5.x.x-bin.zip and copy the following ActiveMQ libs in apache-activemq-5.x.x/lib to {WSO2SIHome}/samples/sample-clients/lib and {WSO2SIHome}/lib
