@@ -8,6 +8,10 @@ Purpose:
 
 Prerequisites:
     1) Setup Kafka
+        This can be achieved using 2 ways,
+        * Install the required jars using the Extensions Installer tool which is available in the editor;
+             * Navigate to Tools/Extension Installer on Editor menu.
+             * Search for the Kafka from the search panel and install
         * Kafka libs to be added and converted to OSGI from {KafkaHome}/libs are as follows
             * kafka_2.11-0.10.0.0.jar
             * kafka-clients-0.10.0.0.jar

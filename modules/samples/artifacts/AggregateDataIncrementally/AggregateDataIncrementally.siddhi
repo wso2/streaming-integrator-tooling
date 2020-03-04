@@ -8,13 +8,17 @@ Purpose:
     The sample depicts a scenario in a sweet production factory.
 
 Prerequisites:
-    1) Ensure that MySql is installed on your machine.
-    2) Add mysql jdbc driver into {WSO2_SI_HOME}/lib
-           2.1) Download JDBC driver (https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz)
-           2.2) Extract it and use the "jartobundle" tool in {WSO2_SI_Home}/bin to convert the above jars into OSGi bundles.
-             For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
-             For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR
-           2.3) Copy over the converted bundles to the {WSO2_SI_Home}/lib directory .
+    1) Ensure that MySql Server is installed on your machine.
+    2) Add mysql jdbc driver into WSO2 SI distribution. This can be achieved using 2 ways,
+        2.1) Install the required jars using the Extensions Installer tool which is available in the editor;
+            2.1.1) Navigate to Tools/Extension Installer on Editor menu.
+            2.1.2) Search for the RDBMS - MySQL from the search panel and install
+        2.2) Add mysql jdbc driver into {WSO2_SI_HOME}/lib
+            2.2.1) Download JDBC driver (https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz)
+            2.2.2) Extract it and use the "jartobundle" tool in {WSO2_SI_Home}/bin to convert the above jars into OSGi bundles.
+                   For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+                   For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR
+            2.2.3) Copy over the converted bundles to the {WSO2_SI_Home}/lib directory .
     3) Create a data store named 'sweetFactoryDB' in MySQL with relevant access privileges.
     4) Replace the 'jdbc.url', username and password parameter values in the sample.
        eg : jdbc.url - jdbc:mysql://localhost:3306/sweetFactoryDB'
