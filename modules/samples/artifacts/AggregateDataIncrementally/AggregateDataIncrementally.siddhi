@@ -21,7 +21,7 @@ Prerequisites:
             2.2.3) Copy over the converted bundles to the {WSO2_SI_Home}/lib directory .
     3) Create a data store named 'sweetFactoryDB' in MySQL with relevant access privileges.
     4) Replace the 'jdbc.url', username and password parameter values in the sample.
-       eg : jdbc.url - jdbc:mysql://localhost:3306/sweetFactoryDB'
+       eg : jdbc.url - jdbc:mysql://localhost:3306/sweetFactoryDB?useSSL=false'
             username - root
             password - root
     5) Save this sample        
@@ -70,7 +70,7 @@ define stream RawMaterialStream (name string, amount double);
 define stream RawMaterialStatStream (AGG_TIMESTAMP long, name string, avgAmount double);
 
 @store( type="rdbms",
-        jdbc.url="jdbc:mysql://localhost:3306/sweetFactoryDB",
+        jdbc.url="jdbc:mysql://localhost:3306/sweetFactoryDB?useSSL=false",
         username="root",
         password="root",
         jdbc.driver.name="com.mysql.jdbc.Driver")

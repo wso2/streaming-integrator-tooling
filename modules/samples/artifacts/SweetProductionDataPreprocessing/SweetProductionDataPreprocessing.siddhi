@@ -19,7 +19,7 @@ Prerequisites:
                       For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
                       For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR
                2.2.3) Copy over the converted bundles to the {WSO2_SI_Home}/lib directory .
-    3) Create a database named 'sampleDB' in MySQL. This database is referred to with 'jdbc:mysql://localhost:3306/sampleDB' url.
+    3) Create a database named 'sampleDB' in MySQL. This database is referred to with 'jdbc:mysql://localhost:3306/sampleDB?useSSL=false' url.
     4) In the store configuration of this application, replace 'username' and 'password' values with your MySQL credentials
     5) Save this sample
 
@@ -48,7 +48,7 @@ Viewing the Results:
 define stream SweetProductionStream (name string, amount double);
 
 @Store(type="rdbms",
-       jdbc.url="jdbc:mysql://localhost:3306/sampleDB",
+       jdbc.url="jdbc:mysql://localhost:3306/sampleDB?useSSL=false",
        username="root",
        password="mysql" ,
        jdbc.driver.name="com.mysql.jdbc.Driver")
