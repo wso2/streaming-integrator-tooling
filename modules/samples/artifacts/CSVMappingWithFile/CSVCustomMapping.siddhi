@@ -23,7 +23,7 @@ Viewing the Results:
 			2,IBM,2.5
 	Sink takes input from source output and produces the output to outputOfCustom.csv.
 	outputOfCustom.csv's data appear in below format
-			WSO2,1,100.0
+			WSO2,1,23.5
 			IBM,2,2.5
 */	
 

@@ -9,7 +9,15 @@ Purpose:
 Prerequisites:
     1) Ensure that there is a running IBM MQ instance.
     2) Create a queue manager named ESBQManager, Queue named  Queue1 and channel named Channel1
-    3) Download com.ibm.mq.allclient_9.0.5.0_1.0.0.jar and javax.jms-api-2.0.1.jar and copy to <SI_HOME>/lib directory.
+    3) Add com.ibm.mq.allclient_9.0.5.0_1.0.0.jar and javax.jms-api-2.0.1.jar into SI distribution this can be done in two ways.
+        3.1) [Recommended] Install the required jars using the extensions Installer tool which is available in the editor;
+             3.1.1) Navigate to Tools/Extension Installer on Editor menu.
+             3.1.2) Search for the entry 'IBM MQ' from the search panel and install
+        3.2) Copy the required jar files to the {WSO2_SI_HOME}/lib
+             3.2.1) Download com.ibm.mq.allclient_9.0.5.0_1.0.0.jar from https://repo1.maven.org/maven2/com/ibm/mq/com.ibm.mq.allclient/9.0.5.0/com.ibm.mq.allclient-9.0.5.0.jar
+             3.2.2) Convert the downloaded com.ibm.mq.allclient_9.0.5.0_1.0.0.jar to an OSGi bundle using the 'jartobundle.sh|bat' tool located in the {WSO2_SI_HOME}/bin and copy the converted jar into {WSO2_SI_HOME}/lib folder
+             3.2.2) Download javax.jms-api-2.0.1.jar from https://repo1.maven.org/maven2/javax/jms/javax.jms-api/2.0.1/javax.jms-api-2.0.1.jar
+             3.2.3) Copy the downloaded javax.jms-api-2.0.1.jar to the {WSO2_SI_HOME}/lib
 
 Executing the Sample:
     1) Start the Siddhi application by clicking on 'Run'
