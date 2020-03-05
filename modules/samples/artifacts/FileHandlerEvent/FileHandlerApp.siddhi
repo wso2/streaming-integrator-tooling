@@ -20,7 +20,7 @@ Executing the Sample:
     If you edit this application while it's running, stop the application -> Save -> Start.
 
 Testing the Sample:
-    1) Change the value of the uri parameter in the Siddhi application to the file path to which you want to monitor.
+    1) Change the value of the uri in the Siddhi application to the file path to which you want to monitor.
     2) Make any modifications to the files in specific uri then those actions will create events.
             I. Create a new file named as test.txt
             II. Create a new folder named as test
@@ -29,6 +29,9 @@ Testing the Sample:
 
 
 Viewing the Results:
+    If that directory already contains files It will print event similar to the following.
+     INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, 'DATE', Newly Added], isExpired=false}
+
     For each action (I, II, III, IV) you make in that folder or file will create a new event.
     Perform the actions and see the respective output on the console similar to the following.
 
@@ -41,9 +44,7 @@ Viewing the Results:
 
 */
 
-@source(type='fileeventlistener',
-        uri='file:/Users/foo/',
-        @map(type='json'))
+@source(type='fileeventlistener', uri='file:/Users/foo/', @map(type='json'))
 define stream CreateFileStream(filepath string, length long, last_modified string,status string);
 
 @sink(type = 'log')
