@@ -14,8 +14,11 @@ Purpose:
 
 
 Prerequisites:
-    (1) Download the solr-6.x.x.zip distribution from https://archive.apache.org/dist/lucene/solr/
-    (2) Start the Solr server in cloud mode using the command "{SOLR_HOME}/bin/solr -e cloud". This will create a simple solr cloud in your local machine.
+    1)There are two ways to add dependencies needed for this extension
+        1.1) (Recommended) Use Tools > Extension Installer to install siddhi-store-solr
+        2.2) Download 'siddhi-store-solr-2.0.0.jar' the from 'https://mvnrepository.com/artifact/org.wso2.extension.siddhi.store.solr/siddhi-store-solr' and place it in <SI_HOME>/lib
+    2) Download the solr-6.x.x.zip distribution from https://archive.apache.org/dist/lucene/solr/
+    3) Start the Solr server in cloud mode using the command "{SOLR_HOME}/bin/solr -e cloud". This will create a simple solr cloud in your local machine.
     When creating the cloud provide the suggested examples values for the each field.Give the collection name as gettingstarted. For the configuration provide "basic_configs".
 
 Executing the Sample:

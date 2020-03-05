@@ -1068,7 +1068,6 @@
 
         <siddhi.store.mongodb.version>2.0.2</siddhi.store.mongodb.version>
         <siddhi.store.rdbms.version>6.0.4</siddhi.store.rdbms.version>
-        <siddhi.store.solr.version>2.0.0</siddhi.store.solr.version>
         <siddhi.store.hbase.version>5.0.0</siddhi.store.hbase.version>
         <siddhi.store.cassandra.version>2.0.0</siddhi.store.cassandra.version>
         <siddhi.store.redis.version>3.1.1</siddhi.store.redis.version>

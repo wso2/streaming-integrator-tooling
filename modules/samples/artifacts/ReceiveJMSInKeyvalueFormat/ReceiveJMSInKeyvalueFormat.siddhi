@@ -6,14 +6,16 @@ Purpose:
     This application demonstrates how to configure WSO2 Streaming Integrator Tooling to receive events to the SweetProductionStream via Jms transport in Keyvalue and log the events in LowProductionAlertStream to the output console.
 
 Prerequisites:
-    1) Setup ActiveMQ
-        * Download activemq-client-5.x.x.jar (http://central.maven.org/maven2/org/apache/activemq/activemq-client/5.9.0/activemq-client-5.9.0.jar)
-        * Download apache-activemq-5.x.x-bin.zip (http://archive.apache.org/dist/activemq/apache-activemq/5.9.0/apache-activemq-5.9.0-bin.zip)
-        * ActiveMQ activemq-client-5.x.x.jar lib to be added and converted to OSGI (See Note: To convert ActiveMQ lib to OSGI).
-        * Unzip the apache-activemq-5.x.x-bin.zip and copy the following ActiveMQ libs in apache-activemq-5.x.x/lib to {WSO2SIHome}/samples/sample-clients/lib and {WSO2SIHome}/lib
-              - hawtbuf-1.9.jar
-              - geronimo-j2ee-management_1.1_spec-1.0.1.jar
-              - geronimo-jms_1.1_spec-1.1.1.jar
+    1) There are two ways to setup ActiveMQ
+        1.1) (Recommended) Navigate to Tools > Extension Installer and install JMS
+        1.2) Manually installing as follows;
+            * Download activemq-client-5.x.x.jar (http://central.maven.org/maven2/org/apache/activemq/activemq-client/5.9.0/activemq-client-5.9.0.jar)
+            * Download apache-activemq-5.x.x-bin.zip (http://archive.apache.org/dist/activemq/apache-activemq/5.9.0/apache-activemq-5.9.0-bin.zip)
+            * ActiveMQ activemq-client-5.x.x.jar lib to be added and converted to OSGI (See Note: To convert ActiveMQ lib to OSGI).
+            * Unzip the apache-activemq-5.x.x-bin.zip and copy the following ActiveMQ libs in apache-activemq-5.x.x/lib to {WSO2SIHome}/samples/sample-clients/lib and {WSO2SIHome}/lib
+                  - hawtbuf-1.9.jar
+                  - geronimo-j2ee-management_1.1_spec-1.0.1.jar
+                  - geronimo-jms_1.1_spec-1.1.1.jar
 	2) Save this sample.
 
 	* If there is no syntax error, the following message is shown on the console:
