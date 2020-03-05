@@ -33,8 +33,8 @@ Testing the Sample:
 
 Viewing the Results:
     Messages similar to the following would be shown on the console.
-        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - MathExtensionSample: Event :, StreamEvent{ timestamp=1513381581963, beforeWindowData=null, onAfterWindowData=null, outputData=[chocolate cake, 51.0], type=CURRENT, next=null}
-        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - MathExtensionSample: Event :, StreamEvent{ timestamp=1513381917721, beforeWindowData=null, onAfterWindowData=null, outputData=[chocolate cake, 51.0], type=CURRENT, next=null}
+        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - MathExtensionSample: Event :, StreamEvent{ timestamp=1583379330474, data=[chocolate cake, 51.0], isExpired=false}
+        INFO {io.siddhi.core.query.processor.stream.LogStreamProcessor} - MathExtensionSample: Event :, StreamEvent{ timestamp=1583379330474, data=[coffee cake, 51.0], isExpired=false}
 
 
 */
