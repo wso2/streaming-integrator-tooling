@@ -8,20 +8,20 @@ Purpose:
     This application demonstrates how to configure WSO2 Streaming Integrator Tooling to receive event via fileeventlistener on any creation, modification or deletion of a file or directory.
 
 Prerequisites:
-    1) Save this sample
+    1) Save this sample.
+    2) Change the uri to any existing path. (The folder or file which you wanted to monitor)
 
 Executing the Sample:
     1) Start the Siddhi application by clicking on 'Run'
 
-    2) If the Siddhi application starts successfully, the following messages would be shown on the console
-        * FIleHandlerApp.siddhi - Started Successfully!
+    2) If the Siddhi application starts successfully, the following message would be shown on the console
+        * FileHandlerApp.siddhi - Started Successfully!
 
     Notes:
     If you edit this application while it's running, stop the application -> Save -> Start.
 
 Testing the Sample:
-    1) Change the value of the uri in the Siddhi application to the file path to which you want to monitor.
-    2) Make any modifications to the files in specific uri then those actions will create events.
+    1) Make any modifications to the files in specific uri then those actions will create events.
             I. Create a new file named as test.txt
             II. Create a new folder named as test
             III. Add new lines in the test.txt
@@ -30,21 +30,20 @@ Testing the Sample:
 
 Viewing the Results:
     If that directory already contains files It will print event similar to the following.
-     INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, 'DATE', Newly Added], isExpired=false}
+     INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, Thu Jan 01 05:30:00 IST 1970, Newly Added], isExpired=false}
 
     For each action (I, II, III, IV) you make in that folder or file will create a new event.
     Perform the actions and see the respective output on the console similar to the following.
 
-    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, 'DATE', Completed], isExpired=false}
-    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test, 0, 'DATE', Completed], isExpired=false}
-    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, 'DATE', Completed], isExpired=false}
-    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test, 0, 'DATE', Completed], isExpired=false}
-	Here 'DATE' speciifes the last modified date.
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, Thu Jan 01 05:30:00 IST 1970, Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test, 0, 'Thu Jan 01 05:30:00 IST 1970, Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test.txt, 0, Thu Jan 01 05:30:00 IST 1970, Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileHandlerApp : ResultStream : Event{timestamp=1582271801878, data=[/Users/foo/test, 0, Thu Jan 01 05:30:00 IST 1970, Completed], isExpired=false}
     	Note how the filepath, length, last modified date and status of a file or folder changes with every action you make in the specific uri.
 
 */
 
-@source(type='fileeventlistener', uri='file:/Users/foo/', @map(type='json'))
+@source(type='fileeventlistener', uri='file:/home/ajanthy/wso2/new', @map(type='json'))
 define stream CreateFileStream(filepath string, length long, last_modified string,status string);
 
 @sink(type = 'log')
