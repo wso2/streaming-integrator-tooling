@@ -7,25 +7,30 @@ Purpose:
     This application demonstrates how to configure WSO2 Streaming Integrator Tooling to receive events to the SweetProductionStream via Kafka transport in Binary Format and log the events in LowProductionAlertStream to the output console.
 
 Prerequisites:
-    1) The following steps must be executed to enable WSO2 SI to receive events via the Kafka transport. Since you need to shut down the server to execute these steps, get a copy of these instructions prior to proceeding.
-        a) Download the Kafka broker from here: https://archive.apache.org/dist/kafka/0.10.0.0/kafka_2.11-0.10.0.0.tgz
-        b) Convert and copy the Kafka client jars from the {KafkaHome}/libs directory to the {WSO2SIHome}/libs directory as follows.
-              i) Create a directory named {Source} in a preferred location in your machine and copy the following JARs to it from the {KafkaHome}/libs directory.
-                 * kafka_2.11-0.10.0.0.jar
-                 * kafka-clients-0.10.0.0.jar
-                 * metrics-core-2.2.0.jar
-                 * scala-library-2.11.8.jar
-                 * zkclient-0.8.jar
-                 * zookeeper-3.4.6.jar
-             ii) Create another directory named {Destination} in a preferred location in your machine.
-            iii) To convert all the Kafka jars you copied into the {Source} directory, issue the following command,
-                 * For Windows: {WSO2SIHome}/bin/jartobundle.bat <{Source} Directory Path> <{Destination} Directory Path>
-                 * For Linux: sh {WSO2SIHome}/bin/jartobundle.sh <{Source} Directory Path> <{Destination} Directory Path>
-             iv) Add the OSGI converted kafka libs from {Destination} directory to {WSO2SIHome}/lib
-              v) Add the original Kafka libs from {Source} to {WSO2SIHome}/samples/sample-clients/lib
-             vi) Navigate to {KafkaHome} and start zookeeper node using "sh bin/zookeeper-server-start.sh config/zookeeper.properties" command
-            vii) Navigate to {KafkaHome} and start Kafka server node using "sh bin/kafka-server-start.sh config/server.properties" command
-    2) Save this sample
+    The following steps must be executed to enable WSO2 SI to receive events via the Kafka transport. Since you need to shut down the server to execute these steps, get a copy of these instructions prior to proceeding.
+    1) The dependencies can be installed in 2 ways
+        1.1) [Recommended] Install the required jars using the Extensions Installer tool which is available in the editor;
+            1.1.1) Navigate to Tools/Extension Installer on Editor menu.
+            1.1.2) Search for 'Kafka' from the search panel and install
+        1.2) Manual install
+            a) Download the Kafka broker from here: https://archive.apache.org/dist/kafka/0.10.0.0/kafka_2.11-0.10.0.0.tgz
+            b) Convert and copy the Kafka client jars from the {KafkaHome}/libs directory to the {WSO2SIHome}/libs directory as follows.
+                  i) Create a directory named {Source} in a preferred location in your machine and copy the following JARs to it from the {KafkaHome}/libs directory.
+                     * kafka_2.11-0.10.0.0.jar
+                     * kafka-clients-0.10.0.0.jar
+                     * metrics-core-2.2.0.jar
+                     * scala-library-2.11.8.jar
+                     * zkclient-0.8.jar
+                     * zookeeper-3.4.6.jar
+                 ii) Create another directory named {Destination} in a preferred location in your machine.
+                iii) To convert all the Kafka jars you copied into the {Source} directory, issue the following command,
+                     * For Windows: {WSO2SIHome}/bin/jartobundle.bat <{Source} Directory Path> <{Destination} Directory Path>
+                     * For Linux: sh {WSO2SIHome}/bin/jartobundle.sh <{Source} Directory Path> <{Destination} Directory Path>
+                 iv) Add the OSGI converted kafka libs from {Destination} directory to {WSO2SIHome}/lib
+                  v) Add the original Kafka libs from {Source} to {WSO2SIHome}/samples/sample-clients/lib
+    2) Navigate to {KafkaHome} and start zookeeper node using "sh bin/zookeeper-server-start.sh config/zookeeper.properties" command
+    3) Navigate to {KafkaHome} and start Kafka server node using "sh bin/kafka-server-start.sh config/server.properties" command
+    4) Save this sample
 
 Executing the Sample:
     1) Start the Siddhi application by clicking on 'Run'

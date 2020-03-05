@@ -12,14 +12,18 @@ Purpose:
 
 Prerequisites:
     1) Ensure that HBase is installed and the server is running on your machine.
-    2) Add HBase client into {WSO2_SI_HOME}/lib as follows:
-         a) Download the following jars:
+    2) Add HBase client into WSO2 SI as follows
+         a) [Recommended] Install the required jars using the Extensions Installer tool which is available in the editor.
+            * Navigate to Tools/Extension Installer on Editor menu.
+            * Search for the HBase from the search panel and install
+            OR
+         b) Download the following jars:
                 * HBase client (http://central.maven.org/maven2/org/apache/hbase/hbase-shaded-client/1.3.1/hbase-shaded-client-1.3.1.jar)
                 * Apache HTrace core (http://central.maven.org/maven2/org/apache/htrace/htrace-core/3.1.0-incubating/htrace-core-3.1.0-incubating.jar)
-         b) Use the "jartobundle" tool in {WSO2_SI_Home}/bin to convert the above jar into a OSGi bundle.
-                For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
-                For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
-         c) Copy the converted bundles to the {WSO2_SI_Home}/lib directory.
+             Use the "jartobundle" tool in {WSO2_SI_Home}/bin to convert the above jar into a OSGi bundle.
+                * For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+                * For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+             Copy the converted bundles to the {WSO2_SI_Home}/lib directory.
     3) Save this sample.
 
 Executing the Sample:
