@@ -1063,7 +1063,7 @@
         <siddhi.map.binary.version>2.0.4</siddhi.map.binary.version>
         <siddhi.map.text.version>2.0.4</siddhi.map.text.version>
         <siddhi.map.xml.version>5.0.3</siddhi.map.xml.version>
-        <siddhi.map.keyvalue.version>2.0.4</siddhi.map.keyvalue.version>
+        <siddhi.map.keyvalue.version>2.0.6</siddhi.map.keyvalue.version>
         <siddhi.map.csv.version>2.0.3</siddhi.map.csv.version>
 
         <siddhi.store.mongodb.version>2.0.2</siddhi.store.mongodb.version>
