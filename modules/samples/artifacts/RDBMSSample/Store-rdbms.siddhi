@@ -18,7 +18,7 @@ Prerequisites:
            a) Download the JDBC driver from: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz
            b) Unzip the archive.
            c) Copy mysql-connector-java-5.1.45-bin.jar to {WSO2_SI_Home}/lib directory.
-    3) Create a database named 'production' in MySQL. This database is referred to with the 'jdbc:mysql://localhost:3306/production' url.
+    3) Create a database named 'production' in MySQL. This database is referred to with the 'jdbc:mysql://localhost:3306/production?useSSL=false' url.
     4) Create a table named 'SweetProductionTable': CREATE TABLE SweetProductionTable (name VARCHAR(20),amount double(10,2));
     5) Insert some values into the table: INSERT INTO SweetProductionTable VALUES ('Sugar',23.50); 
        Note: You can also use insertSweetProductionStream for this.
