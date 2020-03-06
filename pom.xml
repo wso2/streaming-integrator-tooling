@@ -774,6 +774,11 @@
                 <version>${siddhi.execution.json.version}</version>
             </dependency>
             <dependency>
+                <groupId>io.siddhi.extension.execution.list</groupId>
+                <artifactId>siddhi-execution-list</artifactId>
+                <version>${siddhi.execution.list.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>io.siddhi.extension.map.json</groupId>
                 <artifactId>siddhi-map-json</artifactId>
                 <version>${siddhi.map.json.version}</version>
@@ -905,7 +910,7 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.32</carbon.analytics.version>
+        <carbon.analytics.version>3.0.32-SNAPSHOT</carbon.analytics.version>
         <siddhi.version>5.1.12</siddhi.version>
 
         <carbon.analytics-common.version>6.1.45</carbon.analytics-common.version>
@@ -1035,6 +1040,7 @@
         <siddhi.execution.env.version>2.0.0</siddhi.execution.env.version>
         <siddhi.execution.json.version>2.0.2</siddhi.execution.json.version>
         <siddhi.execution.stats.version>2.0.0</siddhi.execution.stats.version>
+        <siddhi.execution.list.version>1.0.0</siddhi.execution.list.version>
 
         <siddhi.io.file.version>2.0.3</siddhi.io.file.version>
         <siddhi.io.tcp.version>3.0.4</siddhi.io.tcp.version>
@@ -1056,7 +1062,7 @@
         <siddhi.io.snmp.version>2.0.0</siddhi.io.snmp.version>
         <siddhi.io.grpc.version>1.0.3</siddhi.io.grpc.version>
         <siddhi.io.gcs.version>1.0.0</siddhi.io.gcs.version>
-        <siddhi.io.s3.version>1.0.0</siddhi.io.s3.version>
+        <siddhi.io.s3.version>1.0.1</siddhi.io.s3.version>
 
         <siddhi.map.json.version>5.0.4</siddhi.map.json.version>
         <siddhi.map.avro.version>2.0.5</siddhi.map.avro.version>

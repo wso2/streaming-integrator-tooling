@@ -328,6 +328,12 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
+                                    <groupId>io.siddhi.extension.execution.list</groupId>
+                                    <artifactId>siddhi-execution-list</artifactId>
+                                    <version>${siddhi.execution.list.version}</version>
+                                    <type>jar</type>
+                                </artifactItem>
+                                <artifactItem>
                                     <groupId>io.siddhi.extension.execution.unique</groupId>
                                     <artifactId>siddhi-execution-unique</artifactId>
                                     <version>${siddhi.execution.unique.version}</version>
