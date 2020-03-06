@@ -135,7 +135,7 @@ org.wso2.carbon.databridge.receiver.binary_6.1.35.jar                           
 org.wso2.carbon.databridge.receiver.thrift_6.1.35.jar                           bundle         apache2
 org.wso2.carbon.datasource.core-1.0.2.jar                                       bundle         apache2   16073     
 org.wso2.carbon.datasource.core_1.1.4.jar                                       bundle         apache2   14014     
-org.wso2.carbon.deployment.engine_5.2.0.jar                                     bundle         apache2   14797     
+org.wso2.carbon.deployment.engine_5.2.0.jar                                     bundle         apache2   14797
 org.wso2.carbon.editor.log.appender_3.0.13.jar                                  bundle         apache2
 org.wso2.carbon.event.simulator.core_3.0.13.jar                                 bundle         apache2
 org.wso2.carbon.extensions.touchpoint_1.1.1.jar                                 bundle         apache2   14616     
@@ -171,19 +171,15 @@ reflections_0.9.11.wso2v1.jar                                                   
 siddhi-annotations_5.1.5.jar                                                    bundle         apache2   4491      
 siddhi-core_5.1.5.jar                                                           bundle         apache2   4502      
 siddhi-execution-env-2.0.0.jar                                                  bundle         apache2   4606      
-siddhi-execution-geo-5.0.0.jar                                                  bundle         apache2   4600      
-siddhi-execution-graph-2.0.0.jar                                                bundle         apache2   4613      
-siddhi-execution-json-2.0.2.jar                                                 bundle         apache2   4418      
+siddhi-execution-geo-5.0.0.jar                                                  bundle         apache2   4600
+siddhi-execution-json-2.0.2.jar                                                 bundle         apache2   4418
 siddhi-execution-map-5.0.5.jar                                                  bundle         apache2   4621      
-siddhi-execution-markov-5.0.1.jar                                               bundle         apache2   4605      
-siddhi-execution-math-5.0.4.jar                                                 bundle         apache2   4505      
+siddhi-execution-math-5.0.4.jar                                                 bundle         apache2   4505
 siddhi-execution-regex-5.0.5.jar                                                bundle         apache2   4434      
-siddhi-execution-stats-2.0.0.jar                                                bundle         apache2   4597      
-siddhi-execution-streamingml-2.0.2.jar                                          bundle         apache2   4602      
+siddhi-execution-streamingml-2.0.2.jar                                          bundle         apache2   4602
 siddhi-execution-string-5.0.5.jar                                               bundle         apache2   4521      
 siddhi-execution-time-5.0.4.jar                                                 bundle         apache2   4523      
-siddhi-execution-timeseries-5.0.1.jar                                           bundle         apache2   4596      
-siddhi-execution-unique-5.0.4.jar                                               bundle         apache2   4520      
+siddhi-execution-unique-5.0.4.jar                                               bundle         apache2   4520
 siddhi-execution-unitconversion-2.0.2.jar                                       bundle         apache2   4422      
 siddhi-io-cdc-2.0.3.jar                                                         bundle         apache2   4429      
 siddhi-io-email-2.0.3.jar                                                       bundle         apache2   4426      
@@ -203,8 +199,7 @@ siddhi-io-s3-1.0.0.jar                                                          
 siddhi-io-snmp-2.0.0.jar                                                        bundle         apache2   4598      
 siddhi-io-sqs-3.0.0.jar                                                         bundle         apache2   4616      
 siddhi-io-tcp-3.0.4.jar                                                         bundle         apache2   4512      
-siddhi-io-twitter-2.0.0.jar                                                     bundle         apache2   4603      
-siddhi-io-websocket-3.0.0.jar                                                   bundle         apache2   4601      
+siddhi-io-websocket-3.0.0.jar                                                   bundle         apache2   4601
 siddhi-map-avro-2.0.5.jar                                                       bundle         apache2   4615      
 siddhi-map-binary-2.0.4.jar                                                     bundle         apache2   4508      
 siddhi-map-csv-2.0.3.jar                                                        bundle         apache2   4504      
@@ -218,12 +213,10 @@ siddhi-script-js-5.0.2.jar                                                      
 siddhi-store-cassandra-2.0.0.jar                                                bundle         apache2   4599      
 siddhi-store-elasticsearch-3.1.1.jar                                            bundle         apache2   4617      
 siddhi-store-hbase-5.0.0.jar                                                    bundle         apache2   4611      
-siddhi-store-influxdb-2.0.0.jar                                                 bundle         apache2   4610      
-siddhi-store-mongodb-2.0.2.jar                                                  bundle         apache2   4511      
+siddhi-store-mongodb-2.0.2.jar                                                  bundle         apache2   4511
 siddhi-store-rdbms-6.0.4.jar                                                    bundle         apache2   4519      
 siddhi-store-redis-3.1.1.jar                                                    bundle         apache2   4430      
-siddhi-store-solr-2.0.0.jar                                                     bundle         apache2   4609      
-slf4j-api-1.7.25.jar                                                            bundle         mit       2446      
+slf4j-api-1.7.25.jar                                                            bundle         mit       2446
 slf4j-log4j12-1.7.25.jar                                                        bundle         mit       2445      
 slf4j.api_1.7.12.jar                                                            bundle         mit       1289      
 slf4j.log4j12_1.7.12.jar                                                        bundle         mit       1288      
