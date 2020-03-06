@@ -1,0 +1,62 @@
+@App:name('FileEventListenerSample')
+
+@App:description('Identify whether file or folder has been created, modified or deleted in the given uri and throw events.')
+
+/*
+Purpose:
+    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to receive events via
+    fileeventlistener on creation, modification or deletion of a file or directory.
+
+Prerequisites:
+    1) Save this sample.
+    2) Create a folder named 'sweet-factory-logs'.
+    3) Add a file named 'existingFile.txt' in the 'sweet-factory-logs' .
+
+Executing the Sample:
+    1) Start the Siddhi application by clicking on 'Run'
+
+    2) If the Siddhi application starts successfully, the following message would be shown on the console
+        * FileEventListenerSample.siddhi - Started Successfully!
+
+    Notes:
+    If you edit this application while it's running, stop the application -> Save -> Start.
+
+Testing the Sample:
+    1) Perform the following actions in 'sweet-factory-logs' folder that you have already created. These actions will
+    create events.
+            I. Create a new file named as test.txt
+            II. Create a new folder named as test
+            III. Add new lines in the test.txt
+            IV. Delete the folder test
+
+
+Viewing the Results:
+    You will see an event similar to the following when you start the Siddhi app.
+     INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1582271801878,
+     data=[/path/to/sweet-factory-logs/existingFile.txt, 0, Fri Mar 06 12:59:11 IST 2020, Newly Added], isExpired=false}
+
+    For each action performed in the folder (I, II, III, IV) a new event will be created. The outputs on the console will be similar to the following.
+
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1582271801878,
+    data=[/path/to/sweet-factory-logs/test.txt,, 0, Fri Mar 06 12:59:11 IST 2020, Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1582271801878,
+    data=[/path/to/sweet-factory-logs/test, 0, Fri Mar 06 12:59:11 IST 2020, Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1582271801878,
+    data=[/path/to/sweet-factory-logs/test.txt, 0, Fri Mar 06 12:59:11 IST 2020, Copying], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1582271801878,
+    data=[/path/to/sweet-factory-logs/test.txt, 0, Fri Mar 06 12:59:11 IST 2020, Completed], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1582271801878,
+    data=[/path/to/sweet-factory-logs/test, 0, Fri Mar 06 12:59:11 IST 2020, Completed], isExpired=false}
+    	Note how the file path, length, last modified date and status of a file or folder changes with every action you
+    	make in the "sweet-factory-logs" directory
+*/
+
+@source(type='fileeventlistener', uri='file:/path/to/sweet-factory-logs/', @map(type='json'))
+define stream FileListenerStream(filepath string, length long, last_modified string,status string);
+
+@sink(type = 'log')
+define stream ResultStream(filepath string, length long, last_modified string,status string);
+
+from FileListenerStream
+select *
+insert into ResultStream;
