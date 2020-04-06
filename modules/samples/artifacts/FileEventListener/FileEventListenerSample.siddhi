@@ -8,9 +8,11 @@ Purpose:
     fileeventlistener on creation, modification or deletion of a file or directory.
 
 Prerequisites:
-    1) Save this sample.
-    2) Create a folder named 'sweet-factory-logs'.
-    3) Add a file named 'test.txt' in the 'sweet-factory-logs' .
+    1) Create a folder named 'sweet-factory-logs'.
+    2) Add a file named 'test.txt' in the 'sweet-factory-logs' .
+    3) Edit the dir.uri '/path/to/sweet-factory-logs/' by replacing with the absolute path of your directory named
+    sweet-factory-logs.
+    4) Save this sample.
 
 Executing the Sample:
     1) Start the Siddhi application by clicking on 'Run'
