@@ -8,10 +8,13 @@ Purpose:
 
 Pre-requesites:
     1) Ensure that MySQL is installed on your computer.
-    2) Add the MySQL JDBC driver into {WSO2_SI_HOME}/lib as follows:
-            2.1) Download the JDBC driver from: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz
-            2.2) Unzip the archive.
-            2.3) Copy mysql-connector-java-5.1.45-bin.jar to {WSO2_SI_Home}/lib directory.
+    2) Add the MySQL JDBC driver into {WSO2_SI_HOME}/lib. This can be achieved in two ways,
+            2.1) [Recommended] Install the required jars using the Extensions Installer tool which is available in the editor.
+                    2.1.1) Navigate to Tools/Extension Installer on Editor menu(Ctrl + Alt + I).
+                    2.1.2) Search for the `Change Data Capture - MySQL` from the search panel and install.
+            2.2) Download the JDBC driver from: https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz
+                    2.2.1) Unzip the archive.
+                    2.2.2) Copy mysql-connector-java-5.1.45-bin.jar to {WSO2_SI_Home}/lib directory.
     3) Configure MySQL to enable binary logging.
             4.1)Follow https://debezium.io/docs/connectors/mysql/#enabling-the-binlog
     4) Enable state persistence in siddhi apps.
@@ -45,7 +48,7 @@ Testing the Sample:
             update operation events will include keys: before_name, name, before_amount, amount.
 */
 
-@source(type = 'cdc', url = 'jdbc:mysql://localhost:3306/production', username = 'wso2sp', password = 'wso2', table.name = 'SweetProductionTable', operation = 'insert', 
+@source(type = 'cdc', url = 'jdbc:mysql://localhost:3306/production?useSSL=false', username = 'wso2sp', password = 'wso2', table.name = 'SweetProductionTable', operation = 'insert',
 	@map(type = 'keyvalue'))
 define stream insertSweetProductionStream (name string, amount double);
 

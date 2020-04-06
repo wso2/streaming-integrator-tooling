@@ -8,9 +8,14 @@ Purpose:
     This application demonstrates how to use the Kafka transport in Siddhi to receive and publish events. Events which are in JSON format are consumed from one Kafka topic and written to another Kafka topic in XML format.
 
 Prerequisites:
-    1) The following steps must be executed to enable WSO2 SP to receive and publish events via the Kafka transport. Since you need to shut down the server to execute these steps, get a copy of these instructions prior to proceeding.
+    1) The following steps must be executed to enable WSO2 SI to receive and publish events via the Kafka transport. Since you need to shut down the server to execute these steps, get a copy of these instructions prior to proceeding.
         a) Download the Kafka broker from here: https://www.apache.org/dyn/closer.cgi?path=/kafka/0.10.2.1/kafka_2.11-0.10.2.1.tgz
-        b) Convert and copy the Kafka client jars from the {KafkaHome}/libs directory to the {WSO2SIHome}/libs directory as follows.
+        b) Install the Kafka related jars to the server.
+           I) Using Extensions Installer tool which is available in the editor.
+              * Navigate to Tools/Extension Installer on Editor menu.
+              * Search for the Kafka from the search panel and install
+              OR
+           II) Convert and copy the Kafka client jars from the {KafkaHome}/libs directory to the {WSO2SIHome}/libs directory as follows.
               i) Create a directory named {Source} in a preferred location in your machine and copy the following JARs to it from the {KafkaHome}/libs directory.
                  * kafka_2.11-0.10.2.1.jar
                  * kafka-clients-0.10.2.1.jar
@@ -20,14 +25,14 @@ Prerequisites:
                  * zkclient-0.10.jar
                  * zookeeper-3.4.9.jar
              ii) Create another directory named {Destination} in a preferred location in your machine.
-            iii) To convert all the Kafka jars you copied into the {Source} directory, issue the following command,
+            iii) To convert all the Kafka jars you copied into the {Source} directory, issue the following command.
                  * For Windows: {WSO2SIHome}/bin/jartobundle.bat <{Source} Directory Path> <{Destination} Directory Path>
                  * For Linux: sh {WSO2SIHome}/bin/jartobundle.sh <{Source} Directory Path> <{Destination} Directory Path>
              iv) Add the OSGI converted kafka libs from {Destination} directory to {WSO2SIHome}/lib
               v) Add the original Kafka libs from {Source} to {WSO2SIHome}/samples/sample-clients/lib
-             vi) Navigate to {KafkaHome} and start zookeeper node using "sh bin/zookeeper-server-start.sh config/zookeeper.properties" command
-            vii) Navigate to {KafkaHome} and start Kafka server node using "sh bin/kafka-server-start.sh config/server.properties" command
-           viii) Start the server: sh streaming-integrator-tooling.sh
+        c) Navigate to {KafkaHome} and start zookeeper node using "sh bin/zookeeper-server-start.sh config/zookeeper.properties" command
+        d) Navigate to {KafkaHome} and start Kafka server node using "sh bin/kafka-server-start.sh config/server.properties" command
+        e) Start the server: sh streaming-integrator-tooling.sh
     2) Save this sample
 
 Executing the Sample:
