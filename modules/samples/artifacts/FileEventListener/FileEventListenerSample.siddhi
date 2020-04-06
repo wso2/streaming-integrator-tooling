@@ -1,0 +1,55 @@
+@App:name('FileEventListenerSample')
+
+@App:description('Identify whether file or folder has been created, modified or deleted in the given uri and throw events.')
+
+/*
+Purpose:
+    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to receive events via
+    fileeventlistener on creation, modification or deletion of a file or directory.
+
+Prerequisites:
+    1) Create a folder named 'sweet-factory-logs'.
+    2) Add a file named 'test.txt' in the 'sweet-factory-logs' .
+    3) Edit the dir.uri '/path/to/sweet-factory-logs/' by replacing with the absolute path of your directory named
+    sweet-factory-logs.
+    4) Save this sample.
+
+Executing the Sample:
+    1) Start the Siddhi application by clicking on 'Run'
+
+    2) If the Siddhi application starts successfully, the following message would be shown on the console
+        * FileEventListenerSample.siddhi - Started Successfully!
+
+    Notes:
+    If you edit this application while it's running, stop the application -> Save -> Start.
+
+Testing the Sample:
+    1) Perform the following actions in 'sweet-factory-logs' folder that you have already created. These actions will
+    create events.
+            I. Add new lines in the test.txt
+            II. Delete the file test.txt
+
+Viewing the Results:
+    You will see an event similar to the following when you start the Siddhi app.
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1584442060224,
+    data=[/path/to/sweet-factory-logs/test.txt, test.txt, created], isExpired=false}
+
+    For each action performed in the folder (I, II) a new event will be created. The outputs on the console will be similar to the following.
+
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1584442060224,
+    data=[/path/to/sweet-factory-logs/test.txt, test.txt, modifyingCompleted], isExpired=false}
+    INFO {io.siddhi.core.stream.output.sink.LogSink} - FileEventListenerSample : ResultStream : Event{timestamp=1584442060224,
+    data=[/path/to/sweet-factory-logs/test.txt, test.txt, removed], isExpired=false}
+    Note how the file path, file name and status of a file or folder changes with every action you make in the files
+    given in file.name.list
+*/
+
+@source(type = 'fileeventlistener', dir.uri = "/path/to/sweet-factory-logs/", file.name.list = "test.txt")
+define stream FileListenerStream (filepath string, filename string, status string);
+
+@sink(type = 'log')
+define stream ResultStream (filepath string, filename string, status string);
+
+from FileListenerStream
+select *
+insert into ResultStream;
