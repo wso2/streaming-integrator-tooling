@@ -12,8 +12,9 @@ Prerequisites:
        * - Siddhi App ReadFileInBinaryChunkedMode successfully deployed.
     * Open a terminal and install 'node-ws' by using the command 'sudo apt install node-ws'. node-ws will function
     as the websocket client/server
-    * Edit the uri '{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new' by replacing {WSO2SIHome} with the
-   absolute path of your WSO2SP home directory.
+    * Edit the uri '{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new' and
+    '{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/consumed' by replacing {WSO2SIHome} with
+    the absolute path of your WSO2SP home directory.
 
 Executing the Sample:
     1) Open a terminal and navigate to the {WSO2SIHome}/samples/sample-clients/websocket-receiver directory and run the
@@ -28,6 +29,9 @@ Executing the Sample:
 NOTE:
    If the sample is not running and not producing output, do the following first.
    - Add more content and check whether the expected output appears on the console.
+   - Move all the files in {WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/consumed directory to
+   {WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new.
+   - Delete all the files in consumed and sink directories.
 
 Viewing the Results:
    See the output on the terminal.
@@ -42,7 +46,8 @@ Notes:
 */
 
 @source(type='file', mode='binary.chunked',
- dir.uri='file://{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new', action.after.process='delete',
+ dir.uri='file://{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new', action.after.process='move',
+ move.after.process='file://{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/consumed',
  file.read.wait.timeout='5000', file.polling.interval='3000', @map(type='binaryPassThrough', @attributes(buffer= '0',
  eof = 'trp:eof', fileName = 'trp:file.name', sequenceNumber = 'trp:sequence.number', length = 'trp:content.length')))
 define stream FooStream (buffer object, eof bool, fileName string, sequenceNumber int, length int);
