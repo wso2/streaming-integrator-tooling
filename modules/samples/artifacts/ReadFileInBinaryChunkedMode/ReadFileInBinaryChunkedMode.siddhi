@@ -1,11 +1,10 @@
 @App:name('ReadFileInBinaryChunkedMode')
-
-@App:description('Read the file as binary chunks')
+@App:description('Read a binary file as chunks')
 
 /*
 Purpose:
-    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to read the file and send events
-    via WebSocket transport and log the events to the output console.
+    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to read a binary file in chunks and
+     send via WebSocket transport.
 
 Prerequisites:
     * Save this sample. If there is no syntax error, the following message is shown on the console:
