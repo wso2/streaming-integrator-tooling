@@ -1,4 +1,6 @@
 @App:name('ReceiveEventsFromFile')
+
+@App:description('Receive events via File transport and view the output on the console')
 /*
 Purpose:
     This application demonstrates how to use siddhi-io-file for receiving.
