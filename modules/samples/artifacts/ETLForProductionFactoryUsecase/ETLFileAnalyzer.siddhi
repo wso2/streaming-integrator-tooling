@@ -1,4 +1,5 @@
-@App:name('ETL_File_Analyzer')
+@App:name('ETLFileAnalyzer')
+@App:description('This sample demonstrates on moving files to a specific location comparing its content with the header values.')
 
 /*
 Purpose:
