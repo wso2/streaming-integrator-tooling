@@ -905,7 +905,7 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.42</carbon.analytics.version>
+        <carbon.analytics.version>3.0.44</carbon.analytics.version>
         <siddhi.version>5.1.15</siddhi.version>
 
         <carbon.analytics-common.version>6.1.46</carbon.analytics-common.version>
@@ -1044,7 +1044,7 @@
         <siddhi.io.sqs.version>3.0.0</siddhi.io.sqs.version>
         <siddhi.io.websocket.version>3.0.1</siddhi.io.websocket.version>
         <!--<siddhi.io.ibmmq.version>2.0.0</siddhi.io.ibmmq.version>-->
-        <siddhi.io.cdc.version>2.0.7</siddhi.io.cdc.version>
+        <siddhi.io.cdc.version>2.0.8</siddhi.io.cdc.version>
         <siddhi.io.prometheus.version>2.1.2</siddhi.io.prometheus.version>
         <siddhi.io.nats.version>2.0.11</siddhi.io.nats.version>
         <siddhi.io.googlepubsub.version>2.0.2</siddhi.io.googlepubsub.version>
