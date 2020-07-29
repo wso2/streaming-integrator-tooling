@@ -1,4 +1,5 @@
-@App:name('ETL_File_Records_Copier')
+@App:name('ETLFileRecordsCopier')
+@App:description('This sample demonstrates on integrating a File in a particular location with a Database.')
 
 /*
 Purpose:
