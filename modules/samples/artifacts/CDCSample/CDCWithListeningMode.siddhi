@@ -16,7 +16,10 @@ Pre-requesites:
                     2.2.1) Unzip the archive.
                     2.2.2) Copy mysql-connector-java-5.1.45-bin.jar to {WSO2_SI_Home}/lib directory.
     3) Configure MySQL to enable binary logging.
-            4.1)Follow https://debezium.io/docs/connectors/mysql/#enabling-the-binlog
+            4.1) Follow https://debezium.io/docs/connectors/mysql/#enabling-the-binlog
+            Note: If you are using MySQL 8.0, use the following query to check the binlog status:
+                >> SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+                   FROM performance_schema.global_variables WHERE variable_name='log_bin';
     4) Enable state persistence in siddhi apps.
             5.1)Change state.persistence enabled=true in deployment.yaml file.
     5) Create a database "production".
