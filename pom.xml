@@ -1024,16 +1024,16 @@
         <siddhi.execution.regex.version>5.0.6</siddhi.execution.regex.version>
         <siddhi.execution.streamingml.version>2.0.4</siddhi.execution.streamingml.version>
         <siddhi.execution.string.version>5.0.11</siddhi.execution.string.version>
-        <siddhi.execution.time.version>5.0.5</siddhi.execution.time.version>
+        <siddhi.execution.time.version>5.0.7</siddhi.execution.time.version>
         <siddhi.execution.unique.version>5.0.5</siddhi.execution.unique.version>
 
         <siddhi.execution.geo.version>5.0.1</siddhi.execution.geo.version>
         <siddhi.execution.map.version>5.0.6</siddhi.execution.map.version>
         <siddhi.execution.env.version>2.0.0</siddhi.execution.env.version>
-        <siddhi.execution.json.version>2.0.6</siddhi.execution.json.version>
+        <siddhi.execution.json.version>2.0.9</siddhi.execution.json.version>
         <siddhi.execution.list.version>1.0.0</siddhi.execution.list.version>
 
-        <siddhi.io.file.version>2.0.10</siddhi.io.file.version>
+        <siddhi.io.file.version>2.0.11</siddhi.io.file.version>
         <siddhi.io.tcp.version>3.0.5</siddhi.io.tcp.version>
         <siddhi.io.jms.version>2.0.4</siddhi.io.jms.version>
         <siddhi.io.email.version>2.0.6</siddhi.io.email.version>
@@ -1044,7 +1044,7 @@
         <siddhi.io.sqs.version>3.0.0</siddhi.io.sqs.version>
         <siddhi.io.websocket.version>3.0.1</siddhi.io.websocket.version>
         <!--<siddhi.io.ibmmq.version>2.0.0</siddhi.io.ibmmq.version>-->
-        <siddhi.io.cdc.version>2.0.8</siddhi.io.cdc.version>
+        <siddhi.io.cdc.version>2.0.9</siddhi.io.cdc.version>
         <siddhi.io.prometheus.version>2.1.2</siddhi.io.prometheus.version>
         <siddhi.io.nats.version>2.0.11</siddhi.io.nats.version>
         <siddhi.io.googlepubsub.version>2.0.2</siddhi.io.googlepubsub.version>
