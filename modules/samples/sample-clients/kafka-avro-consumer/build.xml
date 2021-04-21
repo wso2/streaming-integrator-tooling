@@ -57,6 +57,7 @@
             <include name="org.apache.ws.commons.axiom.axiom-api_*.jar"/>
             <include name="jaxen_*.jar"/>
             <include name="io.github.openfeign.feign-*.jar"/>
+            <include name="org.wso2.carbon.si.metrics.core_*.jar"/>
         </fileset>
     </path>
 
