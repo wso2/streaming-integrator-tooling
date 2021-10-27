@@ -905,8 +905,8 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.54</carbon.analytics.version>
-        <siddhi.version>5.1.18</siddhi.version>
+        <carbon.analytics.version>3.0.55</carbon.analytics.version>
+        <siddhi.version>5.1.19</siddhi.version>
 
         <carbon.analytics-common.version>6.1.50</carbon.analytics-common.version>
         <!-- Maven plugins -->
@@ -1033,18 +1033,18 @@
         <siddhi.execution.json.version>2.0.9</siddhi.execution.json.version>
         <siddhi.execution.list.version>1.0.1</siddhi.execution.list.version>
 
-        <siddhi.io.file.version>2.0.16</siddhi.io.file.version>
+        <siddhi.io.file.version>2.0.17</siddhi.io.file.version>
         <siddhi.io.tcp.version>3.0.5</siddhi.io.tcp.version>
         <siddhi.io.jms.version>2.0.4</siddhi.io.jms.version>
         <siddhi.io.email.version>2.0.6</siddhi.io.email.version>
         <siddhi.io.rabbitmq.version>3.0.6</siddhi.io.rabbitmq.version>
-        <siddhi.io.mqtt.version>3.0.0</siddhi.io.mqtt.version>
+        <siddhi.io.mqtt.version>3.0.1</siddhi.io.mqtt.version>
         <siddhi.io.kafka.version>5.0.12</siddhi.io.kafka.version>
         <siddhi.io.http.version>2.3.3</siddhi.io.http.version>
         <siddhi.io.sqs.version>3.0.0</siddhi.io.sqs.version>
         <siddhi.io.websocket.version>3.0.2</siddhi.io.websocket.version>
         <!--<siddhi.io.ibmmq.version>2.0.0</siddhi.io.ibmmq.version>-->
-        <siddhi.io.cdc.version>2.0.10</siddhi.io.cdc.version>
+        <siddhi.io.cdc.version>2.0.11</siddhi.io.cdc.version>
         <siddhi.io.prometheus.version>2.1.2</siddhi.io.prometheus.version>
         <siddhi.io.nats.version>2.0.11</siddhi.io.nats.version>
         <siddhi.io.googlepubsub.version>2.0.2</siddhi.io.googlepubsub.version>
