@@ -23,7 +23,8 @@ import io.siddhi.core.exception.ConnectionUnavailableException;
 import io.siddhi.extension.io.tcp.transport.TCPNettyClient;
 import io.siddhi.extension.map.binary.sinkmapper.BinaryEventConverter;
 import io.siddhi.query.api.definition.Attribute;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -35,7 +36,7 @@ import java.util.List;
 public class StoreTestClient {
     private static final String STREAM_NAME = "TestData";
     private static final Attribute.Type[] TYPES = new Attribute.Type[]{Attribute.Type.BOOL};
-    private static final Logger LOG = Logger.getLogger(StoreTestClient.class);
+    private static final Logger log = LogManager.getLogger(StoreTestClient.class);
 
     /**
      * Main method to start the test client.
