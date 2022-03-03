@@ -35,7 +35,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * Test Server Listener Manger.
  */
 public class HttpServerListener implements HttpHandler {
-    private static final Logger logger = Logger.getLogger(HttpServerListener.class);
+    private static final Logger logger = LogManager.getLogger(HttpServerListener.class);
     private AtomicBoolean isEventArraved = new AtomicBoolean(false);
     private StringBuilder strBld = new StringBuilder();
     private Headers headers;

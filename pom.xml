@@ -923,8 +923,8 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.57</carbon.analytics.version>
-        <siddhi.version>5.1.21</siddhi.version>
+        <carbon.analytics.version>3.0.58</carbon.analytics.version>
+        <siddhi.version>5.1.22</siddhi.version>
 
         <carbon.analytics-common.version>6.1.57</carbon.analytics-common.version>
         <!-- Maven plugins -->
@@ -1066,7 +1066,7 @@
         <siddhi.io.googlepubsub.version>2.0.3</siddhi.io.googlepubsub.version>
         <siddhi.io.hl7.version>3.0.1</siddhi.io.hl7.version>
         <siddhi.io.snmp.version>2.0.1</siddhi.io.snmp.version>
-        <siddhi.io.grpc.version>1.0.10</siddhi.io.grpc.version>
+        <siddhi.io.grpc.version>1.0.11</siddhi.io.grpc.version>
         <siddhi.io.gcs.version>1.0.2</siddhi.io.gcs.version>
         <siddhi.io.s3.version>1.0.4</siddhi.io.s3.version>
 

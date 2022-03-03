@@ -32,7 +32,7 @@ import java.util.Map;
  * Test Server for TCP source.
  */
 public class TCPServer {
-    private static Logger log = Logger.getLogger(TCPServer.class);
+    private static Logger log = LogManager.getLogger(TCPServer.class);
 
     /**
      * Main method to start the test Server.
