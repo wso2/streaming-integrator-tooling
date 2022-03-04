@@ -42,7 +42,7 @@ import javax.net.ssl.TrustManagerFactory;
  * Https test sever listener.
  */
 public class HttpsServerListnerHandler {
-    private static final Logger logger = Logger.getLogger(HttpsServerListnerHandler.class);
+    private static final Logger logger = LogManager.getLogger(HttpsServerListnerHandler.class);
     private HttpServerListener sl;
     private int port;
     private KeyStore ks;

@@ -35,7 +35,7 @@ import java.util.Scanner;
  */
 public class KafkaClient {
 
-    private static Logger log = Logger.getLogger(KafkaClient.class);
+    private static Logger log = LogManager.getLogger(KafkaClient.class);
 
     /**
      * Main method to start the test client.

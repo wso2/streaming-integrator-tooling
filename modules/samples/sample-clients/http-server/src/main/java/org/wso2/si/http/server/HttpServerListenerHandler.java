@@ -30,7 +30,7 @@ import java.net.InetSocketAddress;
  * Http test sever listener.
  */
 public class HttpServerListenerHandler {
-    private static final Logger logger = Logger.getLogger(HttpServerListenerHandler.class);
+    private static final Logger logger = LogManager.getLogger(HttpServerListenerHandler.class);
     private HttpServerListener sl;
     private HttpServer server;
     private int port;
