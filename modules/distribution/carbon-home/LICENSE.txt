@@ -30,7 +30,6 @@ commons-codec-1.4.jar                                                           
 org.wso2.carbon.privacy.forgetme.logs-1.1.21.jar                                                    bundle         apache2
 json-simple-1.1.jar                                                                                 jar            apache2
 HikariCP-2.4.1.jar                                                                                  bundle         apache2
-log4j-1.2.17.jar                                                                                    bundle         apache2
 commons-io-2.4.0.wso2v1.jar                                                                         bundle         apache2
 slf4j-api-1.7.25.jar                                                                                bundle         mit
 org.wso2.carbon.privacy.forgetme.api-1.1.21.jar                                                     bundle         apache2
@@ -42,7 +41,6 @@ org.wso2.carbon.core-5.1.0-alpha2.jar                                           
 commons-cli-1.3.1.jar                                                                               bundle         apache2
 slf4j-log4j12-1.7.25.jar                                                                            bundle         mit
 org.eclipse.equinox.preferences_3.6.0.v20160120-1756.jar                                            bundle         epl1
-com.fasterxml.jackson.dataformat.jackson-dataformat-yaml_2.9.8.jar                                  bundle         apache2
 siddhi-query-api_5.1.19.jar                                                                         bundle         apache2
 org.wso2.carbon.database.query.manager_6.1.48.jar                                                   bundle         apache2
 siddhi-query-compiler_5.1.19.jar                                                                    bundle         apache2
@@ -72,11 +70,8 @@ com.google.gson_2.2.4.jar                                                       
 org.wso2.carbon.streaming.integrator.common_3.0.54.jar                                              bundle         apache2
 generex_1.0.0.wso2v1.jar                                                                            bundle         apache2
 org.apache.ws.commons.axiom.axiom-impl_1.2.20.jar                                                   bundle         apache2
-h2_1.4.199.wso2v1.jar                                                                               bundle         apache2
-h2-1.4.199.jar                                                                                      jarinbundle    apache2
 okhttp_3.8.0.wso2v2.jar                                                                             bundle         apache2
 org.wso2.carbon.editor.log.appender_3.0.54.jar                                                      bundle         apache2
-com.fasterxml.jackson.core.jackson-annotations_2.9.8.jar                                            bundle         apache2
 org.eclipse.osgi.compatibility.state_1.0.200.v20160504-1419.jar                                     bundle         epl1
 org.wso2.carbon.databridge.commons_6.1.50.jar                                                       bundle         apache2
 msf4j-swagger_2.7.7.jar                                                                             bundle         apache2
@@ -95,7 +90,6 @@ io.dropwizard.metrics.jvm_3.2.5.jar                                             
 org.antlr.antlr4-runtime_4.7.2.jar                                                                  bundle         apache2
 fabricator_2.10_2.1.4.wso2v1.jar                                                                    bundle         apache2
 org.wso2.carbon.business.rules.templates.editor.core_3.0.54.jar                                     bundle         apache2
-com.fasterxml.jackson.core.jackson-core_2.9.8.jar                                                   bundle         apache2
 disruptor_3.4.2.wso2v1.jar                                                                          bundle         apache2
 encoder_1.2.0.wso2v2.jar                                                                            bundle         apache2
 org.wso2.carbon.caching_1.1.3.jar                                                                   bundle         apache2
@@ -132,7 +126,6 @@ jaxrs-delegates_2.7.7.jar                                                       
 org.eclipse.equinox.frameworkadmin_2.0.300.v20160504-1450.jar                                       bundle         epl1
 quartz_2.1.1.wso2v1.jar                                                                             bundle         apache2
 org.wso2.carbon.databridge.receiver.thrift_6.1.50.jar                                               bundle         apache2
-com.fasterxml.jackson.core.jackson-databind_2.9.8.jar                                               bundle         apache2
 org.apache.servicemix.bundles.commons-beanutils_1.8.3.2.jar                                         bundle         apache2
 org.apache.ws.commons.axiom.axiom-api_1.2.20.jar                                                    bundle         apache2
 javax.websocket-api_1.1.0.jar                                                                       bundle         cddl1
