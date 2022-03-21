@@ -50,13 +50,13 @@ public class StoreTestClient {
          */
         TCPNettyClient tcpNettyClient = new TCPNettyClient();
         tcpNettyClient.connect(args[0], Integer.parseInt(args[1]));
-        LOG.info("TCP client for Store Test connected");
+        log.info("TCP client for Store Test connected");
 
         List<Event> arrayList = new ArrayList<>();
         arrayList.add(new Event(System.currentTimeMillis(), new Object[]{Boolean.TRUE}));
         tcpNettyClient.send(STREAM_NAME, BinaryEventConverter.convertToBinaryMessage(
                 arrayList.toArray(new Event[0]), TYPES).array());
-        LOG.info("TCP client for Store Test finished sending events");
+        log.info("TCP client for Store Test finished sending events");
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
