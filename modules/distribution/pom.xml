@@ -548,12 +548,6 @@
                                     <type>jar</type>
                                 </artifactItem>
                                 <artifactItem>
-                                    <groupId>org.wso2.extension.siddhi.store.hbase</groupId>
-                                    <artifactId>siddhi-store-hbase</artifactId>
-                                    <version>${siddhi.store.hbase.version}</version>
-                                    <type>jar</type>
-                                </artifactItem>
-                                <artifactItem>
                                     <groupId>org.wso2.extension.siddhi.store.cassandra</groupId>
                                     <artifactId>siddhi-store-cassandra</artifactId>
                                     <version>${siddhi.store.cassandra.version}</version>
