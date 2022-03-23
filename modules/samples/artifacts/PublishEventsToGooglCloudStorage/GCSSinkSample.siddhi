@@ -18,7 +18,7 @@ Executing the Sample:
 
 Testing the Sample:
     Open a terminal and issue the following curl command
-	curl -H "Content-Type: application/json" -d '{"event":{"key":"testFile","payload":"message", "test":"wjson"}}' http://localhost:8006/inputStream
+	curl -H "Content-Type: application/json" -d '{"event":{"key":"testFile","payload":"message", "suffix":"wjson"}}' http://localhost:8006/inputStream
 */
 
 @Source(type = 'http',

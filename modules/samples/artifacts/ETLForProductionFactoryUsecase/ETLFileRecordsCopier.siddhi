@@ -1,0 +1,91 @@
+@App:name('ETLFileRecordsCopier')
+@App:description('This sample demonstrates on integrating a File in a particular location with a Database.')
+
+/*
+Purpose:
+    This sample demonstrates on integrating a File in a particular location with a Database.
+
+Prerequisites:
+    1) Ensure that MySql Server is installed on your machine.
+    2) Add mysql jdbc driver into WSO2 SI distribution. This can be achieved using 2 ways,
+        2.1) [Recommended] Install the required jars using the Extensions Installer tool which is available in the editor;
+            2.1.1) Navigate to Tools/Extension Installer on Editor menu.
+            2.1.2) Search for the RDBMS - MySQL from the search panel and install
+        2.2) Add mysql jdbc driver into {WSO2_SI_HOME}/lib
+            2.2.1) Download JDBC driver (https://dev.mysql.com/get/Downloads/Connector-J/mysql-connector-java-5.1.45.tar.gz)
+            2.2.2) Extract it and use the "jartobundle" tool in {WSO2_SI_Home}/bin to convert the above jars into OSGi bundles.
+                   For Windows: <SI_HOME>/bin/jartobundle.bat <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR>
+                   For Linux: <SI_HOME>/bin/jartobundle.sh <PATH_OF_DOWNLOADED_JAR> <PATH_OF_CONVERTED_JAR
+            2.2.3) Copy over the converted bundles to the {WSO2_SI_Home}/lib directory .
+    3) Create a database "batchInformation".
+            >> CREATE DATABASE batchInformation;
+    4) Copy and unzip `demo.zip` folder to your local machine and replace `/Users/wso2/` locations in the siddhi application pointing to the newly copied directory
+    5) Save this sample.
+
+Executing the Sample:
+    1) Start the Siddhi application by clicking on 'Run'.
+    2) If the Siddhi application starts successfully, the following message is shown on the console
+        * ETL_File_Records_Copier.siddhi - Started Successfully!
+Note:
+    If you want to edit this application while it's running, stop the application, make your edits and save the application, and then start it again.
+*/
+
+@source(type='file', mode='LINE',
+    dir.uri='file:/Users/wso2/demo/accurate-files',
+    action.after.process='MOVE',
+    move.after.process='file:/Users/wso2/demo/moved',
+    tailing='false',
+    header.present='true',
+    @map(
+        type='csv',
+        delimiter='|',
+        @attributes(code = '0', serialNo = '1', amount = '2', fileName = 'trp:file.path', eof = 'trp:eof')))
+define stream FileReaderStream (code string, serialNo string, amount double, fileName string, eof string); -- Reads from file
+
+@Store(type="rdbms",
+      jdbc.url="jdbc:mysql://localhost:3306/batchInformation?useSSL=false",
+      username="root",
+      password="root" ,
+      jdbc.driver.name="com.mysql.jdbc.Driver",
+      isAutoCommit = 'true')
+define table AccurateBatchTable(serialNo string, amount double, fileName string, status string, timestamp long);
+
+@sink(type='log', prefix='File to DB copying has Started: ')
+define stream FileReadingStartStream(fileName string);
+
+@sink(type='log', prefix='File to DB copying has Finished: ')
+define stream FileReadingEndStream(fileName string);
+
+
+from FileReaderStream
+select serialNo, amount, fileName, "test" as status, eventTimestamp() as timestamp, count() as rowNumber, eof
+insert into DataStream;
+
+from DataStream
+select *
+insert into DataStreamPassthrough;
+
+-- Write to DB Passthrough
+from DataStreamPassthrough#window.externalTimeBatch(timestamp, 5 sec, timestamp, 10 sec)
+select serialNo, amount, fileName, status, timestamp, rowNumber, eof
+insert into TemporaryTablePassthroughStream;
+
+-- Log First Record
+from TemporaryTablePassthroughStream[rowNumber == 1]
+select fileName
+insert into FileReadingStartStream;
+
+-- Log Every 100000th Record
+from TemporaryTablePassthroughStream
+select fileName, rowNumber as rows
+insert into FileReadingInProgressStream;
+
+-- Log Last Record
+from TemporaryTablePassthroughStream[eof == 'true']
+select fileName
+insert into FileReadingEndStream;
+
+-- Write to DB
+from TemporaryTablePassthroughStream#window.batch()
+select serialNo, amount, fileName, status, timestamp
+insert into AccurateBatchTable;

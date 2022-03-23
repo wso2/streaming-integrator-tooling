@@ -21,7 +21,8 @@ package org.wso2.si.tcp.server;
 import io.siddhi.core.SiddhiAppRuntime;
 import io.siddhi.core.SiddhiManager;
 import io.siddhi.core.util.config.InMemoryConfigManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +32,7 @@ import java.util.Map;
  * Test Server for TCP source.
  */
 public class TCPServer {
-    private static Logger log = Logger.getLogger(TCPServer.class);
+    private static Logger log = LogManager.getLogger(TCPServer.class);
 
     /**
      * Main method to start the test Server.

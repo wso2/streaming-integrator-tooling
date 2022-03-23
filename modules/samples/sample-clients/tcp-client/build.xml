@@ -42,9 +42,7 @@
         </fileset>
         <fileset dir="${carbon.home}/wso2/lib/plugins">
             <include name="org.apache.commons.logging_*.jar"/>
-            <include name="slf4j.log4j*.jar"/>
             <include name="org.ops4j.*.jar"/>
-            <include name="slf4j.api_*.jar"/>
             <include name="siddhi-*.jar"/>
             <include name="disruptor_*.jar"/>
             <include name="org.eclipse.osgi_*.jar"/>
@@ -55,6 +53,8 @@
             <include name="org.wso2.carbon.transport.http.netty_*.jar"/>
             <include name="io.netty.*.jar"/>
             <include name="commons-pool_*.jar"/>
+            <include name="pax-logging-api-*.jar" />
+            <include name="pax-logging-log4j2-*.jar" />
         </fileset>
     </path>
 

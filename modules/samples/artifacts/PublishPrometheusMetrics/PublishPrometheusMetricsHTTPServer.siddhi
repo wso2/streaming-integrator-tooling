@@ -18,14 +18,16 @@ Prerequisites:
         * you can replace values for 'localhost:9080' in targets according to your preferred host and port.
 	      In that case, the 'server.url' option must be included in the Sink definition with the same host and port values.
 
-        c) Download and copy the prometheus client jars to the {WSO2SIHome}/lib directory as follows.
-              i) Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to {WSO2SIHome}/lib directory.
-                 * simpleclient_pushgateway-0.5.0.jar
-                 * simpleclient_common-0.5.0.jar
-                 * simpleclient-0.5.0.jar
-		         * simpleclient_httpserver-0.5.0.jar
+        c) Add prometheus client jars to the {WSO2SIHome}/lib directory. This can be achieved in two ways,
+                1) [Recommended] Install the required jars using the Extensions Installer tool which is available in the editor.
+                    1.1) Navigate to Tools/Extension Installer on Editor menu(Ctrl + Alt + I).
+                    1.2) Search for the 'Prometheus' from the search panel and install
+                2) Download the following jars from https://mvnrepository.com/artifact/io.prometheus and copy them to {WSO2SIHome}/lib directory.
+                     * simpleclient_pushgateway-0.5.0.jar
+                     * simpleclient_common-0.5.0.jar
+                     * simpleclient-0.5.0.jar
+                     * simpleclient_httpserver-0.5.0.jar
 	    d) Navigate to {prometheus} and start prometheus server using ' ./prometheus --config.file="prometheus.yml" ' command
-    2) Start the editor WSO2 SP by giving this command in the terminal : sh editor.sh
     3) Save this sample
 
 Executing the Sample:
@@ -55,35 +57,6 @@ Viewing the Results:
                 - "SweetProductionStream{Name="gingerbread",} 72.3"
                 - "SweetProductionStream{Name="lollipop",} 23.8"
                 - "SweetProductionStream{Name="toffees",} 87.8""
-
-	2) Send http request to the endpoint "http://localhost:9090" to the running prometheus server using the curl command:
-	  a) Open a new terminal and issue the following command:
-            * curl -X GET http://localhost:9090/
-      b) If there is no error, the result will be shown on the terminal in JSON Format similar to the following :
-            {"status":"success",
-               "data":{
-                "resultType":"vector",
-                "result":[
-                    {   "metric":{"Name":"gingerbread",
-                        "__name__":"SweetProductionStream",
-                        "instance":"localhost:9080",
-                        "job":"server"},
-                        "value":[1*********.***,"72.3"]
-                    },
-                    {   "metric":{"Name":"lollipop",
-                        "__name__":"SweetProductionStream",
-                        "instance":"localhost:9080",
-                        "job":"server"},
-                        "value":[1*********.***,"23.8"]
-                    },
-                    {   "metric":{"Name":"toffees",
-                        "__name__":"SweetProductionStream",
-                        "instance":"localhost:9080",
-                        "job":"server"},
-                        "value":[1*********.***,"87.8"]
-                    }
-                    ]}
-            }
 
 */
 

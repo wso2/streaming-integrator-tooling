@@ -1,0 +1,56 @@
+@App:name("AmazonS3FileSample")
+@App:description("Read events from a file and publish them to Amazon AWS S3")
+
+/**
+Purpose:
+    This application demonstrates how to receive events from a file using the siddhi-io-file source extension and
+    publish those as aggregated events to Amazon AWS S3 bucket via the siddhi-io-s3 sink extension. In this sample
+    the events are received by StockQuoteStream stream from a json file. Then those events are published to the
+    Amazon S3 bucket specified via the bucket.name parameter.
+
+Prerequisites:
+    1. Create an AWS account and set the credentials as mentioned in
+            https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/credentials.html.
+    2. Install the required jars using the Extensions Installer tool which is available in the editor.
+           2.1) Navigate to Tools/Extension Installer on Editor menu(Ctrl + Alt + I).
+           2.2) Search for the `Amazon S3` from the search panel and install.
+
+
+Executing the Sample:
+    1. Set the credential.provider class name. If the class is not given, default credential provider chain
+       will be used.
+    2. Set the bucket name for the bucket.name parameter.
+    3. Copy and paste the following text to a new json file and change the value of file.uri parameter to the location
+       of the json file.
+
+       [{"symbol": "WSO2", "date":"2020-01-09", "price": "100.0", "quantity": "2"},
+       {"symbol": "WSO2", "date":"2020-01-08", "price": "800.0", "quantity": "56"},
+       {"symbol": "WSO2", "date":"2020-01-09", "price": "768.0", "quantity": "89"},
+       {"symbol": "IBM", "date":"2020-01-08", "price": "360.0", "quantity": "50"},
+       {"symbol": "IBM", "date":"2020-01-09", "price": "100.0", "quantity": "3"},
+       {"symbol": "IBM", "date":"2020-01-07", "price": "680.0", "quantity": "89"}]
+
+    4. Save the Siddhi sample.
+    5. Run the AmazonS3FileSample.siddhi file.
+
+Testing the Sample:
+    Check the S3 bucket after running the sample. Two folders would  be created as ‘WSO2’ and ‘IBM’, each containing
+    folders for specific dates. Inside each of these folders there's a single json file containing events specific for
+    that date.
+*/
+
+@source(type='file', mode='text.full',
+    file.uri='file:/home/foo/test.json',
+    tailing='false',
+    @map(type='json'))
+define stream StockQuoteStream(symbol string, date string, price double, quantity int);
+
+@sink(type='s3', bucket.name='<BUCKET_NAME>', object.path='stocks/{{symbol}}/{{date}}',
+      credential.provider.class='software.amazon.awssdk.auth.credentials.ProfileCredentialsProvider', node.id='zeus',
+    @map(type='json',
+        @payload("""{"symbol": "{{symbol}}", "date": "{{date}}", "price": "{{price}}", "quantity": "{{quantity}}"}""")))
+define stream Trades (symbol string, date string, price double, quantity int);
+
+from StockQuoteStream
+select *
+insert into Trades;

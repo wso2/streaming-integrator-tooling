@@ -98,7 +98,7 @@ wso2.transport.http:
     port: 9743
     scheme: https
     keyStoreFile: ${carbon.home}/resources/security/wso2carbon.jks
-    keyStorePass: wso2carbon
+    keyStorePassword: wso2carbon
     certPass: wso2carbon
     messageProcessorId: "MSF4J-CM-PROCESSOR"
 

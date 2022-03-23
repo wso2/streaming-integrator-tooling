@@ -22,7 +22,8 @@ package org.wso2.si.sample.rabbitmq.producer;
 import io.siddhi.core.SiddhiAppRuntime;
 import io.siddhi.core.SiddhiManager;
 import io.siddhi.core.stream.input.InputHandler;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,7 +36,7 @@ import java.util.Scanner;
  * Test client for RabbitMQ source.
  */
 public class RabbitMQProducer {
-    private static final Logger log = Logger.getLogger(RabbitMQProducer.class);
+    private static final Logger log = LogManager.getLogger(RabbitMQProducer.class);
 
     /**
      * Main method to start the test client.
