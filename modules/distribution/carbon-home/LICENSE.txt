@@ -205,7 +205,7 @@ siddhi-store-mongodb-2.1.4.jar                                                  
 siddhi-execution-string-5.0.12.jar                                                                  bundle         apache2
 siddhi-map-keyvalue-2.1.2.jar                                                                       bundle         apache2
 siddhi-execution-math-5.0.6.jar                                                                     bundle         apache2
-siddhi-store-rdbms-7.0.15.jar                                                                       bundle         apache2
+siddhi-store-rdbms-7.0.16.jar                                                                       bundle         apache2
 siddhi-io-snmp-2.0.1.jar                                                                            bundle         apache2
 siddhi-store-cassandra-2.0.0.jar                                                                    bundle         apache2
 siddhi-io-file-2.0.18.jar                                                                           bundle         apache2
