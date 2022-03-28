@@ -903,8 +903,8 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.61</carbon.analytics.version>
-        <siddhi.version>5.1.24</siddhi.version>
+        <carbon.analytics.version>3.0.60</carbon.analytics.version>
+        <siddhi.version>5.1.23</siddhi.version>
 
         <carbon.analytics-common.version>6.1.59</carbon.analytics-common.version>
         <!-- Maven plugins -->
@@ -1045,7 +1045,7 @@
         <siddhi.io.googlepubsub.version>2.0.3</siddhi.io.googlepubsub.version>
         <siddhi.io.hl7.version>3.0.1</siddhi.io.hl7.version>
         <siddhi.io.snmp.version>2.0.1</siddhi.io.snmp.version>
-        <siddhi.io.grpc.version>1.0.11</siddhi.io.grpc.version>
+        <siddhi.io.grpc.version>1.0.12</siddhi.io.grpc.version>
         <siddhi.io.gcs.version>1.0.2</siddhi.io.gcs.version>
         <siddhi.io.s3.version>1.0.4</siddhi.io.s3.version>
 
@@ -1059,8 +1059,7 @@
 
         <siddhi.store.mongodb.version>2.1.4</siddhi.store.mongodb.version>
         <siddhi.store.solr.version>2.0.0</siddhi.store.solr.version>
-        <siddhi.store.rdbms.version>7.0.15</siddhi.store.rdbms.version>
-        <siddhi.store.hbase.version>5.0.0</siddhi.store.hbase.version>
+        <siddhi.store.rdbms.version>7.0.16</siddhi.store.rdbms.version>
         <siddhi.store.cassandra.version>2.0.0</siddhi.store.cassandra.version>
         <siddhi.store.redis.version>3.1.3</siddhi.store.redis.version>
         <siddhi.store.elasticsearch.version>3.2.2</siddhi.store.elasticsearch.version>
