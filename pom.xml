@@ -195,7 +195,7 @@
                 <version>${osgi.api.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.wso2.eclipse.osgi</groupId>
+                <groupId>org.eclipse.platform</groupId>
                 <artifactId>org.eclipse.osgi</artifactId>
                 <version>${equinox.osgi.version}</version>
             </dependency>
@@ -892,24 +892,24 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.11</carbon.analytics.version>
+        <carbon.analytics.version>3.0.63-SNAPSHOT</carbon.analytics.version> <!-- TODO release and bump -->
         <siddhi.version>5.1.5</siddhi.version>
 
-        <carbon.analytics-common.version>6.1.33</carbon.analytics-common.version>
+        <carbon.analytics-common.version>6.1.59</carbon.analytics-common.version> <!-- TODO check if this is needed -->
         <!-- Maven plugins -->
         <!--Bundle Plugin - Overridden from parent due to a bug in latest version related to capability providers-->
         <maven.bundle.plugin.version>2.5.4</maven.bundle.plugin.version>
         <maven.findbugsplugin.version.exclude>findbugs-exclude.xml</maven.findbugsplugin.version.exclude>
 
         <carbon.p2.plugin.version>1.5.4</carbon.p2.plugin.version>
-        <carbon.feature.plugin.version>3.1.3</carbon.feature.plugin.version>
+        <carbon.feature.plugin.version>3.1.5</carbon.feature.plugin.version>
 
         <testng.version>6.9.4</testng.version>
         <plugin.version.antlr>4.5.1</plugin.version.antlr>
 
         <!-- OSGI -->
         <osgi.api.version>6.0.0</osgi.api.version>
-        <equinox.osgi.version>3.11.0.v20160603-1336</equinox.osgi.version>
+        <equinox.osgi.version>3.14.0</equinox.osgi.version>
         <equinox.osgi.services.version>3.4.0.v20140312-2051</equinox.osgi.services.version>
 
         <osgi.framework.import.version.range>[1.8.0, 2.0.0)</osgi.framework.import.version.range>
@@ -917,13 +917,13 @@
 
         <!-- Dependencies -->
         <open.tracing.version>0.31.0</open.tracing.version>
-        <carbon.kernel.version>5.2.8</carbon.kernel.version>
+        <carbon.kernel.version>5.2.18-SNAPSHOT</carbon.kernel.version> <!-- TODO release and bump -->
         <carbon.kernel.package.import.version.range>[5.2.0, 6.0.0)</carbon.kernel.package.import.version.range>
-        <carbon.kernel.pax.version>5.2.8</carbon.kernel.pax.version>
+        <carbon.kernel.pax.version>5.2.17</carbon.kernel.pax.version>
 
         <carbon.deployment.version>5.2.0</carbon.deployment.version>
 
-        <carbon.datasources.version>1.1.4</carbon.datasources.version>
+        <carbon.datasources.version>1.1.11</carbon.datasources.version>
         <carbon.metrics.version>2.3.8</carbon.metrics.version>
         <carbon.jndi.version>1.0.5</carbon.jndi.version>
 
@@ -985,9 +985,9 @@
         <common.collections4.version>4.0</common.collections4.version>
 
         <!--MSF4J related-->
-        <msf4j.version>2.7.3</msf4j.version>
-        <com.fasterxml.jackson.core.version>2.8.9</com.fasterxml.jackson.core.version>
-        <io.swagger.version>1.5.22</io.swagger.version>
+        <msf4j.version>2.8.7-SNAPSHOT</msf4j.version> <!-- TODO release and bump -->
+        <com.fasterxml.jackson.core.version>2.9.10</com.fasterxml.jackson.core.version>
+        <io.swagger.version>1.6.7</io.swagger.version>
         <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
         <pax.logging.api.version>1.8.5</pax.logging.api.version>
         <javax.servlet.version>3.1.0</javax.servlet.version>
@@ -1079,6 +1079,10 @@
         <io.netty.version>4.1.19.Final</io.netty.version>
         <log4j.version>1.2.17</log4j.version>
         <commons-codec.wso2.version>1.3.0.wso2v1</commons-codec.wso2.version>
+
+        <com.sun.activation.version>1.1.1.wso2v3</com.sun.activation.version>
+        <com.sun.xml.bind.version>2.3.0</com.sun.xml.bind.version>
+        <org.wso2.orbit.javax.xml.bind.version>2.3.1.wso2v1</org.wso2.orbit.javax.xml.bind.version>
 
         <!--Performance Testing Versions-->
         <HdrHistogram.version>2.1.9</HdrHistogram.version>

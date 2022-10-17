@@ -633,6 +633,32 @@
                 <groupId>org.wso2.carbon.maven</groupId>
                 <artifactId>carbon-feature-plugin</artifactId>
                 <version>${carbon.feature.plugin.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-core</artifactId>
+                        <version>${com.sun.xml.bind.version}</version>
+                        <type>jar</type>
+                    </dependency>
+                    <dependency>
+                        <groupId>com.sun.xml.bind</groupId>
+                        <artifactId>jaxb-impl</artifactId>
+                        <version>${com.sun.xml.bind.version}</version>
+                        <type>jar</type>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.wso2.orbit.javax.xml.bind</groupId>
+                        <artifactId>jaxb-api</artifactId>
+                        <version>${org.wso2.orbit.javax.xml.bind.version}</version>
+                        <type>jar</type>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.wso2.orbit.javax.activation</groupId>
+                        <artifactId>activation</artifactId>
+                        <version>${com.sun.activation.version}</version>
+                        <type>jar</type>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <id>p2-repo-generation</id>
