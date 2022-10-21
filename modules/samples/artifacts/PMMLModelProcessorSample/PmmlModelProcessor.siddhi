@@ -56,7 +56,9 @@ Viewing the Results:
     Note:
     Stop this Siddhi application, once you are done with the execution.
 
--- Please refer to https://docs.wso2.com/display/SP400/Quick+Start+Guide on getting started with SP editor.
+ Please refer to https://ei.docs.wso2.com/en/latest/streaming-integrator/quick-start-guide/quick-start-guide-101/ on
+ getting started with streaming-integrator-tooling.
+
 */
 @Source(type = 'tcp', context='SweetProductionStream',
 @map(type='binary'))

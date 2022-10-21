@@ -5,8 +5,10 @@ Purpose:
 
 Prerequisites:
     1) Replace {SI_HOME} with absolute path to the Streaming Integrator Tooling home directory.
-	2) Save this sample.
-	3) If there is no syntax error, the following message is shown on the console:
+    2) Download the 'siddhi-execution-tensorflow' extension from 'https://repo1.maven.org/maven2/org/wso2/extension/siddhi/execution/tensorflow/siddhi-execution-tensorflow/2.0.0/siddhi-execution-tensorflow-2.0.0.jar' and place it in {SI_HOME}/lib
+	3) Restart the tooling
+	4) Save this sample.
+	5) If there is no syntax error, the following message is shown on the console:
 	       * - Siddhi App TensorFlowTestApp successfully deployed.
 
 Executing the Sample:

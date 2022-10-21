@@ -9,20 +9,25 @@ Purpose:
 Prerequisites:
     1) Set up Kafka as follows:
     	a) Create a folder called kafka and another folder called kafka-osgi.
-	    b) Copy the following files from {KafkaHome}/libs to the kafka folder you just created:
-            * kafka_2.11-0.10.0.0.jar
-            * kafka-clients-0.10.0.0.jar
-            * metrics-core-2.2.0.jar
-            * scala-library-2.11.8.jar
-            * zkclient-0.8.jar
-            * zookeeper-3.4.6.jar
-	    c) Copy these same files to the {WSO2SIHome}/samples/sample-clients/lib folder.
- 	    d) Navigate to {WSO2SIHome}/bin and issue the following command:
-             -For Linux: ./jartobundle.sh <path/kafka> <path/kafka-osgi>
-    	     -For Windows: ./jartobundle.bat <path/kafka> <path/kafka-osgi>
-	       If converted successfully, the following messages are shown on the terminal for each lib file:
-    	    - INFO: Created the OSGi bundle <kafka-lib-name>.jar for JAR file <absolute_path>/kafka/<kafka-lib-name>.jar
-        e) Copy the OSGi-converted kafka libs from the kafka-osgi folder to {WSO2SIHome}/lib.
+        b) Add the kafka dependency jars to Streaming-Integrator-Tooling, This can be achieved in two ways,
+               1.1) [Recommended] Installing theL dependency jars through the extension installer
+                        a) Navigate to Tools/Extension Installer on Editor menu.
+                        b) Search for the entry 'Kafka' from the search panel and install
+               1.2) By copying the kafka dependency jars manually as follows:
+                        a) Copy the following files from {KafkaHome}/libs to the kafka folder you just created:
+                                * kafka_2.11_2.2.0.jar
+                                * kafka_clients_2.2.0.jar
+                                * metrics-core-2.2.0.jar
+                                * scala_library_2.11.12.jar
+                                * zkclient_0.11.jar
+                                * zookeeper_3.4.13.jar
+                        b) Copy these same files to the {WSO2SIHome}/samples/sample-clients/lib folder.
+                        c) Navigate to {WSO2SIHome}/bin and issue the following command:
+                                 -For Linux: ./jartobundle.sh <path/kafka> <path/kafka-osgi>
+                                 -For Windows: ./jartobundle.bat <path/kafka> <path/kafka-osgi>
+                           If converted successfully, the following messages are shown on the terminal for each lib file:
+                               - INFO: Created the OSGi bundle <kafka-lib-name>.jar for JAR file <absolute_path>/kafka/<kafka-lib-name>.jar
+                        d) Copy the OSGi-converted kafka libs from the kafka-osgi folder to {WSO2SIHome}/lib.
     2) Download confluent from https://www.confluent.io/download/ and unzip.
     3) Save this sample.
     4) If there is no syntax error, the following message is shown on the console:

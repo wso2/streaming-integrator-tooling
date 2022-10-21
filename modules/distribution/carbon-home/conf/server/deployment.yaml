@@ -41,11 +41,11 @@ wso2.transport.http:
     -
       id: "default"
       host: "0.0.0.0"
-      port: 9390
+      port: 9387
     -
       id: "msf4j-https"
       host: "0.0.0.0"
-      port: 9743
+      port: 9740
       scheme: https
       keyStoreFile: "${carbon.home}/resources/security/wso2carbon.jks"
       keyStorePassword: wso2carbon
@@ -295,7 +295,7 @@ wso2.datasources:
     definition:
       type: RDBMS
       configuration:
-        jdbcUrl: 'jdbc:h2:${sys:carbon.home}/wso2/${sys:wso2.runtime}/database/PERMISSION_DB;IFEXISTS=TRUE;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000;MVCC=TRUE'
+        jdbcUrl: 'jdbc:h2:${sys:carbon.home}/wso2/${sys:wso2.runtime}/database/PERMISSION_DB;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000'
         username: wso2carbon
         password: wso2carbon
         driverClassName: org.h2.Driver
@@ -313,7 +313,7 @@ wso2.datasources:
     definition:
       type: RDBMS
       configuration:
-        jdbcUrl: 'jdbc:h2:${sys:carbon.home}/wso2/${sys:wso2.runtime}/database/BUSINESS_RULES_DB;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000;MVCC=TRUE'
+        jdbcUrl: 'jdbc:h2:${sys:carbon.home}/wso2/${sys:wso2.runtime}/database/BUSINESS_RULES_DB;DB_CLOSE_ON_EXIT=FALSE;LOCK_TIMEOUT=60000'
         username: wso2carbon
         password: wso2carbon
         driverClassName: org.h2.Driver

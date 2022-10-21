@@ -1,0 +1,59 @@
+@App:name('ReadFileInBinaryChunkedMode')
+@App:description('Read a binary file as chunks')
+
+/*
+Purpose:
+    This application demonstrates how to configure WSO2 Streaming Integrator Tooling to read a binary file in chunks and
+     send via WebSocket transport.
+
+Prerequisites:
+    * Save this sample. If there is no syntax error, the following message is shown on the console:
+       * - Siddhi App ReadFileInBinaryChunkedMode successfully deployed.
+    * Open a terminal and install 'node-ws' by using the command 'sudo apt install node-ws'. node-ws will function
+    as the websocket client/server
+    * Edit the uri '{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new' and
+    '{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/consumed' by replacing {WSO2SIHome} with
+    the absolute path of your WSO2SP home directory.
+
+Executing the Sample:
+    1) Open a terminal and navigate to the {WSO2SIHome}/samples/sample-clients/websocket-receiver directory and run the
+    'wscat -c ws://localhost:8080 ' command. (Replace localhost and 8080 with appropriate arguments if you want to use a
+     different host/port)
+
+    2) Start the Siddhi application by clicking on 'Run'.
+
+    3) If the Siddhi application starts successfully, the following messages are shown on the console:
+        * ReadFileInBinaryChunkedMode.siddhi - Started Successfully!
+
+NOTE:
+   If the sample is not running and not producing output, do the following first.
+   - Add more content and check whether the expected output appears on the console.
+   - Move all the files in {WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/consumed directory to
+   {WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new.
+   - Delete all the files in consumed and sink directories.
+
+Viewing the Results:
+   See the output on the terminal.
+
+Notes:
+ If the message "BarStream' stream could not connect to 'localhost:8080", it could be due to port 8080 defined in the
+ Siddhi application already being used by a different program. To resolve this issue, do the following:
+       1) Stop this Siddhi application (Click 'Run' on menu bar -> 'Stop').
+       2) Change the port from 8080 to an unused port in this Siddhi application's source configuration and in the
+       websocket-receiver file.
+       3) Start the application and check whether the expected output appears on the console.
+*/
+
+@source(type='file', mode='binary.chunked',
+ dir.uri='file://{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/new', action.after.process='move',
+ move.after.process='file://{WSO2SIHome}/samples/artifacts/ReadFileInBinaryChunkedMode/consumed',
+ file.read.wait.timeout='5000', file.polling.interval='3000', @map(type='binaryPassThrough', @attributes(buffer= '0',
+ eof = 'trp:eof', fileName = 'trp:file.name', sequenceNumber = 'trp:sequence.number', length = 'trp:content.length')))
+define stream FooStream (buffer object, eof bool, fileName string, sequenceNumber int, length int);
+
+@sink(type='websocket-server', host='localhost', port='8080', @map(type='binaryPassThrough'))
+define stream BarStream (buffer object);
+
+from FooStream
+select buffer
+insert into BarStream;

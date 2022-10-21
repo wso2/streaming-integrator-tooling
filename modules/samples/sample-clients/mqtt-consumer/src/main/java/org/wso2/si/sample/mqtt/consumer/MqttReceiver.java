@@ -21,13 +21,14 @@ package org.wso2.si.sample.mqtt.consumer;
 
 import io.siddhi.core.SiddhiAppRuntime;
 import io.siddhi.core.SiddhiManager;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Test client for MQTT source.
  */
 public class MqttReceiver {
-    private static final Logger log = Logger.getLogger(MqttReceiver.class);
+    private static final Logger log = LogManager.getLogger(MqttReceiver.class);
 
     /**
      * Main method to start the test client.
