@@ -186,7 +186,7 @@
             <fileMode>644</fileMode>
         </fileSet>
         <fileSet>
-            <directory>target/javax</directory>
+            <directory>target/java-dependencies</directory>
             <outputDirectory>bin/bootstrap</outputDirectory>
             <fileMode>644</fileMode>
         </fileSet>
@@ -196,15 +196,6 @@
             <directory>target/update/</directory>
             <outputDirectory>bin/</outputDirectory>
             <fileMode>744</fileMode>
-        </fileSet>
-        <!-- Java 11 Dependencies -->
-        <fileSet>
-            <directory>target/java-dependencies</directory>
-            <outputDirectory>bin/bootstrap</outputDirectory>
-            <includes>
-                <include>**/*.jar</include>
-            </includes>
-            <fileMode>644</fileMode>
         </fileSet>
     </fileSets>
     <files>
