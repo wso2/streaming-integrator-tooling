@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.wso2.ei</groupId>
         <artifactId>wso2-streaming-integrator-tooling-parent</artifactId>
-        <version>4.2.0-SNAPSHOT</version>
+        <version>4.2.0-m1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
@@ -599,7 +599,7 @@
                             <artifactItems>
                                 <!--Java 11 related dependencies-->
                                 <artifactItem>
-                                    <groupId>org.wso2.orbit.javax.activation</groupId>-->
+                                    <groupId>org.wso2.orbit.javax.activation</groupId>--&gt;
                                     <artifactId>activation</artifactId>
                                     <version>${org.wso2.orbit.javax.activation.version}</version>
                                     <type>jar</type>
