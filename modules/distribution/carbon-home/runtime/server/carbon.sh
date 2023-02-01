@@ -105,7 +105,6 @@ if $mingw ; then
     CARBON_HOME="`(cd "$CARBON_HOME"; pwd)`"
   [ -n "$JAVA_HOME" ] &&
     JAVA_HOME="`(cd "$JAVA_HOME"; pwd)`"
-  # TODO classpath?
 fi
 
 if [ -z "$JAVACMD" ] ; then
@@ -182,7 +181,7 @@ elif [ "$CMD" = "start" ]; then
     fi
   fi
   export CARBON_HOME=$CARBON_HOME
-# using nohup bash to avoid erros in solaris OS.TODO
+# using nohup bash to avoid erros in solaris OS.
   nohup bash $RUNTIME_HOME/bin/carbon.sh $args > /dev/null 2>&1 &
   exit 0
 elif [ "$CMD" = "stop" ]; then
@@ -201,7 +200,7 @@ elif [ "$CMD" = "restart" ]; then
         process_status=$?
   done
 
-# using nohup bash to avoid erros in solaris OS.TODO
+# using nohup bash to avoid erros in solaris OS.
   nohup bash $RUNTIME_HOME/bin/carbon.sh $args > /dev/null 2>&1 &
   exit 0
 elif [ "$CMD" = "test" ]; then
