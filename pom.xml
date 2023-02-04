@@ -150,16 +150,6 @@
                 <version>${antlr4.runtime.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.apache.ws.commons.axiom</groupId>
-                <artifactId>axiom-api</artifactId>
-                <version>${orbit.version.axiom}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.ws.commons.axiom</groupId>
-                <artifactId>axiom-impl</artifactId>
-                <version>${orbit.version.axiom}</version>
-            </dependency>
-            <dependency>
                 <groupId>jaxen</groupId>
                 <artifactId>jaxen</artifactId>
                 <version>${jaxen.version}</version>
@@ -928,7 +918,7 @@
         <carbon.deployment.version>5.2.2</carbon.deployment.version>
 
         <carbon.datasources.version>1.1.14</carbon.datasources.version>
-        <carbon.metrics.version>2.3.17</carbon.metrics.version>
+        <carbon.metrics.version>2.3.18</carbon.metrics.version>
         <carbon.jndi.version>1.0.5</carbon.jndi.version>
 
         <carbon.cache.version>1.1.3</carbon.cache.version>
@@ -936,7 +926,7 @@
         <carbon.utils.version>2.1.1</carbon.utils.version>
         <carbon.config.version>2.1.16</carbon.config.version>
         <carbon.config.version.range>[2.1.0, 3.0.0)</carbon.config.version.range>
-        <carbon.securevault.version>5.0.16</carbon.securevault.version>
+        <carbon.securevault.version>5.0.18</carbon.securevault.version>
 
         <slf4j.version>1.7.12</slf4j.version>
         <slf4j.logging.package.import.version.range>[1.7.1, 2.0.0)
@@ -980,7 +970,7 @@
         <disruptor.version>3.4.2.wso2v1</disruptor.version>
         <guava.version>23.0</guava.version>
         <guava.bundle.version>23.0.0</guava.bundle.version>
-        <quartz.version>2.3.0.wso2v3</quartz.version>
+        <quartz.version>2.3.2.wso2v1</quartz.version>
         <metrics.version>3.2.5</metrics.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
         <commons-collections4.version>4.0</commons-collections4.version>
@@ -988,7 +978,7 @@
         <common.collections4.version>4.0</common.collections4.version>
 
         <!--MSF4J related-->
-        <msf4j.version>2.8.7</msf4j.version>
+        <msf4j.version>2.8.11</msf4j.version>
         <io.swagger.version>1.6.7</io.swagger.version>
         <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
         <pax.logging.api.version>2.1.0-wso2v3</pax.logging.api.version>
