@@ -409,6 +409,11 @@
                 <version>${guava.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>failureaccess</artifactId>
+                <version>${guava.failureaccess.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.wso2.orbit.org.quartz-scheduler</groupId>
                 <artifactId>quartz</artifactId>
                 <version>${quartz.version}</version>
@@ -885,10 +890,10 @@
         </pluginManagement>
     </build>
     <properties>
-        <carbon.analytics.version>3.0.67</carbon.analytics.version>
-        <siddhi.version>5.1.27</siddhi.version>
+        <carbon.analytics.version>3.0.68</carbon.analytics.version>
+        <siddhi.version>5.1.28</siddhi.version>
 
-        <carbon.analytics-common.version>6.1.63</carbon.analytics-common.version>
+        <carbon.analytics-common.version>6.1.64</carbon.analytics-common.version>
         <!-- Maven plugins -->
         <!--Bundle Plugin - Overridden from parent due to a bug in latest version related to capability providers-->
         <maven.bundle.plugin.version>2.5.4</maven.bundle.plugin.version>
@@ -934,7 +939,7 @@
 
         <antlr4.runtime.version>4.5.1.wso2v1</antlr4.runtime.version>
         <!--Dashboard-->
-        <carbon.uis.version>1.0.6</carbon.uis.version>
+        <carbon.uis.version>1.0.7</carbon.uis.version>
         <maven.exec.plugin.version>1.5.0</maven.exec.plugin.version>
 
         <!-- json dependencies -->
@@ -968,8 +973,9 @@
 
         <!-- Streaming Integrator Tooling Dependencies -->
         <disruptor.version>3.4.2.wso2v1</disruptor.version>
-        <guava.version>23.0</guava.version>
-        <guava.bundle.version>23.0.0</guava.bundle.version>
+        <guava.version>31.1-jre</guava.version>
+        <guava.bundle.version>31.1.0.jre</guava.bundle.version>
+        <guava.failureaccess.version>1.0.1</guava.failureaccess.version>
         <quartz.version>2.3.2.wso2v1</quartz.version>
         <metrics.version>3.2.5</metrics.version>
         <commons-lang3.version>3.3.2</commons-lang3.version>
