@@ -71,9 +71,9 @@ javax.ws.rs-api_2.0.0.jar                                                       
 org.wso2.carbon.databridge.commons.thrift_6.1.63.jar                                                bundle         apache2
 org.eclipse.equinox.frameworkadmin.equinox_1.0.700.v20160102-2223.jar                               bundle         epl1
 org.wso2.carbon.event.simulator.core_3.0.66.jar                                                     bundle         apache2
-siddhi-query-api_5.1.26.jar                                                                         bundle         apache2
+siddhi-query-api_5.1.27.jar                                                                         bundle         apache2
 jaxrs-delegates_2.8.7.jar                                                                           bundle         apache2
-siddhi-query-compiler_5.1.26.jar                                                                    bundle         apache2
+siddhi-query-compiler_5.1.27.jar                                                                    bundle         apache2
 org.apache.commons.lang3_3.3.2.jar                                                                  bundle         apache2
 org.wso2.carbon.database.query.manager_6.1.63.jar                                                   bundle         apache2
 org.wso2.carbon.uiserver_1.0.6.jar                                                                  bundle         apache2
@@ -103,8 +103,8 @@ org.apache.commons.io_2.4.0.jar                                                 
 io.netty.tcnative-boringssl-static_2.0.54.Final.jar                                                 bundle         apache2
 org.apache.commons.csv_1.4.0.jar                                                                    bundle         apache2
 org.wso2.carbon.analytics.auth.rest.api_3.0.66.jar                                                  bundle         apache2
-siddhi-core_5.1.26.jar                                                                              bundle         apache2
-siddhi-annotations_5.1.26.jar                                                                       bundle         apache2
+siddhi-core_5.1.27.jar                                                                              bundle         apache2
+siddhi-annotations_5.1.27.jar                                                                       bundle         apache2
 org.wso2.carbon.databridge.receiver.thrift_6.1.63.jar                                               bundle         apache2
 io.dropwizard.metrics.jvm_3.2.5.jar                                                                 bundle         apache2
 io.swagger.jaxrs_1.6.7.jar                                                                          bundle         apache2
@@ -214,7 +214,7 @@ siddhi-io-snmp-2.0.1.jar                                                        
 siddhi-store-cassandra-2.0.0.jar                                                                    bundle         apache2
 siddhi-execution-json-2.0.10.jar                                                                    bundle         apache2
 siddhi-io-rabbitmq-3.0.7.jar                                                                        bundle         apache2
-siddhi-io-cdc-2.0.13.jar                                                                            bundle         apache2
+siddhi-io-cdc-2.0.14.jar                                                                            bundle         apache2
 siddhi-io-nats-2.0.15.jar                                                                           bundle         apache2
 siddhi-io-websocket-3.0.3.jar                                                                       bundle         apache2
 siddhi-execution-geo-5.0.1.jar                                                                      bundle         apache2
