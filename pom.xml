@@ -1050,7 +1050,6 @@
         <siddhi.store.rdbms.version>7.0.17</siddhi.store.rdbms.version>
         <siddhi.store.cassandra.version>2.0.0</siddhi.store.cassandra.version>
         <siddhi.store.redis.version>3.1.3</siddhi.store.redis.version>
-        <siddhi.store.elasticsearch.version>3.2.2</siddhi.store.elasticsearch.version>
 
         <siddhi.script.js.version>5.0.4</siddhi.script.js.version>
 
