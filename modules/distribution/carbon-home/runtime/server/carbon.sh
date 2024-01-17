@@ -303,6 +303,8 @@ do
     -Djavax.net.ssl.trustStorePassword="wso2carbon" \
     -Dorg.ops4j.pax.logging.logReaderEnabled=false \
     -Dorg.ops4j.pax.logging.eventAdminEnabled=false \
+    -Djdk.util.zip.disableZip64ExtraFieldValidation=true \
+    -Djdk.nio.zipfs.allowDotZipEntry=true \
     org.wso2.carbon.launcher.Main $*
     status=$?
 done
