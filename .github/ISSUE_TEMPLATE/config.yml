@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
 - name: '📚 Create an Issue'
-  about: You will be redirected to wso2/api-manager repository where all the APIM product suite issues are reported including Streaming Integrator Tooling releted issues.
-  url: https://github.com/wso2/api-manager/issues/new/choose
+  about: You will be redirected to wso2/streaming-integrator repository where the issues are reported including Streaming Integrator Tooling related issues.
+  url: https://github.com/wso2/streaming-integrator/issues/new/choose
 - name: '💬 Slack Channel'
   url: 'https://apim-slack.wso2.com/'
   about: |
