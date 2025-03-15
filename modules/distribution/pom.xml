@@ -985,11 +985,6 @@
                                     <version>${carbon.analytics.version}</version>
                                 </feature>
 
-                                <feature>
-                                    <id>org.wso2.carbon.streaming.integrator.core.feature</id>
-                                    <version>${carbon.analytics.version}</version>
-                                </feature>
-
                                 <!--simulator feature-->
                                 <feature>
                                     <id>org.wso2.carbon.event.simulator.core.feature.group</id>
