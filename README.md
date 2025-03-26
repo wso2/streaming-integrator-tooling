@@ -66,7 +66,7 @@ Please follow the steps mentioned below to build the WSO2 Streaming Integrator T
 
 ## Getting Started
 
-Get started with Streaming integrator in a few minutes by following [Streaming Integrator Quick Start Guide](https://docs.wso2.com/display/SP4xx/Quick+Start+Guide)
+Get started with Streaming integrator in a few minutes by following [Streaming Integrator Quick Start Guide](https://si.docs.wso2.com/quick-start-guide/quick-start-guide/)
 
 ## Support
 
